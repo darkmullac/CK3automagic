@@ -1,0 +1,9 @@
+﻿l_english:
+ enable_auto_build:0 "Enable auto build"
+ enable_auto_build_desc:0 "1. Duchy buildings and special buildings upgrades still need to be upgraded manually.\n\n2.If building slots are not enough, level 1 buildings should be built manually, so as not to automatically add buildings you don't want."
+ enable_auto_build_confirm:0 "Enable"
+ disable_auto_build:0 "Disable auto build"
+ disable_auto_build_desc:0 "Disable auto build"
+ disable_auto_build_confirm:0 "Disable"
+enable_auto_build_tooltip: "This option enables automatic construction of buildings."
+disable_auto_build_tooltip: "This option disables automatic construction of buildings."

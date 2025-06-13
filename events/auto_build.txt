@@ -1,0 +1,2577 @@
+﻿namespace = auto_build
+auto_build.0003 = {
+	type = character_event
+	trigger = {
+		OR = {
+			has_character_flag = enable_auto_build
+			has_character_flag = enable_vassal_auto_build
+		}
+		
+	}
+	hidden = yes
+	immediate = {
+		hidden_effect = {
+			trigger_event = {
+				id = auto_build.0004
+				days = 15
+			}
+		}
+	}
+
+}
+
+#######适配原版的版本的作者建筑顺序写得好捷豹怪，什么鬼牧场放最前面，我当场梆梆给他两拳（doge
+#以下内容编号会出现顺序不明的情况，只是我在调整建造优先度:3 
+#You can modify these for free,which is easy:Ctrl+X and then Ctrl+V.You can change the building order as you wish in this way.
+#Tips:我没写印度魔幻风炉的革新限制，按道理来说自动建造能给你拍地产上去(地区不合适并不能，如果你玩印度需要建造，先手动拍一个一级的 事件的title、desc都完全没必要写，完全可以删了，我是憨憨改了这么多:(
+#I advise you to use visual code to edit.
+
+auto_build.0004 = {
+	type = character_event
+	hidden = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_character_flag = enable_auto_build
+				}
+				
+				trigger_event = auto_build.0088 #水车/Watermills
+				trigger_event = auto_build.0089 #风车/Windmills
+				trigger_event = auto_build.0090 #商队旅馆/Caravanserai
+				trigger_event = auto_build.0018 #庄园宅邸/Farm Estates
+				trigger_event = auto_build.0024 #农田/Cereal Fields									
+				trigger_event = auto_build.0092 #铁匠铺/Smiths
+				trigger_event = auto_build.0093 #工坊/Workshops
+				trigger_event = auto_build.0017 #沙漠果园/Orchards
+				trigger_event = auto_build.0015 #牧场/Cattle Pastures
+				trigger_event = auto_build.0016 #狩猎场/Hunting Grounds
+				trigger_event = auto_build.0019 #营地，加弓箭手散兵那个营地/Militia Camps
+				trigger_event = auto_build.0020 #军团训练场/Regimental Grounds
+				trigger_event = auto_build.0021 #林中堡垒/Ramparts
+				trigger_event = auto_build.0022 #幕墙，到处都能建的那个/Curtain Walls
+				trigger_event = auto_build.0023 #瞭望塔/Watchtowers			
+				trigger_event = auto_build.0025 #哨站/Outposts
+				trigger_event = auto_build.0026 #兵营/Barracks
+				trigger_event = auto_build.0027 #骆驼养殖场/Camel Farms
+				trigger_event = auto_build.0028 #林业/Logging Camps
+				trigger_event = auto_build.0029 #湿地农场/Peat Quarries
+				trigger_event = auto_build.0030 #山丘农场/Hill Farms
+				trigger_event = auto_build.0031 #战象象栏/Elephant Pens
+				trigger_event = auto_build.0032 #沙漠农业/Plantations
+				trigger_event = auto_build.0033 #采石场/Quarries
+				trigger_event = auto_build.0034 #山堡/Hill Forts
+				trigger_event = auto_build.0035 #贸易港/Tradeports
+				trigger_event = auto_build.0036 #行会/Guild Halls
+				trigger_event = auto_build.0037 #城堡/Castles
+				trigger_event = auto_build.0038 #城市/Citises
+				trigger_event = auto_build.0039 #神殿/Temples
+				trigger_event = auto_build.0040 #僧侣学校/Monastic Schools
+				trigger_event = auto_build.0094 #马厩/Stables
+				trigger_event = auto_build.0095 #牧马场/Horse Pastures
+				trigger_event = auto_build.0096 #战士营地/Warrior Lodges
+				trigger_event = auto_build.0091 #风炉/Wind Furnaces
+				trigger_event = auto_build.0014 #Qanats
+				trigger_event = auto_build.0273 #Hospices
+			}
+			else_if = {#封臣建造顺序 +100/Plus 100
+				limit = {
+					has_character_flag = enable_vassal_auto_build
+				}
+				
+				trigger_event = auto_build.0188 #水车/Watermills
+				trigger_event = auto_build.0189 #风车/Windmills
+				trigger_event = auto_build.0190 #商队旅馆/Caravanserai
+				trigger_event = auto_build.0118 #庄园宅邸/Farm Estates
+				trigger_event = auto_build.0124 #农田/Cereal Fields
+				trigger_event = auto_build.0192 #铁匠铺/Smiths
+				trigger_event = auto_build.0193 #工坊/Workshops		
+				trigger_event = auto_build.0115 #牧场/Cattle Pastures
+				trigger_event = auto_build.0116 #狩猎场/Hunting Grounds
+				trigger_event = auto_build.0117 #沙漠果园/Orchards				
+				trigger_event = auto_build.0119 #军用营地/Militia Camps
+				trigger_event = auto_build.0120 #军团训练场/Regimental Grounds
+				trigger_event = auto_build.0121 #林中堡垒/Ramparts
+				trigger_event = auto_build.0122 #幕墙，到处都能建的那个/Curtain Walls
+				trigger_event = auto_build.0123 #瞭望塔/Watchtowers				
+				trigger_event = auto_build.0125 #哨站/Outposts
+				trigger_event = auto_build.0126 #兵营/Barracks
+				trigger_event = auto_build.0127 #骆驼养殖场/Camel Farms
+				trigger_event = auto_build.0128 #林业/Logging Camps
+				trigger_event = auto_build.0129 #湿地农场/Peat Quarries
+				trigger_event = auto_build.0130 #山丘农场/Hill Farms
+				trigger_event = auto_build.0131 #战象象栏/Elephant Pens
+				trigger_event = auto_build.0132 #沙漠农业/Plantations
+				trigger_event = auto_build.0133 #采石场/Quarries
+				trigger_event = auto_build.0134 #山堡/Hill Forts
+				trigger_event = auto_build.0135 #贸易港/Tradeports
+				trigger_event = auto_build.0136 #行会/Guild Halls
+				trigger_event = auto_build.0137 #城堡/Castles
+				trigger_event = auto_build.0138 #城市/Citises
+				trigger_event = auto_build.0139 #神殿/Temples
+				trigger_event = auto_build.0140 #僧侣学校/Monastic Schools																																																
+				trigger_event = auto_build.0194 #马厩/Stables
+				trigger_event = auto_build.0195 #牧马场/Horse Pastures
+				trigger_event = auto_build.0196 #战士营地/Warrior Lodges
+				trigger_event = auto_build.0191 #风炉/Wind Furnaces
+				trigger_event = auto_build.0114 #Qanats
+				trigger_event = auto_build.0173 #Hospices
+			}
+			trigger_event = {
+				id = auto_build.0003
+				days = 15
+			}
+		}
+	}
+}
+
+auto_build.0001 = {
+	type = character_event
+	title = auto_build.0001.t
+	desc = auto_build.0001.desc
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	immediate = {
+		hidden_effect = {
+			trigger_event = {
+				id = auto_build.0003
+				days = 5
+			}
+		}
+	}
+	option = {
+		name = auto_build.0001.a
+		add_character_flag = enable_auto_build
+	}
+	option = {
+		name = auto_build.0001.b
+		add_character_flag = enable_vassal_auto_build
+	}
+}
+
+#add_hospices_building_effect
+auto_build.0273 = {
+	type = character_event
+	title = auto_build.0273.t
+	desc = auto_build.0273.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0273.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_hospices_building_effect = yes
+		}
+	}
+}
+
+#add_qanats_building_effect
+auto_build.0014 = {
+	type = character_event
+	title = auto_build.0014.t
+	desc = auto_build.0014.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0014.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_qanats_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-水车 add_watermills_building_effect
+auto_build.0088 = {
+	type = character_event
+	title = auto_build.0088.t
+	desc = auto_build.0088.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0088.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_watermills_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-风车
+auto_build.0089 = {
+	type = character_event
+	title = auto_build.0089.t
+	desc = auto_build.0089.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0089.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_windmills_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-商队旅馆 add_caravanserai_building_effect
+auto_build.0090 = {
+	type = character_event
+	title = auto_build.0090.t
+	desc = auto_build.0090.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0090.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_caravanserai_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-风炉 add_wind_furnace_building_effect
+auto_build.0091 = {
+	type = character_event
+	title = auto_build.0091.t
+	desc = auto_build.0091.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0091.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_wind_furnace_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-铁匠铺 add_smiths_building_effect
+auto_build.0092 = {
+	type = character_event
+	title = auto_build.0092.t
+	desc = auto_build.0092.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0092.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_smiths_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-工坊 add_workshops_building_effect
+auto_build.0093 = {
+	type = character_event
+	title = auto_build.0093.t
+	desc = auto_build.0093.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0093.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_workshops_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-马厩 add_stables_building_effect
+auto_build.0094 = {
+	type = character_event
+	title = auto_build.0094.t
+	desc = auto_build.0094.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0094.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_stables_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-牧马场 add_horse_pastures_building_effect
+auto_build.0095 = {
+	type = character_event
+	title = auto_build.0095.t
+	desc = auto_build.0095.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0095.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_horse_pastures_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-战士营地 add_warrior_lodges_building_effect
+auto_build.0096 = {
+	type = character_event
+	title = auto_build.0096.t
+	desc = auto_build.0096.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0096.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_warrior_lodges_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-牧场
+auto_build.0015 = {
+	type = character_event
+	title = auto_build.0015.t
+	desc = auto_build.0015.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0015.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_pastures_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-狩猎场
+auto_build.0016 = {
+	type = character_event
+	title = auto_build.0016.t
+	desc = auto_build.0016.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0016.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_hunting_building_effect = yes
+		}
+	}
+}
+#自动建筑-果园
+auto_build.0017 = {
+	type = character_event
+	title = auto_build.0017.t
+	desc = auto_build.0017.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0017.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_orchards_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-庄园宅第
+auto_build.0018 = {
+	type = character_event
+	title = auto_build.0018.t
+	desc = auto_build.0018.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0018.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_farm_estates_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-军用营地
+auto_build.0019 = {
+	type = character_event
+	title = auto_build.0019.t
+	desc = auto_build.0019.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0019.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_military_camps_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-军团训练场
+auto_build.0020 = {
+	type = character_event
+	title = auto_build.0020.t
+	desc = auto_build.0020.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0020.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_regimental_grounds_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-林中堡垒
+auto_build.0021 = {
+	type = character_event
+	title = auto_build.0021.t
+	desc = auto_build.0021.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0021.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_ramparts_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-城墙与塔楼
+auto_build.0022 = {
+	type = character_event
+	title = auto_build.0022.t
+	desc = auto_build.0022.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0022.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_curtain_walls_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-瞭望塔
+auto_build.0023 = {
+	type = character_event
+	title = auto_build.0023.t
+	desc = auto_build.0023.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0023.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_watchtowers_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-农场与耕地
+auto_build.0024 = {
+	type = character_event
+	title = auto_build.0024.t
+	desc = auto_build.0024.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0024.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_cereal_fields_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-哨所
+auto_build.0025 = {
+	type = character_event
+	title = auto_build.0025.t
+	desc = auto_build.0025.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0025.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_outposts_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-兵营
+auto_build.0026 = {
+	type = character_event
+	title = auto_build.0026.t
+	desc = auto_build.0026.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0026.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_barracks_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-骆驼养殖场
+auto_build.0027 = {
+	type = character_event
+	title = auto_build.0027.t
+	desc = auto_build.0027.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0027.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_camel_farms_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-林业
+auto_build.0028 = {
+	type = character_event
+	title = auto_build.0028.t
+	desc = auto_build.0028.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0028.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_logging_camps_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-湿地农场
+auto_build.0029 = {
+	type = character_event
+	title = auto_build.0029.t
+	desc = auto_build.0029.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0029.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_peat_quarries_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-山丘农场
+auto_build.0030 = {
+	type = character_event
+	title = auto_build.0030.t
+	desc = auto_build.0030.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0030.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_hill_farms_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-战象
+auto_build.0031 = {
+	type = character_event
+	title = auto_build.0031.t
+	desc = auto_build.0031.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0031.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_elephant_pens_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-沙漠农业
+auto_build.0032 = {
+	type = character_event
+	title = auto_build.0032.t
+	desc = auto_build.0032.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0032.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_plantations_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-采石场
+auto_build.0033 = {
+	type = character_event
+	title = auto_build.0033.t
+	desc = auto_build.0033.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0033.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_quarries_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-山堡
+auto_build.0034 = {
+	type = character_event
+	title = auto_build.0034.t
+	desc = auto_build.0034.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0034.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_hill_forts_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-贸易港口
+auto_build.0035 = {
+	type = character_event
+	title = auto_build.0035.t
+	desc = auto_build.0035.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0035.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_common_tradeport_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-行会
+auto_build.0036 = {
+	type = character_event
+	title = auto_build.0036.t
+	desc = auto_build.0036.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0036.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_guild_halls_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-城堡
+auto_build.0037 = {
+	type = character_event
+	title = auto_build.0037.t
+	desc = auto_build.0037.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0037.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_castle_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-城市
+auto_build.0038 = {
+	type = character_event
+	title = auto_build.0038.t
+	desc = auto_build.0038.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0038.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_city_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-神殿
+auto_build.0039 = {
+	type = character_event
+	title = auto_build.0039.t
+	desc = auto_build.0039.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0039.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_temple_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-僧侣学校
+auto_build.0040 = {
+	type = character_event
+	title = auto_build.0040.t
+	desc = auto_build.0040.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0040.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = root
+			}
+			add_monastic_schools_building_effect = yes
+		}
+	}
+}
+
+
+#########################################################################################################
+#############################################################################
+#############################################################
+#######################################
+######################## Vassals
+#######################################
+#############################################################
+#############################################################################
+#########################################################################################################封臣
+#自动建筑-牧场
+auto_build.0115 = {
+	type = character_event
+	title = auto_build.0115.t
+	desc = auto_build.0115.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0115.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_pastures_building_effect = yes
+		}
+	}
+}
+
+#add_hospices_building_effect
+auto_build.0173 = {
+	type = character_event
+	title = auto_build.0173.t
+	desc = auto_build.0173.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0173.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_hospices_building_effect = yes
+		}
+	}
+}
+
+#add_qanats_building_effect
+auto_build.00114 = {
+	type = character_event
+	title = auto_build.0114.t
+	desc = auto_build.0114.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0114.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+			    }
+			}
+			add_qanats_building_effect = yes
+		    }
+        }
+    }
+
+#自动建筑-狩猎场
+auto_build.0116 = {
+	type = character_event
+	title = auto_build.0116.t
+	desc = auto_build.0116.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0116.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_hunting_building_effect = yes
+		}
+	}
+}
+#自动建筑-果园
+auto_build.0117 = {
+	type = character_event
+	title = auto_build.0117.t
+	desc = auto_build.0117.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0117.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_orchards_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-庄园宅第
+auto_build.0118 = {
+	type = character_event
+	title = auto_build.0118.t
+	desc = auto_build.0118.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0118.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_farm_estates_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-军用营地
+auto_build.0119 = {
+	type = character_event
+	title = auto_build.0119.t
+	desc = auto_build.0119.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0119.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_military_camps_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-军团训练场
+auto_build.0120 = {
+	type = character_event
+	title = auto_build.0120.t
+	desc = auto_build.0120.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0120.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_regimental_grounds_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-林中堡垒
+auto_build.0121 = {
+	type = character_event
+	title = auto_build.0121.t
+	desc = auto_build.0121.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0121.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_ramparts_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-城墙与塔楼
+auto_build.0122 = {
+	type = character_event
+	title = auto_build.0122.t
+	desc = auto_build.0122.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0122.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_curtain_walls_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-瞭望塔
+auto_build.0123 = {
+	type = character_event
+	title = auto_build.0123.t
+	desc = auto_build.0123.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0123.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_watchtowers_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-农场与耕地
+auto_build.0124 = {
+	type = character_event
+	title = auto_build.0124.t
+	desc = auto_build.0124.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0124.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_cereal_fields_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-哨所
+auto_build.0125 = {
+	type = character_event
+	title = auto_build.0125.t
+	desc = auto_build.0125.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0125.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_outposts_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-兵营
+auto_build.0126 = {
+	type = character_event
+	title = auto_build.0126.t
+	desc = auto_build.0126.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0126.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_barracks_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-骆驼养殖场
+auto_build.0127 = {
+	type = character_event
+	title = auto_build.0127.t
+	desc = auto_build.0127.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0127.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_camel_farms_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-林业
+auto_build.0128 = {
+	type = character_event
+	title = auto_build.0128.t
+	desc = auto_build.0128.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0128.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_logging_camps_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-湿地农场
+auto_build.0129 = {
+	type = character_event
+	title = auto_build.0129.t
+	desc = auto_build.0129.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0129.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_peat_quarries_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-山丘农场
+auto_build.0130 = {
+	type = character_event
+	title = auto_build.0130.t
+	desc = auto_build.0130.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0130.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_hill_farms_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-战象
+auto_build.0131 = {
+	type = character_event
+	title = auto_build.0131.t
+	desc = auto_build.0131.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0131.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_elephant_pens_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-沙漠农业
+auto_build.0132 = {
+	type = character_event
+	title = auto_build.0132.t
+	desc = auto_build.0132.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0132.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_plantations_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-采石场
+auto_build.0133 = {
+	type = character_event
+	title = auto_build.0133.t
+	desc = auto_build.0133.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0133.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_quarries_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-山堡
+auto_build.0134 = {
+	type = character_event
+	title = auto_build.0134.t
+	desc = auto_build.0134.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0134.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_hill_forts_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-贸易港口
+auto_build.0135 = {
+	type = character_event
+	title = auto_build.0135.t
+	desc = auto_build.0135.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0135.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_common_tradeport_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-行会
+auto_build.0136 = {
+	type = character_event
+	title = auto_build.0136.t
+	desc = auto_build.0136.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0136.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_guild_halls_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-城堡
+auto_build.0137 = {
+	type = character_event
+	title = auto_build.0137.t
+	desc = auto_build.0137.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0137.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_castle_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-城市
+auto_build.0138 = {
+	type = character_event
+	title = auto_build.0138.t
+	desc = auto_build.0138.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0138.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_city_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-神殿
+auto_build.0139 = {
+	type = character_event
+	title = auto_build.0139.t
+	desc = auto_build.0139.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0139.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_temple_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-僧侣学校
+auto_build.0140 = {
+	type = character_event
+	title = auto_build.0140.t
+	desc = auto_build.0140.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0140.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_monastic_schools_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-水车 add_watermills_building_effect
+auto_build.0188 = {
+	type = character_event
+	title = auto_build.0188.t
+	desc = auto_build.0188.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0188.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_watermills_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-风车
+auto_build.0189 = {
+	type = character_event
+	title = auto_build.0189.t
+	desc = auto_build.0189.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0189.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_windmills_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-商队旅馆 add_caravanserai_building_effect
+auto_build.0190 = {
+	type = character_event
+	title = auto_build.0190.t
+	desc = auto_build.0190.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0190.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_caravanserai_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-风炉 add_wind_furnace_building_effect
+auto_build.0191 = {
+	type = character_event
+	title = auto_build.0191.t
+	desc = auto_build.0191.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0191.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_wind_furnace_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-铁匠铺 add_smiths_building_effect
+auto_build.0192 = {
+	type = character_event
+	title = auto_build.0192.t
+	desc = auto_build.0192.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0192.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_smiths_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-工坊 add_workshops_building_effect
+auto_build.0193 = {
+	type = character_event
+	title = auto_build.0193.t
+	desc = auto_build.0193.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0193.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_workshops_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-马厩 add_stables_building_effect
+auto_build.0194 = {
+	type = character_event
+	title = auto_build.0194.t
+	desc = auto_build.0194.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0194.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_stables_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-牧马场 add_horse_pastures_building_effect
+auto_build.0195 = {
+	type = character_event
+	title = auto_build.0195.t
+	desc = auto_build.0195.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0195.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_horse_pastures_building_effect = yes
+		}
+	}
+}
+
+#自动建筑-战士营地 add_warrior_lodges_building_effect
+auto_build.0196 = {
+	type = character_event
+	title = auto_build.0196.t
+	desc = auto_build.0196.desc
+	hidden = yes
+	weight_multiplier = {
+		base = 1
+	}
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:root
+	}
+	option = {
+		name = auto_build.0196.a
+		every_province = {
+			limit = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = church_holding
+					has_holding_type = castle_holding
+					has_holding_type = city_holding
+					has_holding_type = church_holding
+				}
+				province_owner = {
+					is_vassal_or_below_of = root
+				}
+			}
+			add_warrior_lodges_building_effect = yes
+		}
+	}
+}

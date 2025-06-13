@@ -1,0 +1,623 @@
+﻿l_english:
+ auto_build.0001.t:0 "Auto Build"
+ auto_build.0001.desc:0 "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+ auto_build.0001.a:0 "build for the holdings owned by you"
+ auto_build.0001.b:0 "build for the holdings owned by your vassals or below"
+
+auto_build.006.t: "Auto Build"
+auto_build.006.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.006.a: "Build for the holdings owned by you"
+
+auto_build.007.t: "Auto Build"
+auto_build.007.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.007.a: "Build for the holdings owned by you"
+
+auto_build.008.t: "Auto Build"
+auto_build.008.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.008.a: "Build for the holdings owned by you"
+
+auto_build.009.t: "Auto Build"
+auto_build.009.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.009.a: "Build for the holdings owned by you"
+
+auto_build.0010.t: "Auto Build"
+auto_build.0010.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0010.a: "Build for the holdings owned by you"
+
+auto_build.0011.t: "Auto Build"
+auto_build.0011.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0011.a: "Build for the holdings owned by you"
+
+auto_build.0012.t: "Auto Build"
+auto_build.0012.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0012.a: "Build for the holdings owned by you"
+
+auto_build.0013.t: "Auto Build"
+auto_build.0013.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0013.a: "Build for the holdings owned by you"
+
+auto_build.0014.t: "Auto Build"
+auto_build.0014.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0014.a: "Build for the holdings owned by you"
+
+auto_build.080.t: "Auto Build"
+auto_build.080.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.080.a: "Build for the holdings owned by you"
+
+auto_build.0081.t: "Auto Build"
+auto_build.0081.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0081.a: "Build for the holdings owned by you"
+
+auto_build.0082.t: "Auto Build"
+auto_build.0082.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0082.a: "Build for the holdings owned by you"
+
+auto_build.0083.t: "Auto Build"
+auto_build.0083.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0083.a: "Build for the holdings owned by you"
+
+auto_build.0084.t: "Auto Build"
+auto_build.0084.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0084.a: "Build for the holdings owned by you"
+
+auto_build.0085.t: "Auto Build"
+auto_build.0085.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0085.a: "Build for the holdings owned by you"
+
+auto_build.0086.t: "Auto Build"
+auto_build.0086.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0086.a: "Build for the holdings owned by you"
+
+auto_build.0087.t: "Auto Build"
+auto_build.0087.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0087.a: "Build for the holdings owned by you"
+
+auto_build.0088.t: "Auto Build"
+auto_build.0088.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0088.a: "Build for the holdings owned by you"
+
+auto_build.0089.t: "Auto Build"
+auto_build.0089.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0089.a: "Build for the holdings owned by you"
+
+auto_build.0090.t: "Auto Build"
+auto_build.0090.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0090.a: "Build for the holdings owned by you"
+
+auto_build.0091.t: "Auto Build"
+auto_build.0091.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0091.a: "Build for the holdings owned by you"
+
+auto_build.0092.t: "Auto Build"
+auto_build.0092.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0092.a: "Build for the holdings owned by you"
+
+auto_build.0093.t: "Auto Build"
+auto_build.0093.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0093.a: "Build for the holdings owned by you"
+
+auto_build.0094.t: "Auto Build"
+auto_build.0094.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0094.a: "Build for the holdings owned by you"
+
+auto_build.0095.t: "Auto Build"
+auto_build.0095.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0095.a: "Build for the holdings owned by you"
+
+auto_build.0096.t: "Auto Build"
+auto_build.0096.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0096.a: "Build for the holdings owned by you"
+
+auto_build.0097.t: "Auto Build"
+auto_build.0097.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0097.a: "Build for the holdings owned by you"
+
+auto_build.0015.t: "Auto Build"
+auto_build.0015.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0015.a: "Build for the holdings owned by you"
+
+auto_build.0016.t: "Auto Build"
+auto_build.0016.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0016.a: "Build for the holdings owned by you"
+
+auto_build.0017.t: "Auto Build"
+auto_build.0017.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0017.a: "Build for the holdings owned by you"
+
+auto_build.0018.t: "Auto Build"
+auto_build.0018.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0018.a: "Build for the holdings owned by you"
+
+auto_build.0019.t: "Auto Build"
+auto_build.0019.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0019.a: "Build for the holdings owned by you"
+
+auto_build.0020.t: "Auto Build"
+auto_build.0020.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0020.a: "Build for the holdings owned by you"
+
+auto_build.0021.t: "Auto Build"
+auto_build.0021.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0021.a: "Build for the holdings owned by you"
+
+auto_build.0022.t: "Auto Build"
+auto_build.0022.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0022.a: "Build for the holdings owned by you"
+
+auto_build.0023.t: "Auto Build"
+auto_build.0023.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0023.a: "Build for the holdings owned by you"
+
+auto_build.0024.t: "Auto Build"
+auto_build.0024.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0024.a: "Build for the holdings owned by you"
+
+auto_build.0025.t: "Auto Build"
+auto_build.0025.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0025.a: "Build for the holdings owned by you"
+
+auto_build.0026.t: "Auto Build"
+auto_build.0026.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0026.a: "Build for the holdings owned by you"
+
+auto_build.0027.t: "Auto Build"
+auto_build.0027.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0027.a: "Build for the holdings owned by you"
+
+auto_build.0028.t: "Auto Build"
+auto_build.0028.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0028.a: "Build for the holdings owned by you"
+
+auto_build.0029.t: "Auto Build"
+auto_build.0029.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0029.a: "Build for the holdings owned by you"
+
+auto_build.0030.t: "Auto Build"
+auto_build.0030.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0030.a: "Build for the holdings owned by you"
+
+auto_build.0031.t: "Auto Build"
+auto_build.0031.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0031.a: "Build for the holdings owned by you"
+
+auto_build.0032.t: "Auto Build"
+auto_build.0032.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0032.a: "Build for the holdings owned by you"
+
+auto_build.0033.t: "Auto Build"
+auto_build.0033.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0033.a: "Build for the holdings owned by you"
+
+auto_build.0034.t: "Auto Build"
+auto_build.0034.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0034.a: "Build for the holdings owned by you"
+
+auto_build.0035.t: "Auto Build"
+auto_build.0035.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0035.a: "Build for the holdings owned by you"
+
+auto_build.0036.t: "Auto Build"
+auto_build.0036.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0036.a: "Build for the holdings owned by you"
+
+auto_build.0037.t: "Auto Build"
+auto_build.0037.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0037.a: "Build for the holdings owned by you"
+
+auto_build.0038.t: "Auto Build"
+auto_build.0038.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0038.a: "Build for the holdings owned by you"
+
+auto_build.0039.t: "Auto Build"
+auto_build.0039.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0039.a: "Build for the holdings owned by you"
+
+auto_build.0040.t: "Auto Build"
+auto_build.0040.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0040.a: "Build for the holdings owned by you"
+
+auto_build.0115.t: "Auto Build"
+auto_build.0115.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0115.a: "Build for the holdings owned by you"
+
+auto_build.0116.t: "Auto Build"
+auto_build.0116.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0116.a: "Build for the holdings owned by you"
+
+auto_build.0117.t: "Auto Build"
+auto_build.0117.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0117.a: "Build for the holdings owned by you"
+
+auto_build.0118.t: "Auto Build"
+auto_build.0118.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0118.a: "Build for the holdings owned by you"
+
+auto_build.0119.t: "Auto Build"
+auto_build.0119.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0119.a: "Build for the holdings owned by you"
+
+auto_build.0120.t: "Auto Build"
+auto_build.0120.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0120.a: "Build for the holdings owned by you"
+
+auto_build.0121.t: "Auto Build"
+auto_build.0121.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0121.a: "Build for the holdings owned by you"
+
+auto_build.0122.t: "Auto Build"
+auto_build.0122.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0122.a: "Build for the holdings owned by you"
+
+auto_build.0123.t: "Auto Build"
+auto_build.0123.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0123.a: "Build for the holdings owned by you"
+
+auto_build.0124.t: "Auto Build"
+auto_build.0124.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0124.a: "Build for the holdings owned by you"
+
+auto_build.0125.t: "Auto Build"
+auto_build.0125.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0125.a: "Build for the holdings owned by you"
+
+auto_build.0126.t: "Auto Build"
+auto_build.0126.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0126.a: "Build for the holdings owned by you"
+
+auto_build.0127.t: "Auto Build"
+auto_build.0127.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0127.a: "Build for the holdings owned by you"
+
+auto_build.0128.t: "Auto Build"
+auto_build.0128.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0128.a: "Build for the holdings owned by you"
+
+auto_build.0129.t: "Auto Build"
+auto_build.0129.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0129.a: "Build for the holdings owned by you"
+
+auto_build.0130.t: "Auto Build"
+auto_build.0130.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0130.a: "Build for the holdings owned by you"
+
+auto_build.0131.t: "Auto Build"
+auto_build.0131.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0131.a: "Build for the holdings owned by you"
+
+auto_build.0132.t: "Auto Build"
+auto_build.0132.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0132.a: "Build for the holdings owned by you"
+
+auto_build.0133.t: "Auto Build"
+auto_build.0133.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0133.a: "Build for the holdings owned by you"
+
+auto_build.0134.t: "Auto Build"
+auto_build.0134.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0134.a: "Build for the holdings owned by you"
+
+auto_build.0135.t: "Auto Build"
+auto_build.0135.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0135.a: "Build for the holdings owned by you"
+
+auto_build.0136.t: "Auto Build"
+auto_build.0136.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0136.a: "Build for the holdings owned by you"
+
+auto_build.0137.t: "Auto Build"
+auto_build.0137.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0137.a: "Build for the holdings owned by you"
+
+auto_build.0138.t: "Auto Build"
+auto_build.0138.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0138.a: "Build for the holdings owned by you"
+
+auto_build.0139.t: "Auto Build"
+auto_build.0139.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0139.a: "Build for the holdings owned by you"
+
+auto_build.0140.t: "Auto Build"
+auto_build.0140.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0140.a: "Build for the holdings owned by you"
+
+auto_build.0141.t: "Auto Build"
+auto_build.0141.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0141.a: "Build for the holdings owned by you"
+
+auto_build.0142.t: "Auto Build"
+auto_build.0142.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0142.a: "Build for the holdings owned by you"
+
+auto_build.0143.t: "Auto Build"
+auto_build.0143.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0143.a: "Build for the holdings owned by you"
+
+auto_build.0144.t: "Auto Build"
+auto_build.0144.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0144.a: "Build for the holdings owned by you"
+
+auto_build.0145.t: "Auto Build"
+auto_build.0145.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0145.a: "Build for the holdings owned by you"
+
+auto_build.0146.t: "Auto Build"
+auto_build.0146.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0146.a: "Build for the holdings owned by you"
+
+auto_build.0147.t: "Auto Build"
+auto_build.0147.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0147.a: "Build for the holdings owned by you"
+
+auto_build.0148.t: "Auto Build"
+auto_build.0148.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0148.a: "Build for the holdings owned by you"
+
+auto_build.0149.t: "Auto Build"
+auto_build.0149.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0149.a: "Build for the holdings owned by you"
+
+auto_build.0150.t: "Auto Build"
+auto_build.0150.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0150.a: "Build for the holdings owned by you"
+
+auto_build.0151.t: "Auto Build"
+auto_build.0151.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0151.a: "Build for the holdings owned by you"
+
+auto_build.0152.t: "Auto Build"
+auto_build.0152.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0152.a: "Build for the holdings owned by you"
+
+auto_build.0153.t: "Auto Build"
+auto_build.0153.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0153.a: "Build for the holdings owned by you"
+
+auto_build.0154.t: "Auto Build"
+auto_build.0154.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0154.a: "Build for the holdings owned by you"
+
+auto_build.0155.t: "Auto Build"
+auto_build.0155.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0155.a: "Build for the holdings owned by you"
+
+auto_build.0156.t: "Auto Build"
+auto_build.0156.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0156.a: "Build for the holdings owned by you"
+
+auto_build.0157.t: "Auto Build"
+auto_build.0157.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0157.a: "Build for the holdings owned by you"
+
+auto_build.0158.t: "Auto Build"
+auto_build.0158.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0158.a: "Build for the holdings owned by you"
+
+auto_build.0159.t: "Auto Build"
+auto_build.0159.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0159.a: "Build for the holdings owned by you"
+
+auto_build.0160.t: "Auto Build"
+auto_build.0160.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0160.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0273.t: "Auto Build"
+auto_build.0273.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0273.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0173.t: "Auto Build"
+auto_build.0173.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0173.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0161.t: "Auto Build"
+auto_build.0161.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0161.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0162.t: "Auto Build"
+auto_build.0162.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0162.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0163.t: "Auto Build"
+auto_build.0163.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0163.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0164.t: "Auto Build"
+auto_build.0164.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0164.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0165.t: "Auto Build"
+auto_build.0165.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0165.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0166.t: "Auto Build"
+auto_build.0166.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0166.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0167.t: "Auto Build"
+auto_build.0167.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0167.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0168.t: "Auto Build"
+auto_build.0168.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0168.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0169.t: "Auto Build"
+auto_build.0169.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0169.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0170.t: "Auto Build"
+auto_build.0170.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0170.a: "Build for the holdings owned by you"
+
+auto_build.0171.t: "Auto Build"
+auto_build.0171.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0171.a: "Build for the holdings owned by you"
+
+auto_build.0172.t: "Auto Build"
+auto_build.0172.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0172.a: "Build for the holdings owned by you"
+
+auto_build.0174.t: "Auto Build"
+auto_build.0174.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0174.a: "Build for the holdings owned by you"
+
+auto_build.0175.t: "Auto Build"
+auto_build.0175.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0175.a: "Build for the holdings owned by you"
+
+auto_build.0176.t: "Auto Build"
+auto_build.0176.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0176.a: "Build for the holdings owned by you"
+
+auto_build.0177.t: "Auto Build"
+auto_build.0177.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0177.a: "Build for the holdings owned by you"
+
+auto_build.0178.t: "Auto Build"
+auto_build.0178.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0178.a: "Build for the holdings owned by you"
+
+auto_build.179.t: "Auto Build"
+auto_build.179.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.179.a: "Build for the holdings owned by you"
+
+auto_build.180.t: "Auto Build"
+auto_build.180.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.180.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0181.t: "Auto Build"
+auto_build.0181.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0181.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0182.t: "Auto Build"
+auto_build.0182.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0182.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0183.t: "Auto Build"
+auto_build.0183.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0183.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0184.t: "Auto Build"
+auto_build.0184.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0184.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0185.t: "Auto Build"
+auto_build.0185.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0185.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0186.t: "Auto Build"
+auto_build.0186.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0186.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0187.t: "Auto Build"
+auto_build.0187.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0187.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0188.t: "Auto Build"
+auto_build.0188.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0188.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0189.t: "Auto Build"
+auto_build.0189.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0189.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.0190.t: "Auto Build"
+auto_build.0190.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0190.a: "Build for the holdings owned by you"
+
+auto_build.0191.t: "Auto Build"
+auto_build.0191.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0191.a: "Build for the holdings owned by you"
+
+auto_build.0192.t: "Auto Build"
+auto_build.0192.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0192.a: "Build for the holdings owned by you"
+
+auto_build.0193.t: "Auto Build"
+auto_build.0193.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0193.a: "Build for the holdings owned by you"
+
+auto_build.0194.t: "Auto Build"
+auto_build.0194.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0194.a: "Build for the holdings owned by you"
+
+auto_build.0195.t: "Auto Build"
+auto_build.0195.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0195.a: "Build for the holdings owned by you"
+
+auto_build.0196.t: "Auto Build"
+auto_build.0196.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0196.a: "Build for the holdings owned by you"
+
+auto_build.0197.t: "Auto Build"
+auto_build.0197.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0197.a: "Build for the holdings owned by you"
+
+auto_build.0198.t: "Auto Build"
+auto_build.0198.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0198.a: "Build for the holdings owned by you"
+
+auto_build.0199.t: "Auto Build"
+auto_build.0199.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.0199.a: "Build for the holdings owned by you"
+
+auto_build.200.t: "Auto Build"
+auto_build.200.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.200.a: "Build for the holdings owned by you"
+
+auto_build.201.t: "Auto Build"
+auto_build.201.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.201.a: "Build for the holdings owned by you"
+
+auto_build.202.t: "Auto Build"
+auto_build.202.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.202.a: "Build for the holdings owned by you"
+
+auto_build.203.t: "Auto Build"
+auto_build.203.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.203.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.204.t: "Auto Build"
+auto_build.204.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.204.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.205.t: "Auto Build"
+auto_build.205.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.205.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.206.t: "Auto Build"
+auto_build.206.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.206.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.207.t: "Auto Build"
+auto_build.207.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.207.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.208.t: "Auto Build"
+auto_build.208.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.208.a: "Build for the holdings owned by your vassals or below"
+
+auto_build.209.t: "Auto Build"
+auto_build.209.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+auto_build.209.a: "Build for the holdings owned by your vassals or below"
+
+  auto_build.0110.t: "Auto Build"
+  auto_build.0110.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+  auto_build.0110.a: "Build for the holdings owned by you"
+
+  auto_build.0111.t: "Auto Build"
+  auto_build.0111.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+  auto_build.0111.a: "Build for the holdings owned by you"
+
+  auto_build.0112.t: "Auto Build"
+  auto_build.0112.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+  auto_build.0112.a: "Build for the holdings owned by you"
+
+  auto_build.0113.t: "Auto Build"
+  auto_build.0113.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+  auto_build.0113.a: "Build for the holdings owned by you"
+
+  auto_build.0114.t: "Auto Build"
+  auto_build.0114.desc: "The 1st option only affects your holdings, and the 2nd option only affects the holdings owned by your vassals or below."
+  auto_build.0114.a: "Build for the holdings owned by you"
+
+

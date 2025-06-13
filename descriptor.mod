@@ -1,0 +1,16 @@
+version="1.13"
+tags={
+	"Alternative History"
+	"Balance"
+	"Bookmarks"
+	"Character Focuses"
+	"Character Interactions"
+	"Events"
+	"Gameplay"
+	"Decisions"
+	"Total Conversion"
+	"Utilities"
+}
+name="Automagic"
+supported_version="1.14.2.2"
+remote_file_id="3071418704"

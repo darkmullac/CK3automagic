@@ -1,0 +1,4262 @@
+﻿add_hillside_grazing_building_effect = {
+    if = {
+        limit = {
+            prev = { gold > cheap_building_tier_1_cost }
+            has_free_building_slot = yes
+            NOT = {
+                has_building = hillside_grazing_01
+                has_building = hillside_grazing_02
+                has_building = hillside_grazing_03
+                has_building = hillside_grazing_04
+                has_building = hillside_grazing_05
+                has_building = hillside_grazing_06
+                has_building = hillside_grazing_07
+                has_building = hillside_grazing_08
+            }
+            building_hillside_grazing_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+        }
+        add_building = hillside_grazing_01
+        prev = { remove_short_term_gold = cheap_building_tier_1_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > cheap_building_tier_2_cost }
+            has_building = hillside_grazing_01
+            building_hillside_grazing_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+        }
+        add_building = hillside_grazing_02
+        prev = { remove_short_term_gold = cheap_building_tier_2_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > cheap_building_tier_3_cost }
+            has_building = hillside_grazing_02
+            building_hillside_grazing_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_barracks
+            }
+        }
+        add_building = hillside_grazing_03
+        prev = { remove_short_term_gold = cheap_building_tier_3_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > cheap_building_tier_4_cost }
+            has_building = hillside_grazing_03
+            building_hillside_grazing_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = hillside_grazing_04
+        prev = { remove_short_term_gold = cheap_building_tier_4_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > cheap_building_tier_5_cost }
+            has_building = hillside_grazing_04
+            building_hillside_grazing_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+        add_building = hillside_grazing_05
+        prev = { remove_short_term_gold = cheap_building_tier_5_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > cheap_building_tier_6_cost }
+            has_building = hillside_grazing_05
+            building_hillside_grazing_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = hillside_grazing_06
+        prev = { remove_short_term_gold = cheap_building_tier_6_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > cheap_building_tier_7_cost }
+            has_building = hillside_grazing_06
+            building_hillside_grazing_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_advanced_farming
+            }
+        }
+        add_building = hillside_grazing_07
+        prev = { remove_short_term_gold = cheap_building_tier_7_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > cheap_building_tier_8_cost }
+            has_building = hillside_grazing_07
+            building_hillside_grazing_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_elite_farming
+            }
+        }
+        add_building = hillside_grazing_08
+        prev = { remove_short_term_gold = cheap_building_tier_8_cost }
+    }
+}
+
+add_scriptorium_building_effect = {
+    if = {
+        limit = {
+            prev = { gold > normal_building_tier_1_cost }
+            has_free_building_slot = yes
+            NOT = {
+                has_building = scriptorium_01
+                has_building = scriptorium_02
+                has_building = scriptorium_03
+                has_building = scriptorium_04
+                has_building = scriptorium_05
+                has_building = scriptorium_06
+                has_building = scriptorium_07
+                has_building = scriptorium_08
+            }
+            building_scriptorium_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+        }
+        add_building = scriptorium_01
+        prev = { remove_short_term_gold = normal_building_tier_1_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_2_cost }
+            has_building = scriptorium_01
+            building_scriptorium_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+        }
+        add_building = scriptorium_02
+        prev = { remove_short_term_gold = normal_building_tier_2_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_3_cost }
+            has_building = scriptorium_02
+            building_scriptorium_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_city_planning
+            }
+        }
+        add_building = scriptorium_03
+        prev = { remove_short_term_gold = normal_building_tier_3_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_4_cost }
+            has_building = scriptorium_03
+            building_scriptorium_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = scriptorium_04
+        prev = { remove_short_term_gold = normal_building_tier_4_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_5_cost }
+            has_building = scriptorium_04
+            building_scriptorium_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = scriptorium_05
+        prev = { remove_short_term_gold = normal_building_tier_5_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_6_cost }
+            has_building = scriptorium_05
+            building_scriptorium_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = scriptorium_06
+        prev = { remove_short_term_gold = normal_building_tier_6_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_7_cost }
+            has_building = scriptorium_06
+            building_scriptorium_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = scriptorium_07
+        prev = { remove_short_term_gold = normal_building_tier_7_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_8_cost }
+            has_building = scriptorium_07
+            building_scriptorium_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = scriptorium_08
+        prev = { remove_short_term_gold = normal_building_tier_8_cost }
+    }
+}
+
+add_murex_farms_building_effect = {
+    if = {
+        limit = {
+            prev = { gold > normal_building_tier_1_cost }
+            has_free_building_slot = yes
+            NOT = {
+                has_building = murex_farm_01
+                has_building = murex_farm_02
+                has_building = murex_farm_03
+                has_building = murex_farm_04
+                has_building = murex_farm_05
+                has_building = murex_farm_06
+                has_building = murex_farm_07
+                has_building = murex_farm_08
+            }
+            building_murex_farm_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+        }
+        add_building = murex_farm_01
+        prev = { remove_short_term_gold = normal_building_tier_1_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_2_cost }
+            has_building = murex_farm_01
+            building_murex_farm_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+        }
+        add_building = murex_farm_02
+        prev = { remove_short_term_gold = normal_building_tier_2_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_3_cost }
+            has_building = murex_farm_02
+            building_murex_farm_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+        }
+        add_building = murex_farm_03
+        prev = { remove_short_term_gold = normal_building_tier_3_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_4_cost }
+            has_building = murex_farm_03
+            building_murex_farm_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+        }
+        add_building = murex_farm_04
+        prev = { remove_short_term_gold = normal_building_tier_4_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_5_cost }
+            has_building = murex_farm_04
+            building_murex_farm_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+        }
+        add_building = murex_farm_05
+        prev = { remove_short_term_gold = normal_building_tier_5_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_6_cost }
+            has_building = murex_farm_05
+            building_murex_farm_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+        }
+        add_building = murex_farm_06
+        prev = { remove_short_term_gold = normal_building_tier_6_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_7_cost }
+            has_building = murex_farm_06
+            building_murex_farm_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+        }
+        add_building = murex_farm_07
+        prev = { remove_short_term_gold = normal_building_tier_7_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > normal_building_tier_8_cost }
+            has_building = murex_farm_07
+            building_murex_farm_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+        }
+        add_building = murex_farm_08
+        prev = { remove_short_term_gold = normal_building_tier_8_cost }
+    }
+}
+
+add_pastures_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = pastures_01
+                has_building = pastures_02
+                has_building = pastures_03
+                has_building = pastures_04
+                has_building = pastures_05
+                has_building = pastures_06
+                has_building = pastures_07
+                has_building = pastures_08
+            }
+            building_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = pastures_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = pastures_01
+            building_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = pastures_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = pastures_02
+            building_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = pastures_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = pastures_03
+            building_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = pastures_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = pastures_04
+            building_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = pastures_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = pastures_05
+            building_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = pastures_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = pastures_06
+            building_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = pastures_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = pastures_07
+            building_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = pastures_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_hospices_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = hospices_01
+                has_building = hospices_02
+                has_building = hospices_03
+                has_building = hospices_04
+                has_building = hospices_05
+                has_building = hospices_06
+                has_building = hospices_07
+                has_building = hospices_08
+            }
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = hospices_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = hospices_01
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_city_planning
+            }
+        }
+        add_building = hospices_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = hospices_02
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = hospices_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = hospices_03
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = hospices_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = hospices_04
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = hospices_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = hospices_05
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = hospices_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = hospices_06
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = hospices_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = hospices_07
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = hospices_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_hunting_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = hunting_grounds_01
+                has_building = hunting_grounds_02
+                has_building = hunting_grounds_03
+                has_building = hunting_grounds_04
+                has_building = hunting_grounds_05
+                has_building = hunting_grounds_06
+                has_building = hunting_grounds_07
+                has_building = hunting_grounds_08
+            }
+            building_hunting_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = hunting_grounds_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = hunting_grounds_01
+            building_hunting_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = hunting_grounds_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = hunting_grounds_02
+            building_hunting_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = hunting_grounds_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = hunting_grounds_03
+            building_hunting_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = hunting_grounds_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = hunting_grounds_04
+            building_hunting_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = hunting_grounds_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = hunting_grounds_05
+            building_hunting_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = hunting_grounds_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = hunting_grounds_06
+            building_hunting_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = hunting_grounds_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = hunting_grounds_07
+            building_hunting_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = hunting_grounds_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+add_qanats_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            building_qanat_requirement_terrain = yes
+            NOT = {
+                has_building = qanats_01
+                has_building = qanats_02
+                has_building = qanats_03
+                has_building = qanats_04
+                has_building = qanats_05
+                has_building = qanats_06
+                has_building = qanats_07
+                has_building = qanats_08
+            }
+            AND = {
+                building_requirement_castle_city_church = { 
+                    LEVEL = 01
+                }
+                culture = {
+                    has_cultural_parameter = unlocks_qanat_building
+                }
+            }
+        }
+        add_building = qanats_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = qanats_01
+            building_requirement_castle_city_church = { LEVEL = 01 }
+        }
+        add_building = qanats_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = qanats_02
+            building_requirement_castle_city_church = { LEVEL = 02 }
+        }
+        add_building = qanats_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = qanats_03
+            building_requirement_castle_city_church = { LEVEL = 02 }
+        }
+        add_building = qanats_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = qanats_04
+            building_requirement_castle_city_church = { LEVEL = 03 }
+        }
+        add_building = qanats_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = qanats_05
+            building_requirement_castle_city_church = { LEVEL = 03 }
+        }
+        add_building = qanats_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = qanats_06
+            building_requirement_castle_city_church = { LEVEL = 04 }
+        }
+        add_building = qanats_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = qanats_07
+            building_requirement_castle_city_church = { LEVEL = 04 }
+        }
+        add_building = qanats_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+add_orchards_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = orchards_01
+                has_building = orchards_02
+                has_building = orchards_03
+                has_building = orchards_04
+                has_building = orchards_05
+                has_building = orchards_06
+                has_building = orchards_07
+                has_building = orchards_08
+            }
+            building_orchards_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = orchards_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = orchards_01
+            building_orchards_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = orchards_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = orchards_02
+            building_orchards_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = orchards_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = orchards_03
+            building_orchards_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = orchards_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = orchards_04
+            building_orchards_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = orchards_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = orchards_05
+            building_orchards_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = orchards_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = orchards_06
+            building_orchards_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = orchards_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = orchards_07
+            building_orchards_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = orchards_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_farm_estates_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = farm_estates_01
+                has_building = farm_estates_02
+                has_building = farm_estates_03
+                has_building = farm_estates_04
+                has_building = farm_estates_05
+                has_building = farm_estates_06
+                has_building = farm_estates_07
+                has_building = farm_estates_08
+            }
+            building_farm_estates_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = farm_estates_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = farm_estates_01
+            building_farm_estates_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = farm_estates_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = farm_estates_02
+            building_farm_estates_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = farm_estates_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = farm_estates_03
+            building_farm_estates_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = farm_estates_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = farm_estates_04
+            building_farm_estates_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = farm_estates_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = farm_estates_05
+            building_farm_estates_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = farm_estates_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = farm_estates_06
+            building_farm_estates_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = farm_estates_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = farm_estates_07
+            building_farm_estates_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = farm_estates_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_military_camps_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = military_camps_01
+                has_building = military_camps_02
+                has_building = military_camps_03
+                has_building = military_camps_04
+                has_building = military_camps_05
+                has_building = military_camps_06
+                has_building = military_camps_07
+                has_building = military_camps_08
+            }
+            building_military_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = military_camps_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = military_camps_01
+            building_military_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_barracks
+            }
+        }
+        add_building = military_camps_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = military_camps_02
+            building_military_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = military_camps_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = military_camps_03
+            building_military_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = military_camps_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = military_camps_04
+            building_military_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+        add_building = military_camps_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = military_camps_05
+            building_military_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+        add_building = military_camps_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = military_camps_06
+            building_military_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = military_camps_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = military_camps_07
+            building_military_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = military_camps_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_regimental_grounds_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = regimental_grounds_01
+                has_building = regimental_grounds_02
+                has_building = regimental_grounds_03
+                has_building = regimental_grounds_04
+                has_building = regimental_grounds_05
+                has_building = regimental_grounds_06
+                has_building = regimental_grounds_07
+                has_building = regimental_grounds_08
+            }
+            building_regimental_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = regimental_grounds_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = regimental_grounds_01
+            building_regimental_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_barracks
+            }
+        }
+        add_building = regimental_grounds_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = regimental_grounds_02
+            building_regimental_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = regimental_grounds_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = regimental_grounds_03
+            building_regimental_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = regimental_grounds_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = regimental_grounds_04
+            building_regimental_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+        add_building = regimental_grounds_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = regimental_grounds_05
+            building_regimental_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+        add_building = regimental_grounds_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = regimental_grounds_06
+            building_regimental_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = regimental_grounds_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = regimental_grounds_07
+            building_regimental_grounds_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = regimental_grounds_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_ramparts_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = ramparts_01
+                has_building = ramparts_02
+                has_building = ramparts_03
+                has_building = ramparts_04
+                has_building = ramparts_05
+                has_building = ramparts_06
+                has_building = ramparts_07
+                has_building = ramparts_08
+            }
+            building_ramparts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = ramparts_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = ramparts_01
+            building_ramparts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_motte
+            }
+        }
+        add_building = ramparts_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = ramparts_02
+            building_ramparts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = ramparts_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = ramparts_03
+            building_ramparts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = ramparts_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = ramparts_04
+            building_ramparts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = ramparts_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = ramparts_05
+            building_ramparts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = ramparts_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = ramparts_06
+            building_ramparts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = ramparts_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = ramparts_07
+            building_ramparts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = ramparts_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_curtain_walls_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = curtain_walls_01
+                has_building = curtain_walls_02
+                has_building = curtain_walls_03
+                has_building = curtain_walls_04
+                has_building = curtain_walls_05
+                has_building = curtain_walls_06
+                has_building = curtain_walls_07
+                has_building = curtain_walls_08
+            }
+            building_curtain_walls_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = curtain_walls_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = curtain_walls_01
+            building_curtain_walls_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_motte
+            }
+        }
+        add_building = curtain_walls_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = curtain_walls_02
+            building_curtain_walls_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = curtain_walls_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = curtain_walls_03
+            building_curtain_walls_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = curtain_walls_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = curtain_walls_04
+            building_curtain_walls_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = curtain_walls_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = curtain_walls_05
+            building_curtain_walls_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = curtain_walls_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = curtain_walls_06
+            building_curtain_walls_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = curtain_walls_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = curtain_walls_07
+            building_curtain_walls_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = curtain_walls_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_watchtowers_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = watchtowers_01
+                has_building = watchtowers_02
+                has_building = watchtowers_03
+                has_building = watchtowers_04
+                has_building = watchtowers_05
+                has_building = watchtowers_06
+                has_building = watchtowers_07
+                has_building = watchtowers_08
+            }
+            building_watchtowers_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = watchtowers_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = watchtowers_01
+            building_watchtowers_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_motte
+            }
+        }
+        add_building = watchtowers_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = watchtowers_02
+            building_watchtowers_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = watchtowers_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = watchtowers_03
+            building_watchtowers_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = watchtowers_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = watchtowers_04
+            building_watchtowers_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = watchtowers_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = watchtowers_05
+            building_watchtowers_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = watchtowers_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = watchtowers_06
+            building_watchtowers_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = watchtowers_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = watchtowers_07
+            building_watchtowers_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = watchtowers_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_cereal_fields_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = cereal_fields_01
+                has_building = cereal_fields_02
+                has_building = cereal_fields_03
+                has_building = cereal_fields_04
+                has_building = cereal_fields_05
+                has_building = cereal_fields_06
+                has_building = cereal_fields_07
+                has_building = cereal_fields_08
+            }
+            building_cereal_fields_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = cereal_fields_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = cereal_fields_01
+            building_cereal_fields_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = cereal_fields_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = cereal_fields_02
+            building_cereal_fields_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = cereal_fields_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = cereal_fields_03
+            building_cereal_fields_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = cereal_fields_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = cereal_fields_04
+            building_cereal_fields_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = cereal_fields_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = cereal_fields_05
+            building_cereal_fields_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = cereal_fields_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = cereal_fields_06
+            building_cereal_fields_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = cereal_fields_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = cereal_fields_07
+            building_cereal_fields_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = cereal_fields_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_outposts_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = outposts_01
+                has_building = outposts_02
+                has_building = outposts_03
+                has_building = outposts_04
+                has_building = outposts_05
+                has_building = outposts_06
+                has_building = outposts_07
+                has_building = outposts_08
+            }
+            building_outposts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = outposts_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = outposts_01
+            building_outposts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_barracks
+            }
+        }
+        add_building = outposts_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = outposts_02
+            building_outposts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = outposts_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = outposts_03
+            building_outposts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = outposts_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = outposts_04
+            building_outposts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+        add_building = outposts_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = outposts_05
+            building_outposts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+        add_building = outposts_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = outposts_06
+            building_outposts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = outposts_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = outposts_07
+            building_outposts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = outposts_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_barracks_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = barracks_01
+                has_building = barracks_02
+                has_building = barracks_03
+                has_building = barracks_04
+                has_building = barracks_05
+                has_building = barracks_06
+                has_building = barracks_07
+                has_building = barracks_08
+            }
+            building_barracks_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = barracks_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = barracks_01
+            building_barracks_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_barracks
+            }
+        }
+        add_building = barracks_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = barracks_02
+            building_barracks_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = barracks_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = barracks_03
+            building_barracks_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = barracks_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = barracks_04
+            building_barracks_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+        add_building = barracks_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = barracks_05
+            building_barracks_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+        add_building = barracks_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = barracks_06
+            building_barracks_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = barracks_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = barracks_07
+            building_barracks_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = barracks_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_camel_farms_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = camel_farms_01
+                has_building = camel_farms_02
+                has_building = camel_farms_03
+                has_building = camel_farms_04
+                has_building = camel_farms_05
+                has_building = camel_farms_06
+                has_building = camel_farms_07
+                has_building = camel_farms_08
+            }
+            building_camel_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = camel_farms_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = camel_farms_01
+            building_camel_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_barracks
+            }
+        }
+        add_building = camel_farms_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = camel_farms_02
+            building_camel_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = camel_farms_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = camel_farms_03
+            building_camel_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = camel_farms_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = camel_farms_04
+            building_camel_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+        add_building = camel_farms_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = camel_farms_05
+            building_camel_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+        add_building = camel_farms_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = camel_farms_06
+            building_camel_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = camel_farms_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = camel_farms_07
+            building_camel_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = camel_farms_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_logging_camps_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = logging_camps_01
+                has_building = logging_camps_02
+                has_building = logging_camps_03
+                has_building = logging_camps_04
+                has_building = logging_camps_05
+                has_building = logging_camps_06
+                has_building = logging_camps_07
+                has_building = logging_camps_08
+            }
+            building_logging_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = logging_camps_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = logging_camps_01
+            building_logging_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = logging_camps_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = logging_camps_02
+            building_logging_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = logging_camps_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = logging_camps_03
+            building_logging_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = logging_camps_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = logging_camps_04
+            building_logging_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = logging_camps_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = logging_camps_05
+            building_logging_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = logging_camps_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = logging_camps_06
+            building_logging_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = logging_camps_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = logging_camps_07
+            building_logging_camps_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = logging_camps_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_peat_quarries_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = peat_quarries_01
+                has_building = peat_quarries_02
+                has_building = peat_quarries_03
+                has_building = peat_quarries_04
+                has_building = peat_quarries_05
+                has_building = peat_quarries_06
+                has_building = peat_quarries_07
+                has_building = peat_quarries_08
+            }
+            building_peat_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = peat_quarries_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = peat_quarries_01
+            building_peat_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = peat_quarries_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = peat_quarries_02
+            building_peat_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = peat_quarries_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = peat_quarries_03
+            building_peat_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = peat_quarries_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = peat_quarries_04
+            building_peat_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = peat_quarries_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = peat_quarries_05
+            building_peat_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = peat_quarries_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = peat_quarries_06
+            building_peat_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = peat_quarries_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = peat_quarries_07
+            building_peat_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = peat_quarries_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_hill_farms_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = hill_farms_01
+                has_building = hill_farms_02
+                has_building = hill_farms_03
+                has_building = hill_farms_04
+                has_building = hill_farms_05
+                has_building = hill_farms_06
+                has_building = hill_farms_07
+                has_building = hill_farms_08
+            }
+            building_hill_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = hill_farms_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = hill_farms_01
+            building_hill_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = hill_farms_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = hill_farms_02
+            building_hill_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = hill_farms_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = hill_farms_03
+            building_hill_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = hill_farms_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = hill_farms_04
+            building_hill_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = hill_farms_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = hill_farms_05
+            building_hill_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = hill_farms_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = hill_farms_06
+            building_hill_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = hill_farms_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = hill_farms_07
+            building_hill_farms_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = hill_farms_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_elephant_pens_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = elephant_pens_01
+                has_building = elephant_pens_02
+                has_building = elephant_pens_03
+                has_building = elephant_pens_04
+                has_building = elephant_pens_05
+                has_building = elephant_pens_06
+                has_building = elephant_pens_07
+                has_building = elephant_pens_08
+            }
+            building_elephant_pens_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = elephant_pens_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = elephant_pens_01
+            building_elephant_pens_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = elephant_pens_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = elephant_pens_02
+            building_elephant_pens_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = elephant_pens_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = elephant_pens_03
+            building_elephant_pens_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = elephant_pens_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = elephant_pens_04
+            building_elephant_pens_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = elephant_pens_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = elephant_pens_05
+            building_elephant_pens_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = elephant_pens_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = elephant_pens_06
+            building_elephant_pens_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = elephant_pens_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = elephant_pens_07
+            building_elephant_pens_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = elephant_pens_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_plantations_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = plantations_01
+                has_building = plantations_02
+                has_building = plantations_03
+                has_building = plantations_04
+                has_building = plantations_05
+                has_building = plantations_06
+                has_building = plantations_07
+                has_building = plantations_08
+            }
+            building_plantations_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = plantations_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = plantations_01
+            building_plantations_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = plantations_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = plantations_02
+            building_plantations_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = plantations_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = plantations_03
+            building_plantations_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = plantations_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = plantations_04
+            building_plantations_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = plantations_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = plantations_05
+            building_plantations_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = plantations_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = plantations_06
+            building_plantations_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = plantations_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = plantations_07
+            building_plantations_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = plantations_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_quarries_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = quarries_01
+                has_building = quarries_02
+                has_building = quarries_03
+                has_building = quarries_04
+                has_building = quarries_05
+                has_building = quarries_06
+                has_building = quarries_07
+                has_building = quarries_08
+            }
+            building_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = quarries_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = quarries_01
+            building_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = quarries_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = quarries_02
+            building_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = quarries_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = quarries_03
+            building_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = quarries_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = quarries_04
+            building_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = quarries_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = quarries_05
+            building_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = quarries_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = quarries_06
+            building_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = quarries_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = quarries_07
+            building_quarries_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = quarries_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_hill_forts_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = hill_forts_01
+                has_building = hill_forts_02
+                has_building = hill_forts_03
+                has_building = hill_forts_04
+                has_building = hill_forts_05
+                has_building = hill_forts_06
+                has_building = hill_forts_07
+                has_building = hill_forts_08
+            }
+            building_hill_forts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = hill_forts_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = hill_forts_01
+            building_hill_forts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_motte
+            }
+        }
+        add_building = hill_forts_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = hill_forts_02
+            building_hill_forts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = hill_forts_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = hill_forts_03
+            building_hill_forts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = hill_forts_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = hill_forts_04
+            building_hill_forts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = hill_forts_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = hill_forts_05
+            building_hill_forts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = hill_forts_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = hill_forts_06
+            building_hill_forts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = hill_forts_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = hill_forts_07
+            building_hill_forts_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = hill_forts_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_common_tradeport_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = common_tradeport_01
+                has_building = common_tradeport_02
+                has_building = common_tradeport_03
+                has_building = common_tradeport_04
+                has_building = common_tradeport_05
+                has_building = common_tradeport_06
+                has_building = common_tradeport_07
+                has_building = common_tradeport_08
+            }
+            building_common_tradeport_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = common_tradeport_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = common_tradeport_01
+            building_common_tradeport_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = common_tradeport_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = common_tradeport_02
+            building_common_tradeport_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = common_tradeport_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = common_tradeport_03
+            building_common_tradeport_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = common_tradeport_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = common_tradeport_04
+            building_common_tradeport_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = common_tradeport_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = common_tradeport_05
+            building_common_tradeport_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = common_tradeport_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = common_tradeport_06
+            building_common_tradeport_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = common_tradeport_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = common_tradeport_07
+            building_common_tradeport_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = common_tradeport_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_guild_halls_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            has_holding_type = city_holding
+            NOT = {
+                has_building = guild_halls_01
+                has_building = guild_halls_02
+                has_building = guild_halls_03
+                has_building = guild_halls_04
+                has_building = guild_halls_05
+                has_building = guild_halls_06
+                has_building = guild_halls_07
+                has_building = guild_halls_08
+            }
+            has_building_or_higher = city_01         
+        }
+        add_building = guild_halls_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = guild_halls_01
+            has_building_or_higher = city_01
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = guild_halls_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = guild_halls_02
+            has_building_or_higher = city_02
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = guild_halls_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = guild_halls_03
+            has_building_or_higher = city_02
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = guild_halls_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = guild_halls_04
+            has_building_or_higher = city_03
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = guild_halls_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = guild_halls_05
+            has_building_or_higher = city_03
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = guild_halls_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = guild_halls_06
+            has_building_or_higher = city_04
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = guild_halls_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = guild_halls_07
+            has_building_or_higher = city_04
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = guild_halls_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_castle_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > main_building_tier_2_cost}
+            has_holding_type = castle_holding
+            has_building = castle_01
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }   
+        }
+        add_building = castle_02
+        prev = {remove_short_term_gold = main_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > main_building_tier_3_cost}
+            has_holding_type = castle_holding
+            has_building = castle_02
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }   
+        add_building = castle_03
+        prev = {remove_short_term_gold = main_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > main_building_tier_4_cost}
+            has_holding_type = castle_holding
+            has_building = castle_03
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }  
+        } 
+        add_building = castle_04
+        prev = {remove_short_term_gold = main_building_tier_4_cost}
+    }
+}
+
+add_city_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > main_building_tier_2_cost}
+            has_holding_type = city_holding
+            has_building = city_01
+            prev.culture = {
+                has_innovation =  innovation_manorialism
+            }   
+        }
+        add_building = city_02
+        prev = {remove_short_term_gold = main_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > main_building_tier_3_cost}
+            has_holding_type = city_holding
+            has_building = city_02
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }   
+        }
+        add_building = city_03
+        prev = {remove_short_term_gold = main_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > main_building_tier_4_cost}
+            has_holding_type = city_holding
+            has_building = city_03
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }  
+        } 
+        add_building = city_04
+        prev = {remove_short_term_gold = main_building_tier_4_cost}
+    }
+}
+
+add_temple_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > main_building_tier_2_cost}
+            has_holding_type = church_holding
+            has_building = temple_01
+            prev.culture = {
+                has_innovation =  innovation_manorialism
+            }   
+        }
+        add_building = temple_02
+        prev = {remove_short_term_gold = main_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > main_building_tier_3_cost}
+            has_holding_type = church_holding
+            has_building = temple_02
+            prev.culture = {
+                has_innovation = innovation_windmills
+            } 
+        }  
+        add_building = temple_03
+        prev = {remove_short_term_gold = main_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > main_building_tier_4_cost}
+            has_holding_type = church_holding
+            has_building = temple_03
+            prev.culture = {
+                has_innovation = innovation_cranes
+            } 
+        }  
+        add_building = temple_04
+        prev = {remove_short_term_gold = main_building_tier_4_cost}
+    }
+}
+
+add_monastic_schools_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = monastic_schools_01
+                has_building = monastic_schools_02
+                has_building = monastic_schools_03
+                has_building = monastic_schools_04
+                has_building = monastic_schools_05
+                has_building = monastic_schools_06
+                has_building = monastic_schools_07
+                has_building = monastic_schools_08
+            }
+            has_building_or_higher = temple_01
+        }
+        add_building = monastic_schools_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = monastic_schools_01
+            has_building_or_higher = temple_01
+            prev.culture = {
+                has_innovation = innovation_city_planning
+            }
+        }
+        add_building = monastic_schools_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = monastic_schools_02
+            has_building_or_higher = temple_02
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = monastic_schools_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = monastic_schools_03
+            has_building_or_higher = temple_02
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = monastic_schools_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = monastic_schools_04
+            has_building_or_higher = temple_03
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = monastic_schools_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = monastic_schools_05
+            has_building_or_higher = temple_03
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = monastic_schools_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = monastic_schools_06
+            has_building_or_higher = temple_04
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = monastic_schools_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = monastic_schools_07
+            has_building_or_higher = temple_04
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = monastic_schools_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+#风车 水车
+add_windmills_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = windmills_01
+                has_building = windmills_02
+                has_building = windmills_03
+                has_building = windmills_04
+                has_building = windmills_05
+                has_building = windmills_06
+                has_building = windmills_07
+                has_building = windmills_08
+            }
+            building_windmills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = windmills_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = windmills_01
+            building_windmills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = windmills_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = windmills_02
+            building_windmills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = windmills_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = windmills_03
+            building_windmills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = windmills_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = windmills_04
+            building_windmills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = windmills_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = windmills_05
+            building_windmills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = windmills_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = windmills_06
+            building_windmills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = windmills_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = windmills_07
+            building_windmills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = windmills_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+add_watermills_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = watermills_01
+                has_building = watermills_02
+                has_building = watermills_03
+                has_building = watermills_04
+                has_building = watermills_05
+                has_building = watermills_06
+                has_building = watermills_07
+                has_building = watermills_08
+            }
+            building_watermills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = watermills_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = watermills_01
+            building_watermills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = watermills_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = watermills_02
+            building_watermills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = watermills_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = watermills_03
+            building_watermills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = watermills_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = watermills_04
+            building_watermills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = watermills_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = watermills_05
+            building_watermills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+        add_building = watermills_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = watermills_06
+            building_watermills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = watermills_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = watermills_07
+            building_watermills_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = watermills_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+#商队旅馆 caravanserai
+add_caravanserai_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = caravanserai_01
+                has_building = caravanserai_02
+                has_building = caravanserai_03
+                has_building = caravanserai_04
+                has_building = caravanserai_05
+                has_building = caravanserai_06
+                has_building = caravanserai_07
+                has_building = caravanserai_08
+            }
+            building_caravanserai_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = caravanserai_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = caravanserai_01
+            building_caravanserai_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+        add_building = caravanserai_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = caravanserai_02
+            building_caravanserai_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = caravanserai_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = caravanserai_03
+            building_caravanserai_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+        add_building = caravanserai_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = caravanserai_04
+            building_caravanserai_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_guilds
+            }
+        }
+        add_building = caravanserai_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = caravanserai_05
+            building_caravanserai_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_guilds
+            }
+        }
+        add_building = caravanserai_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = caravanserai_06
+            building_caravanserai_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = caravanserai_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = caravanserai_07
+            building_caravanserai_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+        add_building = caravanserai_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+#风炉 wind_furnace
+add_wind_furnace_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = wind_furnace_01
+                has_building = wind_furnace_02
+                has_building = wind_furnace_03
+                has_building = wind_furnace_04
+                has_building = wind_furnace_05
+                has_building = wind_furnace_06
+                has_building = wind_furnace_07
+                has_building = wind_furnace_08
+            }
+            building_wind_furnace_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = wind_furnace_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = wind_furnace_01
+            building_wind_furnace_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_barracks
+            }
+        }
+        add_building = wind_furnace_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = wind_furnace_02
+            building_wind_furnace_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = wind_furnace_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = wind_furnace_03
+            building_wind_furnace_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+        add_building = wind_furnace_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = wind_furnace_04
+            building_wind_furnace_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+        add_building = wind_furnace_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = wind_furnace_05
+            building_wind_furnace_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = wind_furnace_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = wind_furnace_06
+            building_wind_furnace_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = wind_furnace_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = wind_furnace_07
+            building_wind_furnace_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+        add_building = wind_furnace_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+#铁匠 smiths
+add_smiths_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = smiths_01
+                has_building = smiths_02
+                has_building = smiths_03
+                has_building = smiths_04
+                has_building = smiths_05
+                has_building = smiths_06
+                has_building = smiths_07
+                has_building = smiths_08
+            }
+            building_smiths_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = smiths_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = smiths_01
+            building_smiths_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+            }
+        }
+        add_building = smiths_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = smiths_02
+            building_smiths_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+            }
+        }
+        add_building = smiths_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = smiths_03
+            building_smiths_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+            }
+        }
+        add_building = smiths_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = smiths_04
+            building_smiths_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+            }
+        }
+        add_building = smiths_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = smiths_05
+            building_smiths_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+            }
+        }
+        add_building = smiths_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = smiths_06
+            building_smiths_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+            }
+        }
+        add_building = smiths_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = smiths_07
+            building_smiths_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+            }
+        }
+        add_building = smiths_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+#工坊 加攻城那个 workshops
+add_workshops_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = workshops_01
+                has_building = workshops_02
+                has_building = workshops_03
+                has_building = workshops_04
+                has_building = workshops_05
+                has_building = workshops_06
+                has_building = workshops_07
+                has_building = workshops_08
+            }
+            building_workshops_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = workshops_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = workshops_01
+            building_workshops_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_motte
+            }
+        }
+        add_building = workshops_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = workshops_02
+            building_workshops_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = workshops_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = workshops_03
+            building_workshops_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = workshops_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = workshops_04
+            building_workshops_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = workshops_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = workshops_05
+            building_workshops_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = workshops_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = workshops_06
+            building_workshops_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = workshops_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = workshops_07
+            building_workshops_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = workshops_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+#马厩 加移速的 stables
+add_stables_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = stables_01
+                has_building = stables_02
+                has_building = stables_03
+                has_building = stables_04
+                has_building = stables_05
+                has_building = stables_06
+                has_building = stables_07
+                has_building = stables_08
+            }
+            building_stables_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = stables_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = stables_01
+            building_stables_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_motte
+            }
+        }
+        add_building = stables_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = stables_02
+            building_stables_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = stables_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = stables_03
+            building_stables_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = stables_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = stables_04
+            building_stables_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = stables_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = stables_05
+            building_stables_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = stables_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = stables_06
+            building_stables_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = stables_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = stables_07
+            building_stables_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = stables_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+#马什么的 可能是游牧的建筑 horse_pastures
+add_horse_pastures_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = horse_pastures_01
+                has_building = horse_pastures_02
+                has_building = horse_pastures_03
+                has_building = horse_pastures_04
+                has_building = horse_pastures_05
+                has_building = horse_pastures_06
+                has_building = horse_pastures_07
+                has_building = horse_pastures_08
+            }
+            building_horse_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = horse_pastures_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = horse_pastures_01
+            building_horse_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_motte
+            }
+        }
+        add_building = horse_pastures_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = horse_pastures_02
+            building_horse_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = horse_pastures_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = horse_pastures_03
+            building_horse_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = horse_pastures_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = horse_pastures_04
+            building_horse_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = horse_pastures_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = horse_pastures_05
+            building_horse_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = horse_pastures_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = horse_pastures_06
+            building_horse_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = horse_pastures_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = horse_pastures_07
+            building_horse_pastures_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = horse_pastures_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
+
+#战士营地 加追击那个 warrior_lodges
+add_warrior_lodges_building_effect = {
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_1_cost}
+            has_free_building_slot = yes
+            NOT = {
+                has_building = warrior_lodges_01
+                has_building = warrior_lodges_02
+                has_building = warrior_lodges_03
+                has_building = warrior_lodges_04
+                has_building = warrior_lodges_05
+                has_building = warrior_lodges_06
+                has_building = warrior_lodges_07
+                has_building = warrior_lodges_08
+            }
+            building_warrior_lodges_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }         
+        }
+        add_building = warrior_lodges_01
+        prev = {remove_short_term_gold = normal_building_tier_1_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_2_cost}
+            has_building = warrior_lodges_01
+            building_warrior_lodges_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_motte
+            }
+        }
+        add_building = warrior_lodges_02
+        prev = {remove_short_term_gold = normal_building_tier_2_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_3_cost}
+            has_building = warrior_lodges_02
+            building_warrior_lodges_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = warrior_lodges_03
+        prev = {remove_short_term_gold = normal_building_tier_3_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_4_cost}
+            has_building = warrior_lodges_03
+            building_warrior_lodges_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_battlements
+            }
+        }
+        add_building = warrior_lodges_04
+        prev = {remove_short_term_gold = normal_building_tier_4_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_5_cost}
+            has_building = warrior_lodges_04
+            building_warrior_lodges_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = warrior_lodges_05
+        prev = {remove_short_term_gold = normal_building_tier_5_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_6_cost}
+            has_building = warrior_lodges_05
+            building_warrior_lodges_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_hoardings
+            }
+        }
+        add_building = warrior_lodges_06
+        prev = {remove_short_term_gold = normal_building_tier_6_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_7_cost}
+            has_building = warrior_lodges_06
+            building_warrior_lodges_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = warrior_lodges_07
+        prev = {remove_short_term_gold = normal_building_tier_7_cost}
+    }
+    if = {
+        limit = {
+            prev = {gold > normal_building_tier_8_cost}
+            has_building = warrior_lodges_07
+            building_warrior_lodges_requirement_terrain = yes
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_machicolations
+            }
+        }
+        add_building = warrior_lodges_08
+        prev = {remove_short_term_gold = normal_building_tier_8_cost}
+    }
+}
