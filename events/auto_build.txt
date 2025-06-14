@@ -116,13 +116,13 @@ auto_build.0004 = {
 				trigger_event = auto_build.0191 #风炉/Wind Furnaces
 				trigger_event = auto_build.0114 #Qanats
 				trigger_event = auto_build.0173 #Hospices
-			}
-			trigger_event = {
-				id = auto_build.0003
-				days = 15
-			}
-		}
-	}
+                        }
+                        trigger_event = {
+                                id = auto_build.0003
+                                days = 15
+                        }
+                }
+        }
 }
 
 auto_build.0001 = {
@@ -1403,7 +1403,7 @@ auto_build.0173 = {
 }
 
 #add_qanats_building_effect
-auto_build.00114 = {
+auto_build.0114 = {
 	type = character_event
 	title = auto_build.0114.t
 	desc = auto_build.0114.desc
@@ -2575,8 +2575,6 @@ auto_build.0196 = {
 		}
 	}
 }
-=======
-﻿namespace = auto_build
 auto_build.0003 = {
 	type = character_event
 	trigger = {
@@ -2589,12 +2587,12 @@ auto_build.0003 = {
 	hidden = yes
 	immediate = {
 		hidden_effect = {
-			trigger_event = {
-				id = auto_build.0004
-				days = 15
-
-}
-
+                        trigger_event = {
+                                id = auto_build.0004
+                                days = 15
+                        }
+                }
+        }
 }
 
 # The vanilla build order seemed odd, with cattle pastures first.
@@ -2658,6 +2656,8 @@ trigger_event = auto_build.0273 # Hospices
 			trigger_event = {
 				id = auto_build.0003
 				days = 15
+        }
+}
         }
 }
 
@@ -3051,6 +3051,7 @@ auto_build.0096 = {
 			}
 			add_warrior_lodges_building_effect = yes
         }
+}
 }
 
 # Tribal Buildings
@@ -4001,10 +4002,6 @@ auto_build.0115 = {
                 }
         }
 }
-			add_pastures_building_effect = yes
-		}
-	}
-}
 
 # add_hospices_building_effect
 auto_build.0173 = {
@@ -4042,7 +4039,7 @@ auto_build.0173 = {
 }
 
 # add_qanats_building_effect
-auto_build.00114 = {
+auto_build.0114 = {
 	type = character_event
 	title = auto_build.0114.t
 	desc = auto_build.0114.desc
