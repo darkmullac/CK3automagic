@@ -1,4 +1,4 @@
-﻿namespace = auto_build
+namespace = auto_build
 auto_build.0003 = {
 	type = character_event
 	trigger = {
@@ -6,7 +6,7 @@ auto_build.0003 = {
 			has_character_flag = enable_auto_build
 			has_character_flag = enable_vassal_auto_build
 		}
-		
+
 	}
 	hidden = yes
 	immediate = {
@@ -21,7 +21,7 @@ auto_build.0003 = {
 }
 
 #######适配原版的版本的作者建筑顺序写得好捷豹怪，什么鬼牧场放最前面，我当场梆梆给他两拳（doge
-#以下内容编号会出现顺序不明的情况，只是我在调整建造优先度:3 
+#以下内容编号会出现顺序不明的情况，只是我在调整建造优先度:3
 #You can modify these for free,which is easy:Ctrl+X and then Ctrl+V.You can change the building order as you wish in this way.
 #Tips:我没写印度魔幻风炉的革新限制，按道理来说自动建造能给你拍地产上去(地区不合适并不能，如果你玩印度需要建造，先手动拍一个一级的 事件的title、desc都完全没必要写，完全可以删了，我是憨憨改了这么多:(
 #I advise you to use visual code to edit.
@@ -35,12 +35,12 @@ auto_build.0004 = {
 				limit = {
 					has_character_flag = enable_auto_build
 				}
-				
+
 				trigger_event = auto_build.0088 #水车/Watermills
 				trigger_event = auto_build.0089 #风车/Windmills
 				trigger_event = auto_build.0090 #商队旅馆/Caravanserai
 				trigger_event = auto_build.0018 #庄园宅邸/Farm Estates
-				trigger_event = auto_build.0024 #农田/Cereal Fields									
+				trigger_event = auto_build.0024 #农田/Cereal Fields
 				trigger_event = auto_build.0092 #铁匠铺/Smiths
 				trigger_event = auto_build.0093 #工坊/Workshops
 				trigger_event = auto_build.0017 #沙漠果园/Orchards
@@ -50,7 +50,7 @@ auto_build.0004 = {
 				trigger_event = auto_build.0020 #军团训练场/Regimental Grounds
 				trigger_event = auto_build.0021 #林中堡垒/Ramparts
 				trigger_event = auto_build.0022 #幕墙，到处都能建的那个/Curtain Walls
-				trigger_event = auto_build.0023 #瞭望塔/Watchtowers			
+				trigger_event = auto_build.0023 #瞭望塔/Watchtowers
 				trigger_event = auto_build.0025 #哨站/Outposts
 				trigger_event = auto_build.0026 #兵营/Barracks
 				trigger_event = auto_build.0027 #骆驼养殖场/Camel Farms
@@ -78,22 +78,22 @@ auto_build.0004 = {
 				limit = {
 					has_character_flag = enable_vassal_auto_build
 				}
-				
+
 				trigger_event = auto_build.0188 #水车/Watermills
 				trigger_event = auto_build.0189 #风车/Windmills
 				trigger_event = auto_build.0190 #商队旅馆/Caravanserai
 				trigger_event = auto_build.0118 #庄园宅邸/Farm Estates
 				trigger_event = auto_build.0124 #农田/Cereal Fields
 				trigger_event = auto_build.0192 #铁匠铺/Smiths
-				trigger_event = auto_build.0193 #工坊/Workshops		
+				trigger_event = auto_build.0193 #工坊/Workshops
 				trigger_event = auto_build.0115 #牧场/Cattle Pastures
 				trigger_event = auto_build.0116 #狩猎场/Hunting Grounds
-				trigger_event = auto_build.0117 #沙漠果园/Orchards				
+				trigger_event = auto_build.0117 #沙漠果园/Orchards
 				trigger_event = auto_build.0119 #军用营地/Militia Camps
 				trigger_event = auto_build.0120 #军团训练场/Regimental Grounds
 				trigger_event = auto_build.0121 #林中堡垒/Ramparts
 				trigger_event = auto_build.0122 #幕墙，到处都能建的那个/Curtain Walls
-				trigger_event = auto_build.0123 #瞭望塔/Watchtowers				
+				trigger_event = auto_build.0123 #瞭望塔/Watchtowers
 				trigger_event = auto_build.0125 #哨站/Outposts
 				trigger_event = auto_build.0126 #兵营/Barracks
 				trigger_event = auto_build.0127 #骆驼养殖场/Camel Farms
@@ -109,7 +109,7 @@ auto_build.0004 = {
 				trigger_event = auto_build.0137 #城堡/Castles
 				trigger_event = auto_build.0138 #城市/Citises
 				trigger_event = auto_build.0139 #神殿/Temples
-				trigger_event = auto_build.0140 #僧侣学校/Monastic Schools																																																
+				trigger_event = auto_build.0140 #僧侣学校/Monastic Schools
 				trigger_event = auto_build.0194 #马厩/Stables
 				trigger_event = auto_build.0195 #牧马场/Horse Pastures
 				trigger_event = auto_build.0196 #战士营地/Warrior Lodges
