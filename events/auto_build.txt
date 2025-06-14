@@ -70,6 +70,8 @@ auto_build.0004 = {
 				trigger_event = auto_build.0094 #马厩/Stables
 				trigger_event = auto_build.0095 #牧马场/Horse Pastures
 				trigger_event = auto_build.0096 #战士营地/Warrior Lodges
+                                trigger_event = auto_build.0097 # Scriptoriums
+                                trigger_event = auto_build.0098 # Breweries
 				trigger_event = auto_build.0091 #风炉/Wind Furnaces
 				trigger_event = auto_build.0014 #Qanats
 				trigger_event = auto_build.0273 #Hospices
@@ -113,6 +115,8 @@ auto_build.0004 = {
 				trigger_event = auto_build.0194 #马厩/Stables
 				trigger_event = auto_build.0195 #牧马场/Horse Pastures
 				trigger_event = auto_build.0196 #战士营地/Warrior Lodges
+                                trigger_event = auto_build.0197 # Scriptoriums
+                                trigger_event = auto_build.0198 # Breweries
 				trigger_event = auto_build.0191 #风炉/Wind Furnaces
 				trigger_event = auto_build.0114 #Qanats
 				trigger_event = auto_build.0173 #Hospices
@@ -517,6 +521,70 @@ auto_build.0096 = {
 			add_warrior_lodges_building_effect = yes
 		}
 	}
+}
+#自动建筑-修道院抄写室 add_scriptorium_building_effect
+auto_build.0097 = {
+        type = character_event
+        title = auto_build.0097.t
+        desc = auto_build.0097.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0097.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = root
+                        }
+                        add_scriptorium_building_effect = yes
+                }
+        }
+}
+#自动建筑-酿酒坊 add_breweries_building_effect
+auto_build.0098 = {
+        type = character_event
+        title = auto_build.0098.t
+        desc = auto_build.0098.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0098.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = root
+                        }
+                        add_breweries_building_effect = yes
+                }
+        }
 }
 
 #自动建筑-牧场
@@ -2575,6 +2643,74 @@ auto_build.0196 = {
 		}
 	}
 }
+#自动建筑-修道院抄写室 add_scriptorium_building_effect
+auto_build.0197 = {
+        type = character_event
+        title = auto_build.0197.t
+        desc = auto_build.0197.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0197.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = {
+                                        is_vassal_or_below_of = root
+                                }
+                        }
+                        add_scriptorium_building_effect = yes
+                }
+        }
+}
+#自动建筑-酿酒坊 add_breweries_building_effect
+auto_build.0198 = {
+        type = character_event
+        title = auto_build.0198.t
+        desc = auto_build.0198.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0198.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = {
+                                        is_vassal_or_below_of = root
+                                }
+                        }
+                        add_breweries_building_effect = yes
+                }
+        }
+}
 auto_build.0003 = {
 	type = character_event
 	trigger = {
@@ -3050,6 +3186,70 @@ auto_build.0096 = {
 				province_owner = root
 			}
 			add_warrior_lodges_building_effect = yes
+        }
+}
+#自动建筑-修道院抄写室 add_scriptorium_building_effect
+auto_build.0097 = {
+        type = character_event
+        title = auto_build.0097.t
+        desc = auto_build.0097.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0097.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = root
+                        }
+                        add_scriptorium_building_effect = yes
+                }
+        }
+}
+#自动建筑-酿酒坊 add_breweries_building_effect
+auto_build.0098 = {
+        type = character_event
+        title = auto_build.0098.t
+        desc = auto_build.0098.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0098.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = root
+                        }
+                        add_breweries_building_effect = yes
+                }
         }
 }
 }
@@ -5182,6 +5382,74 @@ auto_build.0196 = {
                                 }
                         }
                         add_warrior_lodges_building_effect = yes
+                }
+        }
+}
+#自动建筑-修道院抄写室 add_scriptorium_building_effect
+auto_build.0197 = {
+        type = character_event
+        title = auto_build.0197.t
+        desc = auto_build.0197.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0197.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = {
+                                        is_vassal_or_below_of = root
+                                }
+                        }
+                        add_scriptorium_building_effect = yes
+                }
+        }
+}
+#自动建筑-酿酒坊 add_breweries_building_effect
+auto_build.0198 = {
+        type = character_event
+        title = auto_build.0198.t
+        desc = auto_build.0198.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0198.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = {
+                                        is_vassal_or_below_of = root
+                                }
+                        }
+                        add_breweries_building_effect = yes
                 }
         }
 }
