@@ -4146,6 +4146,123 @@ prev = {remove_short_term_gold = normal_building_tier_8_cost}
 }
 }
 
+  # Tribal Buildings
+add_longhouses_building_effect = {
+if = {
+limit = {
+prev = {gold > tribal_building_tier_1_cost}
+has_free_building_slot = yes
+NOT = {
+has_building = longhouses_01
+has_building = longhouses_02
+}
+building_requirement_tribal = yes
+}
+add_building = longhouses_01
+prev = {remove_short_term_gold = tribal_building_tier_1_cost}
+}
+if = {
+limit = {
+prev = {gold > tribal_building_tier_2_cost}
+has_building = longhouses_01
+building_requirement_tribal = yes
+OR = {
+mpo_permafrost_building_trigger = yes
+prev.culture = {has_innovation = innovation_barracks}
+}
+}
+add_building = longhouses_02
+prev = {remove_short_term_gold = tribal_building_tier_2_cost}
+}
+}
+
+add_war_camps_building_effect = {
+if = {
+limit = {
+prev = {gold > tribal_building_tier_1_cost}
+has_free_building_slot = yes
+NOT = {
+has_building = war_camps_01
+has_building = war_camps_02
+}
+building_requirement_tribal = yes
+}
+add_building = war_camps_01
+prev = {remove_short_term_gold = tribal_building_tier_1_cost}
+}
+if = {
+limit = {
+prev = {gold > tribal_building_tier_2_cost}
+has_building = war_camps_01
+building_requirement_tribal = yes
+OR = {
+mpo_permafrost_building_trigger = yes
+prev.culture = {has_innovation = innovation_barracks}
+}
+}
+add_building = war_camps_02
+prev = {remove_short_term_gold = tribal_building_tier_2_cost}
+}
+}
+
+add_palisades_building_effect = {
+if = {
+limit = {
+prev = {gold > tribal_building_tier_1_cost}
+has_free_building_slot = yes
+NOT = {
+has_building = palisades_01
+has_building = palisades_02
+}
+building_requirement_tribal = yes
+}
+add_building = palisades_01
+prev = {remove_short_term_gold = tribal_building_tier_1_cost}
+}
+if = {
+limit = {
+prev = {gold > tribal_building_tier_2_cost}
+has_building = palisades_01
+building_requirement_tribal = yes
+OR = {
+mpo_permafrost_building_trigger = yes
+prev.culture = {has_innovation = innovation_barracks}
+}
+}
+add_building = palisades_02
+prev = {remove_short_term_gold = tribal_building_tier_2_cost}
+}
+}
+
+add_market_villages_building_effect = {
+if = {
+limit = {
+prev = {gold > tribal_building_tier_1_cost}
+has_free_building_slot = yes
+NOT = {
+has_building = market_villages_01
+has_building = market_villages_02
+}
+building_requirement_tribal = yes
+}
+add_building = market_villages_01
+prev = {remove_short_term_gold = tribal_building_tier_1_cost}
+}
+if = {
+limit = {
+prev = {gold > tribal_building_tier_2_cost}
+has_building = market_villages_01
+building_requirement_tribal = yes
+OR = {
+mpo_permafrost_building_trigger = yes
+prev.culture = {has_innovation = innovation_barracks}
+}
+}
+add_building = market_villages_02
+prev = {remove_short_term_gold = tribal_building_tier_2_cost}
+}
+}
+
   # warrior_lodges
 add_warrior_lodges_building_effect = {
 if = {
