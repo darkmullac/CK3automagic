@@ -4576,3 +4576,1496 @@ if = {
     limit = { has_building_or_higher = tower_of_silence_01 }
     add_building = tower_of_silence_01
 }
+
+
+#Alamut castle
+if = {
+    limit = {
+        NOT = { has_building_or_higher = alamut_castle_01 }
+        can_construct_building = alamut_castle_01
+    }
+    add_building = alamut_castle_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = alamut_castle_02 }
+        can_construct_building = alamut_castle_02
+    }
+    add_building = alamut_castle_02
+}
+
+
+#Alhambra
+if = {
+    limit = {
+        NOT = { has_building_or_higher = alhambra_01 }
+        can_construct_building = alhambra_01
+    }
+    add_building = alhambra_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = alhambra_02 }
+        can_construct_building = alhambra_02
+    }
+    add_building = alhambra_02
+}
+
+
+#Allaq mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = allaq_mines_01 }
+        can_construct_building = allaq_mines_01
+    }
+    add_building = allaq_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = allaq_mines_02 }
+        can_construct_building = allaq_mines_02
+    }
+    add_building = allaq_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = allaq_mines_03 }
+        can_construct_building = allaq_mines_03
+    }
+    add_building = allaq_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = allaq_mines_04 }
+        can_construct_building = allaq_mines_04
+    }
+    add_building = allaq_mines_04
+}
+
+
+#Argentiera mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = argentiera_mines_01 }
+        can_construct_building = argentiera_mines_01
+    }
+    add_building = argentiera_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = argentiera_mines_02 }
+        can_construct_building = argentiera_mines_02
+    }
+    add_building = argentiera_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = argentiera_mines_03 }
+        can_construct_building = argentiera_mines_03
+    }
+    add_building = argentiera_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = argentiera_mines_04 }
+        can_construct_building = argentiera_mines_04
+    }
+    add_building = argentiera_mines_04
+}
+
+
+#Breweries
+if = {
+    limit = {
+        NOT = { has_building_or_higher = breweries_01 }
+        can_construct_building = breweries_01
+    }
+    add_building = breweries_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = breweries_02 }
+        can_construct_building = breweries_02
+    }
+    add_building = breweries_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = breweries_03 }
+        can_construct_building = breweries_03
+    }
+    add_building = breweries_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = breweries_04 }
+        can_construct_building = breweries_04
+    }
+    add_building = breweries_04
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = breweries_05 }
+        can_construct_building = breweries_05
+    }
+    add_building = breweries_05
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = breweries_06 }
+        can_construct_building = breweries_06
+    }
+    add_building = breweries_06
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = breweries_07 }
+        can_construct_building = breweries_07
+    }
+    add_building = breweries_07
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = breweries_08 }
+        can_construct_building = breweries_08
+    }
+    add_building = breweries_08
+}
+
+
+#Cevennes mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = cevennes_mines_01 }
+        can_construct_building = cevennes_mines_01
+    }
+    add_building = cevennes_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = cevennes_mines_02 }
+        can_construct_building = cevennes_mines_02
+    }
+    add_building = cevennes_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = cevennes_mines_03 }
+        can_construct_building = cevennes_mines_03
+    }
+    add_building = cevennes_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = cevennes_mines_04 }
+        can_construct_building = cevennes_mines_04
+    }
+    add_building = cevennes_mines_04
+}
+
+
+#Citadel of aleppo
+if = {
+    limit = {
+        NOT = { has_building_or_higher = citadel_of_aleppo_01 }
+        can_construct_building = citadel_of_aleppo_01
+    }
+    add_building = citadel_of_aleppo_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = citadel_of_aleppo_02 }
+        can_construct_building = citadel_of_aleppo_02
+    }
+    add_building = citadel_of_aleppo_02
+}
+
+
+#Cluny abbey
+if = {
+    limit = {
+        NOT = { has_building_or_higher = cluny_abbey_01 }
+        can_construct_building = cluny_abbey_01
+    }
+    add_building = cluny_abbey_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = cluny_abbey_02 }
+        can_construct_building = cluny_abbey_02
+    }
+    add_building = cluny_abbey_02
+}
+
+
+#Dean mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = dean_mines_01 }
+        can_construct_building = dean_mines_01
+    }
+    add_building = dean_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = dean_mines_02 }
+        can_construct_building = dean_mines_02
+    }
+    add_building = dean_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = dean_mines_03 }
+        can_construct_building = dean_mines_03
+    }
+    add_building = dean_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = dean_mines_04 }
+        can_construct_building = dean_mines_04
+    }
+    add_building = dean_mines_04
+}
+
+
+#Duomo florence
+if = {
+    limit = {
+        NOT = { has_building_or_higher = duomo_florence_01 }
+        can_construct_building = duomo_florence_01
+    }
+    add_building = duomo_florence_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = duomo_florence_02 }
+        can_construct_building = duomo_florence_02
+    }
+    add_building = duomo_florence_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = duomo_florence_03 }
+        can_construct_building = duomo_florence_03
+    }
+    add_building = duomo_florence_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = duomo_florence_04 }
+        can_construct_building = duomo_florence_04
+    }
+    add_building = duomo_florence_04
+}
+
+
+#Falun mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = falun_mines_01 }
+        can_construct_building = falun_mines_01
+    }
+    add_building = falun_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = falun_mines_02 }
+        can_construct_building = falun_mines_02
+    }
+    add_building = falun_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = falun_mines_03 }
+        can_construct_building = falun_mines_03
+    }
+    add_building = falun_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = falun_mines_04 }
+        can_construct_building = falun_mines_04
+    }
+    add_building = falun_mines_04
+}
+
+
+#Generic copper mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = generic_copper_mines_01 }
+        can_construct_building = generic_copper_mines_01
+    }
+    add_building = generic_copper_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = generic_copper_mines_02 }
+        can_construct_building = generic_copper_mines_02
+    }
+    add_building = generic_copper_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = generic_copper_mines_03 }
+        can_construct_building = generic_copper_mines_03
+    }
+    add_building = generic_copper_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = generic_copper_mines_04 }
+        can_construct_building = generic_copper_mines_04
+    }
+    add_building = generic_copper_mines_04
+}
+
+
+#Generic gold mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = generic_gold_mines_01 }
+        can_construct_building = generic_gold_mines_01
+    }
+    add_building = generic_gold_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = generic_gold_mines_02 }
+        can_construct_building = generic_gold_mines_02
+    }
+    add_building = generic_gold_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = generic_gold_mines_03 }
+        can_construct_building = generic_gold_mines_03
+    }
+    add_building = generic_gold_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = generic_gold_mines_04 }
+        can_construct_building = generic_gold_mines_04
+    }
+    add_building = generic_gold_mines_04
+}
+
+
+#Generic silver mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = generic_silver_mines_01 }
+        can_construct_building = generic_silver_mines_01
+    }
+    add_building = generic_silver_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = generic_silver_mines_02 }
+        can_construct_building = generic_silver_mines_02
+    }
+    add_building = generic_silver_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = generic_silver_mines_03 }
+        can_construct_building = generic_silver_mines_03
+    }
+    add_building = generic_silver_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = generic_silver_mines_04 }
+        can_construct_building = generic_silver_mines_04
+    }
+    add_building = generic_silver_mines_04
+}
+
+
+#Hagia sophia
+if = {
+    limit = {
+        NOT = { has_building_or_higher = hagia_sophia_01 }
+        can_construct_building = hagia_sophia_01
+    }
+    add_building = hagia_sophia_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = hagia_sophia_02 }
+        can_construct_building = hagia_sophia_02
+    }
+    add_building = hagia_sophia_02
+}
+
+
+#Hall of heroes
+if = {
+    limit = {
+        NOT = { has_building_or_higher = hall_of_heroes_01 }
+        can_construct_building = hall_of_heroes_01
+    }
+    add_building = hall_of_heroes_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = hall_of_heroes_02 }
+        can_construct_building = hall_of_heroes_02
+    }
+    add_building = hall_of_heroes_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = hall_of_heroes_03 }
+        can_construct_building = hall_of_heroes_03
+    }
+    add_building = hall_of_heroes_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = hall_of_heroes_04 }
+        can_construct_building = hall_of_heroes_04
+    }
+    add_building = hall_of_heroes_04
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = hall_of_heroes_05 }
+        can_construct_building = hall_of_heroes_05
+    }
+    add_building = hall_of_heroes_05
+}
+
+
+#Holy site canterbury cathedral
+if = {
+    limit = {
+        NOT = { has_building_or_higher = holy_site_canterbury_cathedral_01 }
+        can_construct_building = holy_site_canterbury_cathedral_01
+    }
+    add_building = holy_site_canterbury_cathedral_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = holy_site_canterbury_cathedral_02 }
+        can_construct_building = holy_site_canterbury_cathedral_02
+    }
+    add_building = holy_site_canterbury_cathedral_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = holy_site_canterbury_cathedral_03 }
+        can_construct_building = holy_site_canterbury_cathedral_03
+    }
+    add_building = holy_site_canterbury_cathedral_03
+}
+
+
+#Hotin fort
+if = {
+    limit = {
+        NOT = { has_building_or_higher = hotin_fort_01 }
+        can_construct_building = hotin_fort_01
+    }
+    add_building = hotin_fort_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = hotin_fort_02 }
+        can_construct_building = hotin_fort_02
+    }
+    add_building = hotin_fort_02
+}
+
+
+#Ijil mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = ijil_mines_01 }
+        can_construct_building = ijil_mines_01
+    }
+    add_building = ijil_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = ijil_mines_02 }
+        can_construct_building = ijil_mines_02
+    }
+    add_building = ijil_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = ijil_mines_03 }
+        can_construct_building = ijil_mines_03
+    }
+    add_building = ijil_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = ijil_mines_04 }
+        can_construct_building = ijil_mines_04
+    }
+    add_building = ijil_mines_04
+}
+
+
+#Khetri mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = khetri_mines_01 }
+        can_construct_building = khetri_mines_01
+    }
+    add_building = khetri_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = khetri_mines_02 }
+        can_construct_building = khetri_mines_02
+    }
+    add_building = khetri_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = khetri_mines_03 }
+        can_construct_building = khetri_mines_03
+    }
+    add_building = khetri_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = khetri_mines_04 }
+        can_construct_building = khetri_mines_04
+    }
+    add_building = khetri_mines_04
+}
+
+
+#Kollur mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = kollur_mines_01 }
+        can_construct_building = kollur_mines_01
+    }
+    add_building = kollur_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = kollur_mines_02 }
+        can_construct_building = kollur_mines_02
+    }
+    add_building = kollur_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = kollur_mines_03 }
+        can_construct_building = kollur_mines_03
+    }
+    add_building = kollur_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = kollur_mines_04 }
+        can_construct_building = kollur_mines_04
+    }
+    add_building = kollur_mines_04
+}
+
+
+#Konasamudram mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = konasamudram_mines_01 }
+        can_construct_building = konasamudram_mines_01
+    }
+    add_building = konasamudram_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = konasamudram_mines_02 }
+        can_construct_building = konasamudram_mines_02
+    }
+    add_building = konasamudram_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = konasamudram_mines_03 }
+        can_construct_building = konasamudram_mines_03
+    }
+    add_building = konasamudram_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = konasamudram_mines_04 }
+        can_construct_building = konasamudram_mines_04
+    }
+    add_building = konasamudram_mines_04
+}
+
+
+#Kremnica mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = kremnica_mines_01 }
+        can_construct_building = kremnica_mines_01
+    }
+    add_building = kremnica_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = kremnica_mines_02 }
+        can_construct_building = kremnica_mines_02
+    }
+    add_building = kremnica_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = kremnica_mines_03 }
+        can_construct_building = kremnica_mines_03
+    }
+    add_building = kremnica_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = kremnica_mines_04 }
+        can_construct_building = kremnica_mines_04
+    }
+    add_building = kremnica_mines_04
+}
+
+
+#Kutna hora mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = kutna_hora_mines_01 }
+        can_construct_building = kutna_hora_mines_01
+    }
+    add_building = kutna_hora_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = kutna_hora_mines_02 }
+        can_construct_building = kutna_hora_mines_02
+    }
+    add_building = kutna_hora_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = kutna_hora_mines_03 }
+        can_construct_building = kutna_hora_mines_03
+    }
+    add_building = kutna_hora_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = kutna_hora_mines_04 }
+        can_construct_building = kutna_hora_mines_04
+    }
+    add_building = kutna_hora_mines_04
+}
+
+
+#Longhouses
+if = {
+    limit = {
+        NOT = { has_building_or_higher = longhouses_01 }
+        can_construct_building = longhouses_01
+    }
+    add_building = longhouses_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = longhouses_02 }
+        can_construct_building = longhouses_02
+    }
+    add_building = longhouses_02
+}
+
+
+#Mali mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = mali_mines_01 }
+        can_construct_building = mali_mines_01
+    }
+    add_building = mali_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = mali_mines_02 }
+        can_construct_building = mali_mines_02
+    }
+    add_building = mali_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = mali_mines_03 }
+        can_construct_building = mali_mines_03
+    }
+    add_building = mali_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = mali_mines_04 }
+        can_construct_building = mali_mines_04
+    }
+    add_building = mali_mines_04
+}
+
+
+#Market villages
+if = {
+    limit = {
+        NOT = { has_building_or_higher = market_villages_01 }
+        can_construct_building = market_villages_01
+    }
+    add_building = market_villages_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = market_villages_02 }
+        can_construct_building = market_villages_02
+    }
+    add_building = market_villages_02
+}
+
+
+#Megalith
+if = {
+    limit = {
+        NOT = { has_building_or_higher = megalith_01 }
+        can_construct_building = megalith_01
+    }
+    add_building = megalith_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = megalith_02 }
+        can_construct_building = megalith_02
+    }
+    add_building = megalith_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = megalith_03 }
+        can_construct_building = megalith_03
+    }
+    add_building = megalith_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = megalith_04 }
+        can_construct_building = megalith_04
+    }
+    add_building = megalith_04
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = megalith_05 }
+        can_construct_building = megalith_05
+    }
+    add_building = megalith_05
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = megalith_06 }
+        can_construct_building = megalith_06
+    }
+    add_building = megalith_06
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = megalith_07 }
+        can_construct_building = megalith_07
+    }
+    add_building = megalith_07
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = megalith_08 }
+        can_construct_building = megalith_08
+    }
+    add_building = megalith_08
+}
+
+
+#Meteora
+if = {
+    limit = {
+        NOT = { has_building_or_higher = meteora_01 }
+        can_construct_building = meteora_01
+    }
+    add_building = meteora_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = meteora_02 }
+        can_construct_building = meteora_02
+    }
+    add_building = meteora_02
+}
+
+
+#Mount athos
+if = {
+    limit = {
+        NOT = { has_building_or_higher = mount_athos_01 }
+        can_construct_building = mount_athos_01
+    }
+    add_building = mount_athos_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = mount_athos_02 }
+        can_construct_building = mount_athos_02
+    }
+    add_building = mount_athos_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = mount_athos_03 }
+        can_construct_building = mount_athos_03
+    }
+    add_building = mount_athos_03
+}
+
+
+#Nishapur mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = nishapur_mines_01 }
+        can_construct_building = nishapur_mines_01
+    }
+    add_building = nishapur_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = nishapur_mines_02 }
+        can_construct_building = nishapur_mines_02
+    }
+    add_building = nishapur_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = nishapur_mines_03 }
+        can_construct_building = nishapur_mines_03
+    }
+    add_building = nishapur_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = nishapur_mines_04 }
+        can_construct_building = nishapur_mines_04
+    }
+    add_building = nishapur_mines_04
+}
+
+
+#Palace of ctesiphon
+if = {
+    limit = {
+        NOT = { has_building_or_higher = palace_of_ctesiphon_01 }
+        can_construct_building = palace_of_ctesiphon_01
+    }
+    add_building = palace_of_ctesiphon_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = palace_of_ctesiphon_02 }
+        can_construct_building = palace_of_ctesiphon_02
+    }
+    add_building = palace_of_ctesiphon_02
+}
+
+
+#Palisades
+if = {
+    limit = {
+        NOT = { has_building_or_higher = palisades_01 }
+        can_construct_building = palisades_01
+    }
+    add_building = palisades_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = palisades_02 }
+        can_construct_building = palisades_02
+    }
+    add_building = palisades_02
+}
+
+
+#Pansjhir mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = pansjhir_mines_01 }
+        can_construct_building = pansjhir_mines_01
+    }
+    add_building = pansjhir_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = pansjhir_mines_02 }
+        can_construct_building = pansjhir_mines_02
+    }
+    add_building = pansjhir_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = pansjhir_mines_03 }
+        can_construct_building = pansjhir_mines_03
+    }
+    add_building = pansjhir_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = pansjhir_mines_04 }
+        can_construct_building = pansjhir_mines_04
+    }
+    add_building = pansjhir_mines_04
+}
+
+
+#Phocaea mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = phocaea_mines_01 }
+        can_construct_building = phocaea_mines_01
+    }
+    add_building = phocaea_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = phocaea_mines_02 }
+        can_construct_building = phocaea_mines_02
+    }
+    add_building = phocaea_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = phocaea_mines_03 }
+        can_construct_building = phocaea_mines_03
+    }
+    add_building = phocaea_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = phocaea_mines_04 }
+        can_construct_building = phocaea_mines_04
+    }
+    add_building = phocaea_mines_04
+}
+
+
+#Rammelsberg mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = rammelsberg_mines_01 }
+        can_construct_building = rammelsberg_mines_01
+    }
+    add_building = rammelsberg_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = rammelsberg_mines_02 }
+        can_construct_building = rammelsberg_mines_02
+    }
+    add_building = rammelsberg_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = rammelsberg_mines_03 }
+        can_construct_building = rammelsberg_mines_03
+    }
+    add_building = rammelsberg_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = rammelsberg_mines_04 }
+        can_construct_building = rammelsberg_mines_04
+    }
+    add_building = rammelsberg_mines_04
+}
+
+
+#Ratnapura mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = ratnapura_mines_01 }
+        can_construct_building = ratnapura_mines_01
+    }
+    add_building = ratnapura_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = ratnapura_mines_02 }
+        can_construct_building = ratnapura_mines_02
+    }
+    add_building = ratnapura_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = ratnapura_mines_03 }
+        can_construct_building = ratnapura_mines_03
+    }
+    add_building = ratnapura_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = ratnapura_mines_04 }
+        can_construct_building = ratnapura_mines_04
+    }
+    add_building = ratnapura_mines_04
+}
+
+
+#Rudnik mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = rudnik_mines_01 }
+        can_construct_building = rudnik_mines_01
+    }
+    add_building = rudnik_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = rudnik_mines_02 }
+        can_construct_building = rudnik_mines_02
+    }
+    add_building = rudnik_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = rudnik_mines_03 }
+        can_construct_building = rudnik_mines_03
+    }
+    add_building = rudnik_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = rudnik_mines_04 }
+        can_construct_building = rudnik_mines_04
+    }
+    add_building = rudnik_mines_04
+}
+
+
+#Sar i sang mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = sar_i_sang_mines_01 }
+        can_construct_building = sar_i_sang_mines_01
+    }
+    add_building = sar_i_sang_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = sar_i_sang_mines_02 }
+        can_construct_building = sar_i_sang_mines_02
+    }
+    add_building = sar_i_sang_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = sar_i_sang_mines_03 }
+        can_construct_building = sar_i_sang_mines_03
+    }
+    add_building = sar_i_sang_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = sar_i_sang_mines_04 }
+        can_construct_building = sar_i_sang_mines_04
+    }
+    add_building = sar_i_sang_mines_04
+}
+
+
+#Schwaz mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = schwaz_mines_01 }
+        can_construct_building = schwaz_mines_01
+    }
+    add_building = schwaz_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = schwaz_mines_02 }
+        can_construct_building = schwaz_mines_02
+    }
+    add_building = schwaz_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = schwaz_mines_03 }
+        can_construct_building = schwaz_mines_03
+    }
+    add_building = schwaz_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = schwaz_mines_04 }
+        can_construct_building = schwaz_mines_04
+    }
+    add_building = schwaz_mines_04
+}
+
+
+#Shah i zinda
+if = {
+    limit = {
+        NOT = { has_building_or_higher = shah_i_zinda_01 }
+        can_construct_building = shah_i_zinda_01
+    }
+    add_building = shah_i_zinda_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = shah_i_zinda_02 }
+        can_construct_building = shah_i_zinda_02
+    }
+    add_building = shah_i_zinda_02
+}
+
+
+#Siderokausia mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = siderokausia_mines_01 }
+        can_construct_building = siderokausia_mines_01
+    }
+    add_building = siderokausia_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = siderokausia_mines_02 }
+        can_construct_building = siderokausia_mines_02
+    }
+    add_building = siderokausia_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = siderokausia_mines_03 }
+        can_construct_building = siderokausia_mines_03
+    }
+    add_building = siderokausia_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = siderokausia_mines_04 }
+        can_construct_building = siderokausia_mines_04
+    }
+    add_building = siderokausia_mines_04
+}
+
+
+#Srebrenica mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = srebrenica_mines_01 }
+        can_construct_building = srebrenica_mines_01
+    }
+    add_building = srebrenica_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = srebrenica_mines_02 }
+        can_construct_building = srebrenica_mines_02
+    }
+    add_building = srebrenica_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = srebrenica_mines_03 }
+        can_construct_building = srebrenica_mines_03
+    }
+    add_building = srebrenica_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = srebrenica_mines_04 }
+        can_construct_building = srebrenica_mines_04
+    }
+    add_building = srebrenica_mines_04
+}
+
+
+#Sumela monastery
+if = {
+    limit = {
+        NOT = { has_building_or_higher = sumela_monastery_01 }
+        can_construct_building = sumela_monastery_01
+    }
+    add_building = sumela_monastery_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = sumela_monastery_02 }
+        can_construct_building = sumela_monastery_02
+    }
+    add_building = sumela_monastery_02
+}
+
+
+#Taghaza mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = taghaza_mines_01 }
+        can_construct_building = taghaza_mines_01
+    }
+    add_building = taghaza_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = taghaza_mines_02 }
+        can_construct_building = taghaza_mines_02
+    }
+    add_building = taghaza_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = taghaza_mines_03 }
+        can_construct_building = taghaza_mines_03
+    }
+    add_building = taghaza_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = taghaza_mines_04 }
+        can_construct_building = taghaza_mines_04
+    }
+    add_building = taghaza_mines_04
+}
+
+
+#Takkeda mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = takkeda_mines_01 }
+        can_construct_building = takkeda_mines_01
+    }
+    add_building = takkeda_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = takkeda_mines_02 }
+        can_construct_building = takkeda_mines_02
+    }
+    add_building = takkeda_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = takkeda_mines_03 }
+        can_construct_building = takkeda_mines_03
+    }
+    add_building = takkeda_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = takkeda_mines_04 }
+        can_construct_building = takkeda_mines_04
+    }
+    add_building = takkeda_mines_04
+}
+
+
+#Temple of uppsala
+if = {
+    limit = {
+        NOT = { has_building_or_higher = temple_of_uppsala_01 }
+        can_construct_building = temple_of_uppsala_01
+    }
+    add_building = temple_of_uppsala_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = temple_of_uppsala_02 }
+        can_construct_building = temple_of_uppsala_02
+    }
+    add_building = temple_of_uppsala_02
+}
+
+
+#Trepca mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = trepca_mines_01 }
+        can_construct_building = trepca_mines_01
+    }
+    add_building = trepca_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = trepca_mines_02 }
+        can_construct_building = trepca_mines_02
+    }
+    add_building = trepca_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = trepca_mines_03 }
+        can_construct_building = trepca_mines_03
+    }
+    add_building = trepca_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = trepca_mines_04 }
+        can_construct_building = trepca_mines_04
+    }
+    add_building = trepca_mines_04
+}
+
+
+#Tribe
+if = {
+    limit = {
+        NOT = { has_building_or_higher = tribe_01 }
+        can_construct_building = tribe_01
+    }
+    add_building = tribe_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = tribe_02 }
+        can_construct_building = tribe_02
+    }
+    add_building = tribe_02
+}
+
+
+#Turda mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = turda_mines_01 }
+        can_construct_building = turda_mines_01
+    }
+    add_building = turda_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = turda_mines_02 }
+        can_construct_building = turda_mines_02
+    }
+    add_building = turda_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = turda_mines_03 }
+        can_construct_building = turda_mines_03
+    }
+    add_building = turda_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = turda_mines_04 }
+        can_construct_building = turda_mines_04
+    }
+    add_building = turda_mines_04
+}
+
+
+#Verespatak mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = verespatak_mines_01 }
+        can_construct_building = verespatak_mines_01
+    }
+    add_building = verespatak_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = verespatak_mines_02 }
+        can_construct_building = verespatak_mines_02
+    }
+    add_building = verespatak_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = verespatak_mines_03 }
+        can_construct_building = verespatak_mines_03
+    }
+    add_building = verespatak_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = verespatak_mines_04 }
+        can_construct_building = verespatak_mines_04
+    }
+    add_building = verespatak_mines_04
+}
+
+
+#War camps
+if = {
+    limit = {
+        NOT = { has_building_or_higher = war_camps_01 }
+        can_construct_building = war_camps_01
+    }
+    add_building = war_camps_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = war_camps_02 }
+        can_construct_building = war_camps_02
+    }
+    add_building = war_camps_02
+}
+
+
+#Wawel cathedral
+if = {
+    limit = {
+        NOT = { has_building_or_higher = wawel_cathedral_01 }
+        can_construct_building = wawel_cathedral_01
+    }
+    add_building = wawel_cathedral_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = wawel_cathedral_02 }
+        can_construct_building = wawel_cathedral_02
+    }
+    add_building = wawel_cathedral_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = wawel_cathedral_03 }
+        can_construct_building = wawel_cathedral_03
+    }
+    add_building = wawel_cathedral_03
+}
+
+
+#Zawar mines
+if = {
+    limit = {
+        NOT = { has_building_or_higher = zawar_mines_01 }
+        can_construct_building = zawar_mines_01
+    }
+    add_building = zawar_mines_01
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = zawar_mines_02 }
+        can_construct_building = zawar_mines_02
+    }
+    add_building = zawar_mines_02
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = zawar_mines_03 }
+        can_construct_building = zawar_mines_03
+    }
+    add_building = zawar_mines_03
+}
+if = {
+    limit = {
+        NOT = { has_building_or_higher = zawar_mines_04 }
+        can_construct_building = zawar_mines_04
+    }
+    add_building = zawar_mines_04
+}
+
