@@ -19,12 +19,11 @@ auto_build.0003 = {
 
 }
 
-#######适配原版的版本的作者建筑顺序写得好捷豹怪，什么鬼牧场放最前面，我当场梆梆给他两拳（doge
-#以下内容编号会出现顺序不明的情况，只是我在调整建造优先度:3 
-#You can modify these for free,which is easy:Ctrl+X and then Ctrl+V.You can change the building order as you wish in this way.
-#Tips:我没写印度魔幻风炉的革新限制，按道理来说自动建造能给你拍地产上去(地区不合适并不能，如果你玩印度需要建造，先手动拍一个一级的 事件的title、desc都完全没必要写，完全可以删了，我是憨憨改了这么多:(
-#I advise you to use visual code to edit.
-
+# The vanilla build order seemed odd, with cattle pastures first.
+# Event IDs may appear out of order while priorities are adjusted.
+# You can freely reorder them by copy-pasting.
+# Tip: Indian wind furnaces lack innovation checks; build level one manually.
+# I advise you to use Visual Studio Code to edit.
 auto_build.0004 = {
 	type = character_event
 	hidden = yes
@@ -35,94 +34,48 @@ auto_build.0004 = {
 					has_character_flag = enable_auto_build
 				}
 				
-				trigger_event = auto_build.0088 #水车/Watermills
-				trigger_event = auto_build.0089 #风车/Windmills
-				trigger_event = auto_build.0090 #商队旅馆/Caravanserai
-				trigger_event = auto_build.0018 #庄园宅邸/Farm Estates
-				trigger_event = auto_build.0024 #农田/Cereal Fields									
-				trigger_event = auto_build.0092 #铁匠铺/Smiths
-				trigger_event = auto_build.0093 #工坊/Workshops
-				trigger_event = auto_build.0017 #沙漠果园/Orchards
-				trigger_event = auto_build.0015 #牧场/Cattle Pastures
-				trigger_event = auto_build.0016 #狩猎场/Hunting Grounds
-				trigger_event = auto_build.0019 #营地，加弓箭手散兵那个营地/Militia Camps
-				trigger_event = auto_build.0020 #军团训练场/Regimental Grounds
-				trigger_event = auto_build.0021 #林中堡垒/Ramparts
-				trigger_event = auto_build.0022 #幕墙，到处都能建的那个/Curtain Walls
-				trigger_event = auto_build.0023 #瞭望塔/Watchtowers			
-				trigger_event = auto_build.0025 #哨站/Outposts
-				trigger_event = auto_build.0026 #兵营/Barracks
-				trigger_event = auto_build.0027 #骆驼养殖场/Camel Farms
-				trigger_event = auto_build.0028 #林业/Logging Camps
-				trigger_event = auto_build.0029 #湿地农场/Peat Quarries
-				trigger_event = auto_build.0030 #山丘农场/Hill Farms
-				trigger_event = auto_build.0031 #战象象栏/Elephant Pens
-				trigger_event = auto_build.0032 #沙漠农业/Plantations
-				trigger_event = auto_build.0033 #采石场/Quarries
-				trigger_event = auto_build.0034 #山堡/Hill Forts
-				trigger_event = auto_build.0035 #贸易港/Tradeports
-				trigger_event = auto_build.0036 #行会/Guild Halls
-				trigger_event = auto_build.0037 #城堡/Castles
-				trigger_event = auto_build.0038 #城市/Citises
-				trigger_event = auto_build.0039 #神殿/Temples
-				trigger_event = auto_build.0040 #僧侣学校/Monastic Schools
-				trigger_event = auto_build.0094 #马厩/Stables
-				trigger_event = auto_build.0095 #牧马场/Horse Pastures
-                                trigger_event = auto_build.0096 #战士营地/Warrior Lodges
-                                trigger_event = auto_build.0274 #Longhouses
-                                trigger_event = auto_build.0275 #War Camps
-                                trigger_event = auto_build.0276 #Palisades
-                                trigger_event = auto_build.0277 #Market Villages
-                                trigger_event = auto_build.0091 #风炉/Wind Furnaces
-                                trigger_event = auto_build.0014 #Qanats
-                                trigger_event = auto_build.0273 #Hospices
-			}
-			else_if = {#封臣建造顺序 +100/Plus 100
-				limit = {
-					has_character_flag = enable_vassal_auto_build
-				}
-				
-				trigger_event = auto_build.0188 #水车/Watermills
-				trigger_event = auto_build.0189 #风车/Windmills
-				trigger_event = auto_build.0190 #商队旅馆/Caravanserai
-				trigger_event = auto_build.0118 #庄园宅邸/Farm Estates
-				trigger_event = auto_build.0124 #农田/Cereal Fields
-				trigger_event = auto_build.0192 #铁匠铺/Smiths
-				trigger_event = auto_build.0193 #工坊/Workshops		
-				trigger_event = auto_build.0115 #牧场/Cattle Pastures
-				trigger_event = auto_build.0116 #狩猎场/Hunting Grounds
-				trigger_event = auto_build.0117 #沙漠果园/Orchards				
-				trigger_event = auto_build.0119 #军用营地/Militia Camps
-				trigger_event = auto_build.0120 #军团训练场/Regimental Grounds
-				trigger_event = auto_build.0121 #林中堡垒/Ramparts
-				trigger_event = auto_build.0122 #幕墙，到处都能建的那个/Curtain Walls
-				trigger_event = auto_build.0123 #瞭望塔/Watchtowers				
-				trigger_event = auto_build.0125 #哨站/Outposts
-				trigger_event = auto_build.0126 #兵营/Barracks
-				trigger_event = auto_build.0127 #骆驼养殖场/Camel Farms
-				trigger_event = auto_build.0128 #林业/Logging Camps
-				trigger_event = auto_build.0129 #湿地农场/Peat Quarries
-				trigger_event = auto_build.0130 #山丘农场/Hill Farms
-				trigger_event = auto_build.0131 #战象象栏/Elephant Pens
-				trigger_event = auto_build.0132 #沙漠农业/Plantations
-				trigger_event = auto_build.0133 #采石场/Quarries
-				trigger_event = auto_build.0134 #山堡/Hill Forts
-				trigger_event = auto_build.0135 #贸易港/Tradeports
-				trigger_event = auto_build.0136 #行会/Guild Halls
-				trigger_event = auto_build.0137 #城堡/Castles
-				trigger_event = auto_build.0138 #城市/Citises
-				trigger_event = auto_build.0139 #神殿/Temples
-				trigger_event = auto_build.0140 #僧侣学校/Monastic Schools																																																
-				trigger_event = auto_build.0194 #马厩/Stables
-				trigger_event = auto_build.0195 #牧马场/Horse Pastures
-                                trigger_event = auto_build.0196 #战士营地/Warrior Lodges
-                                trigger_event = auto_build.0174 #Longhouses
-                                trigger_event = auto_build.0175 #War Camps
-                                trigger_event = auto_build.0176 #Palisades
-                                trigger_event = auto_build.0177 #Market Villages
-                                trigger_event = auto_build.0191 #风炉/Wind Furnaces
-                                trigger_event = auto_build.0114 #Qanats
-                                trigger_event = auto_build.0173 #Hospices
+trigger_event = auto_build.0088 # Watermills
+trigger_event = auto_build.0089 # Windmills
+trigger_event = auto_build.0090 # Caravanserai
+trigger_event = auto_build.0018 # Farm Estates
+trigger_event = auto_build.0024 # Cereal Fields
+trigger_event = auto_build.0092 # Smiths
+trigger_event = auto_build.0093 # Workshops
+trigger_event = auto_build.0017 # Orchards
+trigger_event = auto_build.0015 # Cattle Pastures
+trigger_event = auto_build.0016 # Hunting Grounds
+trigger_event = auto_build.0019 # Militia Camps
+trigger_event = auto_build.0020 # Regimental Grounds
+trigger_event = auto_build.0021 # Ramparts
+trigger_event = auto_build.0022 # Curtain Walls
+trigger_event = auto_build.0023 # Watchtowers
+trigger_event = auto_build.0025 # Outposts
+trigger_event = auto_build.0026 # Barracks
+trigger_event = auto_build.0027 # Camel Farms
+trigger_event = auto_build.0028 # Logging Camps
+trigger_event = auto_build.0029 # Peat Quarries
+trigger_event = auto_build.0030 # Hill Farms
+trigger_event = auto_build.0031 # Elephant Pens
+trigger_event = auto_build.0032 # Plantations
+trigger_event = auto_build.0033 # Quarries
+trigger_event = auto_build.0034 # Hill Forts
+trigger_event = auto_build.0035 # Tradeports
+trigger_event = auto_build.0036 # Guild Halls
+trigger_event = auto_build.0037 # Castles
+trigger_event = auto_build.0038 # Cities
+trigger_event = auto_build.0039 # Temples
+trigger_event = auto_build.0040 # Monastic Schools
+trigger_event = auto_build.0094 # Stables
+trigger_event = auto_build.0095 # Horse Pastures
+trigger_event = auto_build.0096 # Warrior Lodges
+trigger_event = auto_build.0274 # Longhouses
+trigger_event = auto_build.0275 # War Camps
+trigger_event = auto_build.0276 # Palisades
+trigger_event = auto_build.0277 # Market Villages
+trigger_event = auto_build.0091 # Wind Furnaces
+trigger_event = auto_build.0014 # Qanats
+trigger_event = auto_build.0273 # Hospices
+
 			}
 			trigger_event = {
 				id = auto_build.0003
@@ -161,7 +114,7 @@ auto_build.0001 = {
 	}
 }
 
-#add_hospices_building_effect
+# add_hospices_building_effect
 auto_build.0273 = {
 	type = character_event
 	title = auto_build.0273.t
@@ -194,7 +147,7 @@ auto_build.0273 = {
 	}
 }
 
-#add_qanats_building_effect
+# add_qanats_building_effect
 auto_build.0014 = {
 	type = character_event
 	title = auto_build.0014.t
@@ -227,7 +180,7 @@ auto_build.0014 = {
 	}
 }
 
-#自动建筑-水车 add_watermills_building_effect
+# add_watermills_building_effect
 auto_build.0088 = {
 	type = character_event
 	title = auto_build.0088.t
@@ -260,7 +213,6 @@ auto_build.0088 = {
 	}
 }
 
-#自动建筑-风车
 auto_build.0089 = {
 	type = character_event
 	title = auto_build.0089.t
@@ -293,7 +245,7 @@ auto_build.0089 = {
 	}
 }
 
-#自动建筑-商队旅馆 add_caravanserai_building_effect
+# add_caravanserai_building_effect
 auto_build.0090 = {
 	type = character_event
 	title = auto_build.0090.t
@@ -326,7 +278,7 @@ auto_build.0090 = {
 	}
 }
 
-#自动建筑-风炉 add_wind_furnace_building_effect
+# add_wind_furnace_building_effect
 auto_build.0091 = {
 	type = character_event
 	title = auto_build.0091.t
@@ -359,7 +311,7 @@ auto_build.0091 = {
 	}
 }
 
-#自动建筑-铁匠铺 add_smiths_building_effect
+# add_smiths_building_effect
 auto_build.0092 = {
 	type = character_event
 	title = auto_build.0092.t
@@ -392,7 +344,7 @@ auto_build.0092 = {
 	}
 }
 
-#自动建筑-工坊 add_workshops_building_effect
+# add_workshops_building_effect
 auto_build.0093 = {
 	type = character_event
 	title = auto_build.0093.t
@@ -425,7 +377,7 @@ auto_build.0093 = {
 	}
 }
 
-#自动建筑-马厩 add_stables_building_effect
+# add_stables_building_effect
 auto_build.0094 = {
 	type = character_event
 	title = auto_build.0094.t
@@ -458,7 +410,7 @@ auto_build.0094 = {
 	}
 }
 
-#自动建筑-牧马场 add_horse_pastures_building_effect
+# add_horse_pastures_building_effect
 auto_build.0095 = {
 	type = character_event
 	title = auto_build.0095.t
@@ -491,9 +443,9 @@ auto_build.0095 = {
 	}
 }
 
-#自动建筑-战士营地 add_warrior_lodges_building_effect
+# add_warrior_lodges_building_effect
 auto_build.0096 = {
-	type = character_event
+  type = character_event
 	title = auto_build.0096.t
 	desc = auto_build.0096.desc
 	hidden = yes
@@ -652,7 +604,6 @@ auto_build.0277 = {
         }
 }
 
-#自动建筑-牧场
 auto_build.0015 = {
 	type = character_event
 	title = auto_build.0015.t
@@ -683,7 +634,6 @@ auto_build.0015 = {
 	}
 }
 
-#自动建筑-狩猎场
 auto_build.0016 = {
 	type = character_event
 	title = auto_build.0016.t
@@ -713,7 +663,6 @@ auto_build.0016 = {
 		}
 	}
 }
-#自动建筑-果园
 auto_build.0017 = {
 	type = character_event
 	title = auto_build.0017.t
@@ -744,7 +693,6 @@ auto_build.0017 = {
 	}
 }
 
-#自动建筑-庄园宅第
 auto_build.0018 = {
 	type = character_event
 	title = auto_build.0018.t
@@ -775,7 +723,6 @@ auto_build.0018 = {
 	}
 }
 
-#自动建筑-军用营地
 auto_build.0019 = {
 	type = character_event
 	title = auto_build.0019.t
@@ -806,7 +753,6 @@ auto_build.0019 = {
 	}
 }
 
-#自动建筑-军团训练场
 auto_build.0020 = {
 	type = character_event
 	title = auto_build.0020.t
@@ -837,7 +783,6 @@ auto_build.0020 = {
 	}
 }
 
-#自动建筑-林中堡垒
 auto_build.0021 = {
 	type = character_event
 	title = auto_build.0021.t
@@ -868,7 +813,6 @@ auto_build.0021 = {
 	}
 }
 
-#自动建筑-城墙与塔楼
 auto_build.0022 = {
 	type = character_event
 	title = auto_build.0022.t
@@ -899,7 +843,6 @@ auto_build.0022 = {
 	}
 }
 
-#自动建筑-瞭望塔
 auto_build.0023 = {
 	type = character_event
 	title = auto_build.0023.t
@@ -930,7 +873,6 @@ auto_build.0023 = {
 	}
 }
 
-#自动建筑-农场与耕地
 auto_build.0024 = {
 	type = character_event
 	title = auto_build.0024.t
@@ -961,7 +903,6 @@ auto_build.0024 = {
 	}
 }
 
-#自动建筑-哨所
 auto_build.0025 = {
 	type = character_event
 	title = auto_build.0025.t
@@ -992,7 +933,6 @@ auto_build.0025 = {
 	}
 }
 
-#自动建筑-兵营
 auto_build.0026 = {
 	type = character_event
 	title = auto_build.0026.t
@@ -1023,7 +963,6 @@ auto_build.0026 = {
 	}
 }
 
-#自动建筑-骆驼养殖场
 auto_build.0027 = {
 	type = character_event
 	title = auto_build.0027.t
@@ -1054,7 +993,6 @@ auto_build.0027 = {
 	}
 }
 
-#自动建筑-林业
 auto_build.0028 = {
 	type = character_event
 	title = auto_build.0028.t
@@ -1085,7 +1023,6 @@ auto_build.0028 = {
 	}
 }
 
-#自动建筑-湿地农场
 auto_build.0029 = {
 	type = character_event
 	title = auto_build.0029.t
@@ -1116,7 +1053,6 @@ auto_build.0029 = {
 	}
 }
 
-#自动建筑-山丘农场
 auto_build.0030 = {
 	type = character_event
 	title = auto_build.0030.t
@@ -1147,7 +1083,6 @@ auto_build.0030 = {
 	}
 }
 
-#自动建筑-战象
 auto_build.0031 = {
 	type = character_event
 	title = auto_build.0031.t
@@ -1178,7 +1113,6 @@ auto_build.0031 = {
 	}
 }
 
-#自动建筑-沙漠农业
 auto_build.0032 = {
 	type = character_event
 	title = auto_build.0032.t
@@ -1209,7 +1143,6 @@ auto_build.0032 = {
 	}
 }
 
-#自动建筑-采石场
 auto_build.0033 = {
 	type = character_event
 	title = auto_build.0033.t
@@ -1240,7 +1173,6 @@ auto_build.0033 = {
 	}
 }
 
-#自动建筑-山堡
 auto_build.0034 = {
 	type = character_event
 	title = auto_build.0034.t
@@ -1271,7 +1203,6 @@ auto_build.0034 = {
 	}
 }
 
-#自动建筑-贸易港口
 auto_build.0035 = {
 	type = character_event
 	title = auto_build.0035.t
@@ -1302,7 +1233,6 @@ auto_build.0035 = {
 	}
 }
 
-#自动建筑-行会
 auto_build.0036 = {
 	type = character_event
 	title = auto_build.0036.t
@@ -1333,7 +1263,6 @@ auto_build.0036 = {
 	}
 }
 
-#自动建筑-城堡
 auto_build.0037 = {
 	type = character_event
 	title = auto_build.0037.t
@@ -1364,7 +1293,6 @@ auto_build.0037 = {
 	}
 }
 
-#自动建筑-城市
 auto_build.0038 = {
 	type = character_event
 	title = auto_build.0038.t
@@ -1395,7 +1323,6 @@ auto_build.0038 = {
 	}
 }
 
-#自动建筑-神殿
 auto_build.0039 = {
 	type = character_event
 	title = auto_build.0039.t
@@ -1426,7 +1353,6 @@ auto_build.0039 = {
 	}
 }
 
-#自动建筑-僧侣学校
 auto_build.0040 = {
 	type = character_event
 	title = auto_build.0040.t
@@ -1462,12 +1388,10 @@ auto_build.0040 = {
 #############################################################################
 #############################################################
 #######################################
-######################## Vassals
+# Vassals
 #######################################
 #############################################################
 #############################################################################
-#########################################################################################################封臣
-#自动建筑-牧场
 auto_build.0115 = {
 	type = character_event
 	title = auto_build.0115.t
@@ -1504,7 +1428,7 @@ auto_build.0115 = {
 	}
 }
 
-#add_hospices_building_effect
+# add_hospices_building_effect
 auto_build.0173 = {
 	type = character_event
 	title = auto_build.0173.t
@@ -1539,7 +1463,7 @@ auto_build.0173 = {
 	}
 }
 
-#add_qanats_building_effect
+# add_qanats_building_effect
 auto_build.00114 = {
 	type = character_event
 	title = auto_build.0114.t
@@ -1574,7 +1498,6 @@ auto_build.00114 = {
         }
     }
 
-#自动建筑-狩猎场
 auto_build.0116 = {
 	type = character_event
 	title = auto_build.0116.t
@@ -1606,7 +1529,6 @@ auto_build.0116 = {
 		}
 	}
 }
-#自动建筑-果园
 auto_build.0117 = {
 	type = character_event
 	title = auto_build.0117.t
@@ -1639,7 +1561,6 @@ auto_build.0117 = {
 	}
 }
 
-#自动建筑-庄园宅第
 auto_build.0118 = {
 	type = character_event
 	title = auto_build.0118.t
@@ -1672,7 +1593,6 @@ auto_build.0118 = {
 	}
 }
 
-#自动建筑-军用营地
 auto_build.0119 = {
 	type = character_event
 	title = auto_build.0119.t
@@ -1705,7 +1625,6 @@ auto_build.0119 = {
 	}
 }
 
-#自动建筑-军团训练场
 auto_build.0120 = {
 	type = character_event
 	title = auto_build.0120.t
@@ -1738,7 +1657,6 @@ auto_build.0120 = {
 	}
 }
 
-#自动建筑-林中堡垒
 auto_build.0121 = {
 	type = character_event
 	title = auto_build.0121.t
@@ -1771,7 +1689,6 @@ auto_build.0121 = {
 	}
 }
 
-#自动建筑-城墙与塔楼
 auto_build.0122 = {
 	type = character_event
 	title = auto_build.0122.t
@@ -1804,7 +1721,6 @@ auto_build.0122 = {
 	}
 }
 
-#自动建筑-瞭望塔
 auto_build.0123 = {
 	type = character_event
 	title = auto_build.0123.t
@@ -1837,7 +1753,6 @@ auto_build.0123 = {
 	}
 }
 
-#自动建筑-农场与耕地
 auto_build.0124 = {
 	type = character_event
 	title = auto_build.0124.t
@@ -1870,7 +1785,6 @@ auto_build.0124 = {
 	}
 }
 
-#自动建筑-哨所
 auto_build.0125 = {
 	type = character_event
 	title = auto_build.0125.t
@@ -1903,7 +1817,6 @@ auto_build.0125 = {
 	}
 }
 
-#自动建筑-兵营
 auto_build.0126 = {
 	type = character_event
 	title = auto_build.0126.t
@@ -1936,7 +1849,6 @@ auto_build.0126 = {
 	}
 }
 
-#自动建筑-骆驼养殖场
 auto_build.0127 = {
 	type = character_event
 	title = auto_build.0127.t
@@ -1969,7 +1881,6 @@ auto_build.0127 = {
 	}
 }
 
-#自动建筑-林业
 auto_build.0128 = {
 	type = character_event
 	title = auto_build.0128.t
@@ -2002,7 +1913,6 @@ auto_build.0128 = {
 	}
 }
 
-#自动建筑-湿地农场
 auto_build.0129 = {
 	type = character_event
 	title = auto_build.0129.t
@@ -2035,7 +1945,6 @@ auto_build.0129 = {
 	}
 }
 
-#自动建筑-山丘农场
 auto_build.0130 = {
 	type = character_event
 	title = auto_build.0130.t
@@ -2068,7 +1977,6 @@ auto_build.0130 = {
 	}
 }
 
-#自动建筑-战象
 auto_build.0131 = {
 	type = character_event
 	title = auto_build.0131.t
@@ -2101,7 +2009,6 @@ auto_build.0131 = {
 	}
 }
 
-#自动建筑-沙漠农业
 auto_build.0132 = {
 	type = character_event
 	title = auto_build.0132.t
@@ -2134,7 +2041,6 @@ auto_build.0132 = {
 	}
 }
 
-#自动建筑-采石场
 auto_build.0133 = {
 	type = character_event
 	title = auto_build.0133.t
@@ -2167,7 +2073,6 @@ auto_build.0133 = {
 	}
 }
 
-#自动建筑-山堡
 auto_build.0134 = {
 	type = character_event
 	title = auto_build.0134.t
@@ -2200,7 +2105,6 @@ auto_build.0134 = {
 	}
 }
 
-#自动建筑-贸易港口
 auto_build.0135 = {
 	type = character_event
 	title = auto_build.0135.t
@@ -2233,7 +2137,6 @@ auto_build.0135 = {
 	}
 }
 
-#自动建筑-行会
 auto_build.0136 = {
 	type = character_event
 	title = auto_build.0136.t
@@ -2266,7 +2169,6 @@ auto_build.0136 = {
 	}
 }
 
-#自动建筑-城堡
 auto_build.0137 = {
 	type = character_event
 	title = auto_build.0137.t
@@ -2299,7 +2201,6 @@ auto_build.0137 = {
 	}
 }
 
-#自动建筑-城市
 auto_build.0138 = {
 	type = character_event
 	title = auto_build.0138.t
@@ -2332,7 +2233,6 @@ auto_build.0138 = {
 	}
 }
 
-#自动建筑-神殿
 auto_build.0139 = {
 	type = character_event
 	title = auto_build.0139.t
@@ -2365,7 +2265,6 @@ auto_build.0139 = {
 	}
 }
 
-#自动建筑-僧侣学校
 auto_build.0140 = {
 	type = character_event
 	title = auto_build.0140.t
@@ -2398,7 +2297,7 @@ auto_build.0140 = {
 	}
 }
 
-#自动建筑-水车 add_watermills_building_effect
+# add_watermills_building_effect
 auto_build.0188 = {
 	type = character_event
 	title = auto_build.0188.t
@@ -2433,7 +2332,6 @@ auto_build.0188 = {
 	}
 }
 
-#自动建筑-风车
 auto_build.0189 = {
 	type = character_event
 	title = auto_build.0189.t
@@ -2468,7 +2366,7 @@ auto_build.0189 = {
 	}
 }
 
-#自动建筑-商队旅馆 add_caravanserai_building_effect
+# add_caravanserai_building_effect
 auto_build.0190 = {
 	type = character_event
 	title = auto_build.0190.t
@@ -2503,7 +2401,7 @@ auto_build.0190 = {
 	}
 }
 
-#自动建筑-风炉 add_wind_furnace_building_effect
+# add_wind_furnace_building_effect
 auto_build.0191 = {
 	type = character_event
 	title = auto_build.0191.t
@@ -2538,7 +2436,7 @@ auto_build.0191 = {
 	}
 }
 
-#自动建筑-铁匠铺 add_smiths_building_effect
+# add_smiths_building_effect
 auto_build.0192 = {
 	type = character_event
 	title = auto_build.0192.t
@@ -2573,7 +2471,7 @@ auto_build.0192 = {
 	}
 }
 
-#自动建筑-工坊 add_workshops_building_effect
+# add_workshops_building_effect
 auto_build.0193 = {
 	type = character_event
 	title = auto_build.0193.t
@@ -2608,7 +2506,7 @@ auto_build.0193 = {
 	}
 }
 
-#自动建筑-马厩 add_stables_building_effect
+# add_stables_building_effect
 auto_build.0194 = {
 	type = character_event
 	title = auto_build.0194.t
@@ -2643,7 +2541,7 @@ auto_build.0194 = {
 	}
 }
 
-#自动建筑-牧马场 add_horse_pastures_building_effect
+# add_horse_pastures_building_effect
 auto_build.0195 = {
 	type = character_event
 	title = auto_build.0195.t
@@ -2678,7 +2576,7 @@ auto_build.0195 = {
 	}
 }
 
-#自动建筑-战士营地 add_warrior_lodges_building_effect
+# add_warrior_lodges_building_effect
 auto_build.0196 = {
 	type = character_event
 	title = auto_build.0196.t
