@@ -1,9 +1,9 @@
-﻿enable_auto_build = {
+enable_auto_build = {
 	picture = {
 	reference = "gfx/interface/icons/enable_auto_build.dds"
 	    }
 	decision_group_type = decisions
-	ai_check_frequency = 0
+        ai_check_interval = 0
 	desc = enable_auto_build_desc
 	is_shown = {
         is_ai = no
