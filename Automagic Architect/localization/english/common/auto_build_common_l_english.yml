@@ -1,0 +1,5 @@
+﻿l_english:
+ enable_auto_build:0 "Enable Auto-Build"
+ enable_auto_build_desc:0 "Let the AI automatically build and upgrade buildings in your holdings."
+ disable_auto_build:0 "Disable Auto-Build"
+ disable_auto_build_desc:0 "Turn off automatic building and resume manual control."
