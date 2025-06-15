@@ -4378,8 +4378,6 @@ prev = {remove_short_term_gold = normal_building_tier_8_cost}
 }
 }
 
-
-# ====================
 # breweries
 add_breweries_building_effect = {
     if = {
@@ -4494,6 +4492,7 @@ add_breweries_building_effect = {
         prev = { remove_short_term_gold = normal_building_tier_8_cost }
     }
 }
+
 # PATCHED FOR CK3 1.16
 # ====================
 
