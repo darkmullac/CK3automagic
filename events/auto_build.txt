@@ -70,6 +70,8 @@ auto_build.0004 = {
 				trigger_event = auto_build.0094 #马厩/Stables
 				trigger_event = auto_build.0095 #牧马场/Horse Pastures
 				trigger_event = auto_build.0096 #战士营地/Warrior Lodges
+                                trigger_event = auto_build.0099 #Hillside Grazing
+                                trigger_event = auto_build.0100 #Murex Farms
 				trigger_event = auto_build.0091 #风炉/Wind Furnaces
 				trigger_event = auto_build.0014 #Qanats
 				trigger_event = auto_build.0273 #Hospices
@@ -113,6 +115,8 @@ auto_build.0004 = {
 				trigger_event = auto_build.0194 #马厩/Stables
 				trigger_event = auto_build.0195 #牧马场/Horse Pastures
 				trigger_event = auto_build.0196 #战士营地/Warrior Lodges
+                                trigger_event = auto_build.0199 #Hillside Grazing
+                                trigger_event = auto_build.0200 #Murex Farms
 				trigger_event = auto_build.0191 #风炉/Wind Furnaces
 				trigger_event = auto_build.0114 #Qanats
 				trigger_event = auto_build.0173 #Hospices
@@ -517,6 +521,71 @@ auto_build.0096 = {
 			add_warrior_lodges_building_effect = yes
 		}
 	}
+}
+#\u81ea\u52a8\u5efa\u7b51-\u5c71\u5761\u7267\u573a add_hillside_grazing_building_effect
+auto_build.0099 = {
+        type = character_event
+        title = auto_build.0099.t
+        desc = auto_build.0099.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0099.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = root
+                        }
+                        add_hillside_grazing_building_effect = yes
+                }
+        }
+}
+
+#\u81ea\u52a8\u5efa\u7b51-\u7d2b\u8272\u67d3\u6599\u519c\u573a add_murex_farms_building_effect
+auto_build.0100 = {
+        type = character_event
+        title = auto_build.0100.t
+        desc = auto_build.0100.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0100.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = root
+                        }
+                        add_murex_farms_building_effect = yes
+                }
+        }
 }
 
 #自动建筑-牧场
@@ -2575,6 +2644,75 @@ auto_build.0196 = {
 		}
 	}
 }
+#\u81ea\u52a8\u5efa\u7b51-\u5c71\u5761\u7267\u573a add_hillside_grazing_building_effect
+auto_build.0199 = {
+        type = character_event
+        title = auto_build.0199.t
+        desc = auto_build.0199.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0199.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = {
+                                        is_vassal_or_below_of = root
+                                }
+                        }
+                        add_hillside_grazing_building_effect = yes
+                }
+        }
+}
+
+#\u81ea\u52a8\u5efa\u7b51-\u7d2b\u8272\u67d3\u6599\u519c\u573a add_murex_farms_building_effect
+auto_build.0200 = {
+        type = character_event
+        title = auto_build.0200.t
+        desc = auto_build.0200.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0200.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = {
+                                        is_vassal_or_below_of = root
+                                }
+                        }
+                        add_murex_farms_building_effect = yes
+                }
+        }
+}
 auto_build.0003 = {
 	type = character_event
 	trigger = {
@@ -2644,6 +2782,8 @@ trigger_event = auto_build.0040 # Monastic Schools
 trigger_event = auto_build.0094 # Stables
 trigger_event = auto_build.0095 # Horse Pastures
 trigger_event = auto_build.0096 # Warrior Lodges
+                                trigger_event = auto_build.0099 #Hillside Grazing
+                                trigger_event = auto_build.0100 #Murex Farms
 trigger_event = auto_build.0274 # Longhouses
 trigger_event = auto_build.0275 # War Camps
 trigger_event = auto_build.0276 # Palisades
@@ -3054,6 +3194,71 @@ auto_build.0096 = {
 }
 }
 
+# add_hillside_grazing_building_effect
+auto_build.0099 = {
+        type = character_event
+        title = auto_build.0099.t
+        desc = auto_build.0099.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0099.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = root
+                        }
+                        add_hillside_grazing_building_effect = yes
+                }
+        }
+}
+
+# add_murex_farms_building_effect
+auto_build.0100 = {
+        type = character_event
+        title = auto_build.0100.t
+        desc = auto_build.0100.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0100.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = root
+                        }
+                        add_murex_farms_building_effect = yes
+                }
+        }
+}
 # Tribal Buildings
 auto_build.0274 = {
         type = character_event
@@ -5186,6 +5391,75 @@ auto_build.0196 = {
         }
 }
 
+# add_hillside_grazing_building_effect
+auto_build.0199 = {
+        type = character_event
+        title = auto_build.0199.t
+        desc = auto_build.0199.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0199.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = {
+                                        is_vassal_or_below_of = root
+                                }
+                        }
+                        add_hillside_grazing_building_effect = yes
+                }
+        }
+}
+
+# add_murex_farms_building_effect
+auto_build.0200 = {
+        type = character_event
+        title = auto_build.0200.t
+        desc = auto_build.0200.desc
+        hidden = yes
+        weight_multiplier = {
+                base = 1
+        }
+        override_background = {
+                reference = terrain
+        }
+        left_portrait = {
+                character = scope:root
+        }
+        option = {
+                name = auto_build.0200.a
+                every_province = {
+                        limit = {
+                                OR = {
+                                        has_holding_type = tribal_holding
+                                        has_holding_type = church_holding
+                                        has_holding_type = castle_holding
+                                        has_holding_type = city_holding
+                                        has_holding_type = church_holding
+                                }
+                                province_owner = {
+                                        is_vassal_or_below_of = root
+                                }
+                        }
+                        add_murex_farms_building_effect = yes
+                }
+        }
+}
 # Tribal Buildings
 auto_build.0174 = {
         type = character_event
