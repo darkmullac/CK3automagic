@@ -1,0 +1,5 @@
+﻿aba_recent_build_modifier = {
+	icon = county_modifier_development_positive
+	
+	build_speed = 0.25
+}

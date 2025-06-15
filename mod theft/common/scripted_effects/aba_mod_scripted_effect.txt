@@ -1,0 +1,1542 @@
+﻿# 奇观建筑师 建筑
+aba_building_upgrade_effect_uba = { 
+    # economy
+    if = {
+        limit = { has_building_or_higher = uba_piazza_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_piazza }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_manor_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_manor }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_taxing_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_taxing }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_bazaar_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_bazaar }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_aqueduct_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_aqueduct }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_bathroom_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_bathroom }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_herbal_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_herbal }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_library_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_library }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_temple_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_temple }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_townhall_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_townhall }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_vineyard_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_vineyard }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_olive_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_olive }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_fur_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = uba_fur }
+    }
+    # military
+    if = {
+        limit = { has_building_or_higher = uba_residence_01 }
+        aba_military_building_upgrade_effect = { BUILDING = uba_residence }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_joust_01 }
+        aba_military_building_upgrade_effect = { BUILDING = uba_joust }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_checkpoint_01 }
+        aba_military_building_upgrade_effect = { BUILDING = uba_checkpoint }
+    }
+    if = {
+        limit = { has_building_or_higher = uba_private_01 }
+        aba_military_building_upgrade_effect = { BUILDING = uba_private }
+    }
+}
+
+# more building reboot 建筑
+aba_building_upgrade_effect_mbrxxx = { 
+    # economy
+    if = {
+        limit = { has_building_or_higher = militia_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = militia }
+    }
+    if = {
+        limit = { has_building_or_higher = improvement_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = improvement }
+    }
+    if = {
+        limit = { has_building_or_higher = town_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = town }
+    }
+    if = {
+        limit = { has_building_or_higher = district_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = district }
+    }
+    if = {
+        limit = { has_building_or_higher = hospital_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = hospital }
+    }
+    if = {
+        limit = { has_building_or_higher = farming_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = farming }
+    }
+    if = {
+        limit = { has_building_or_higher = district_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = district }
+    }
+    # military
+    if = {
+        limit = { has_building_or_higher = horse_01 }
+        aba_military_building_upgrade_effect = { BUILDING = horse }
+    }
+    if = {
+        limit = { has_building_or_higher = MBRXXX_horse_archer_01 }
+        aba_military_building_upgrade_effect = { BUILDING = MBRXXX_horse_archer }
+    }
+    if = {
+        limit = { has_building_or_higher = MBRXXX_camel_01 }
+        aba_military_building_upgrade_effect = { BUILDING = MBRXXX_camel }
+    }
+    # fortification
+    if = {
+        limit = { has_building_or_higher = expansion_01 }
+        aba_fortification_building_upgrade_effect = { BUILDING = expansion }
+    }
+    if = {
+        limit = { has_building_or_higher = expansion_camel_cavalry_01 }
+        aba_fortification_building_upgrade_effect = { BUILDING = expansion_camel_cavalry }
+    }
+    if = {
+        limit = { has_building_or_higher = expansion_archer_cavalry_01 }
+        aba_fortification_building_upgrade_effect = { BUILDING = expansion_archer_cavalry }
+    }
+    if = {
+        limit = { has_building_or_higher = interior_01 }
+        aba_fortification_building_upgrade_effect = { BUILDING = interior }
+    }
+    
+    if = {
+        limit = { has_building_or_higher = support_01 }
+        aba_fortification_building_upgrade_effect = { BUILDING = support }
+    }
+    # tribal
+    if = {
+        limit = { has_building_or_higher = Townsquare_01 }
+        aba_mbrxxx_tribal_building_upgrade_effect = { BUILDING = Townsquare }
+    }
+    if = {
+        limit = { has_building_or_higher = tribeport_01 }
+        aba_mbrxxx_tribal_building_upgrade_effect = { BUILDING = tribeport }
+    }
+    if = {
+        limit = { has_building_or_higher = war_01 }
+        aba_mbrxxx_tribal_building_upgrade_effect = { BUILDING = war }
+    }
+    if = {
+        limit = { has_building_or_higher = raiding_01 }
+        aba_mbrxxx_tribal_building_upgrade_effect = { BUILDING = raiding }
+    }
+    if = {
+        limit = { has_building_or_higher = medicine_lodge_01 }
+        aba_mbrxxx_tribal_building_upgrade_effect = { BUILDING = medicine_lodge }
+    }
+    
+    if = {
+        limit = { has_building_or_higher = liehu_01 }
+        aba_mbrxxx_tribal_building_upgrade_effect = { BUILDING = liehu }
+    }
+    if = {
+        limit = { has_building_or_higher = car_01 }
+        aba_mbrxxx_tribal_building_upgrade_effect = { BUILDING = car }
+    }
+    if = {
+        limit = { has_building_or_higher = pimao_01 }
+        aba_mbrxxx_tribal_building_upgrade_effect = { BUILDING = pimao }
+    }
+    if = {
+        limit = { has_building_or_higher = zhanshi_01 }
+        aba_mbrxxx_tribal_building_upgrade_effect = { BUILDING = zhanshi }
+    }
+    # 5 level from more building reboot 被mb++覆盖了
+    # if = {
+    #     limit = { has_building_or_higher = slaughterhouse_01 }
+    #     aba_mbrxxx_building_upgrade_effect = { BUILDING = slaughterhouse }
+    # }
+    # if = {
+    #     limit = { has_building_or_higher = vineyard_01 }
+    #     aba_mbrxxx_building_upgrade_effect = { BUILDING = vineyard }
+    # }
+    # if = {
+    #     limit = { has_building_or_higher = tunnel_01 }
+    #     aba_mbrxxx_building_upgrade_effect = { BUILDING = tunnel }
+    # }
+    # if = {
+    #     limit = { has_building_or_higher = embassy_01 }
+    #     aba_mbrxxx_building_upgrade_effect = { BUILDING = embassy }
+    # }
+    # if = {
+    #     limit = { has_building_or_higher = support_01 }
+    #     aba_mbrxxx_building_upgrade_effect = { BUILDING = support }
+    # }
+    # more builiding ++
+    if = {
+        limit = { has_building_or_higher = slaughterhouse_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = slaughterhouse }
+    }
+    if = {
+        limit = { has_building_or_higher = vineyard_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = vineyard }
+    }
+    if = {
+        limit = { has_building_or_higher = tunnel_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = tunnel }
+    }
+    if = {
+        limit = { has_building_or_higher = plain_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = plain }
+    }
+    if = {
+        limit = { has_building_or_higher = czhen_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = czhen }
+    }
+    if = {
+        limit = { has_building_or_higher = muhou_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = muhou }
+    }
+    if = {
+        limit = { has_building_or_higher = silk_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = silk }
+    }
+    if = {
+        limit = { has_building_or_higher = restau_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = restau }
+    }
+    if = {
+        limit = { has_building_or_higher = supm_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = supm }
+    }
+    if = {
+        limit = { has_building_or_higher = mif_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = mif }
+    }
+    if = {
+        limit = { has_building_or_higher = lcamp_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = lcamp }
+    }
+    if = {
+        limit = { has_building_or_higher = hbm_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = hbm }
+    }
+    if = {
+        limit = { has_building_or_higher = tavern_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = tavern }
+    }
+    if = {
+        limit = { has_building_or_higher = stash_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = stash }
+    }
+    if = {
+        limit = { has_building_or_higher = spice_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = spice }
+    }
+    if = {
+        limit = { has_building_or_higher = crockery_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = crockery }
+    }
+    if = {
+        limit = { has_building_or_higher = currier_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = currier }
+    }
+    if = {
+        limit = { has_building_or_higher = waterfront_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = waterfront }
+    }
+    if = {
+        limit = { has_building_or_higher = shanqiu_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = shanqiu }
+    }
+    if = {
+        limit = { has_building_or_higher = fayuan_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = fayuan }
+    }
+}
+
+aba_mbrxxx_building_upgrade_effect = {
+	if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_2_cost }
+            has_building = $BUILDING$_01
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_crop_rotation
+            }
+        }
+		add_building = $BUILDING$_02
+        aba_building_cost_effect = { LEVEL = 2 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_3_cost }
+            has_building = $BUILDING$_02
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+		add_building = $BUILDING$_03
+        aba_building_cost_effect = { LEVEL = 3 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_4_cost }
+            has_building = $BUILDING$_03
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+		add_building = $BUILDING$_04
+        aba_building_cost_effect = { LEVEL = 4 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_5_cost }
+            has_building = $BUILDING$_04
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+		add_building = $BUILDING$_05
+        aba_building_cost_effect = { LEVEL = 5 }
+	}
+}
+
+aba_mbrxxx_tribal_building_upgrade_effect = {
+	if = {
+		limit = {
+            prev = {
+                gold > tribal_building_tier_2_cost 
+                prestige > expensive_building_tier_2_cost
+            }
+            has_building = $BUILDING$_01
+            prev.culture = {
+                has_innovation = innovation_barracks
+                has_innovation = innovation_motte
+                has_innovation = innovation_city_planning
+            }
+        }
+		add_building = $BUILDING$_02
+        prev = {
+            remove_short_term_gold = tribal_building_tier_2_cost
+            add_prestige_no_experience = -350
+        }
+	}
+}
+
+# 东方王朝 建筑
+aba_building_upgrade_effect_oe = { 
+    # economy
+    if = {
+        limit = { has_building_or_higher = tea_plantation_01 }
+        aba_oe_building_upgrade_effect = { BUILDING = tea_plantation }
+    }
+    if = {
+        limit = { has_building_or_higher = sea_spice_plantation_01 }
+        aba_oe_building_upgrade_effect = { BUILDING = sea_spice_plantation }
+    }
+    if = {
+        limit = { has_building_or_higher = silk_plantation_01 }
+        aba_oe_building_upgrade_effect = { BUILDING = silk_plantation }
+    }
+}
+aba_oe_building_upgrade_effect = {
+	if = {
+		limit = {
+            prev = { gold > expensive_building_tier_4_cost }
+            has_building = $BUILDING$_01
+            building_requirement_castle_city_church = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+		add_building = $BUILDING$_02
+        prev = { remove_short_term_gold = expensive_building_tier_4_cost }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > expensive_building_tier_5_cost }
+            has_building = $BUILDING$_02
+            building_requirement_castle_city_church = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+		add_building = $BUILDING$_03
+        prev = { remove_short_term_gold = expensive_building_tier_5_cost }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > expensive_building_tier_6_cost }
+            has_building = $BUILDING$_03
+            building_requirement_castle_city_church = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+		add_building = $BUILDING$_04
+        prev = { remove_short_term_gold = expensive_building_tier_6_cost }
+	}
+}
+
+# 东方王朝兵种拓展 建筑
+aba_building_upgrade_effect_oeex = {
+    if = {
+        limit = { has_building_or_higher = qianmutian_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = qianmutian }
+    }
+    if = {
+        limit = { has_building_or_higher = lutaiyanchang_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = lutaiyanchang }
+    }
+    if = {
+        limit = { has_building_or_higher = heitudi_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = heitudi }
+    }
+    if = {
+        limit = { has_building_or_higher = a_heitudi_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = a_heitudi }
+    }
+    if = {
+        limit = { has_building_or_higher = chayuan_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = chayuan }
+    }
+    if = {
+        limit = { has_building_or_higher = shutian_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = shutian }
+    }
+    if = {
+        limit = { has_building_or_higher = dongfangchengqiang_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = dongfangchengqiang }
+    }
+    if = {
+        limit = { has_building_or_higher = jiaochang_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = jiaochang }
+    }
+    if = {
+        limit = { has_building_or_higher = dongfangchengqiang_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = dongfangchengqiang }
+    }
+    if = {
+        limit = { has_building_or_higher = xinzeng_01_yidao_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = xinzeng_01_yidao }
+    }
+    if = {
+        limit = { has_building_or_higher = xinzeng_02_yidao_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = xinzeng_02_yidao }
+    }
+    if = {
+        limit = { has_building_or_higher = xinzeng_03_yidao_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = xinzeng_03_yidao }
+    }
+    if = {
+        limit = { has_building_or_higher = huaxia_guanai_01 }
+        aba_oeex_building_upgrade_effect = { BUILDING = huaxia_guanai }
+    }
+    # tribal
+    if = {
+        limit = { has_building_or_higher = dingjudian_01 }
+        aba_oeex_tribal_building_upgrade_effect = { BUILDING = dingjudian }
+    }
+    if = {
+        limit = { has_building_or_higher = muchang_01 }
+        aba_oeex_tribal_building_upgrade_effect = { BUILDING = muchang }
+    }
+    if = {
+        limit = { has_building_or_higher = gaoshanjudian_01 }
+        aba_oeex_tribal_building_upgrade_effect = { BUILDING = gaoshanjudian }
+    }
+    if = {
+        limit = { has_building_or_higher = conglinliechang_01 }
+        aba_oeex_tribal_building_upgrade_effect = { BUILDING = conglinliechang }
+    }
+
+}
+
+aba_oeex_building_upgrade_effect = {
+	if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_2_cost }
+            has_building = $BUILDING$_01
+            building_requirement_castle_city_church = { LEVEL = 01 }
+        }
+		add_building = $BUILDING$_02
+        aba_building_cost_effect = { LEVEL = 2 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_3_cost }
+            has_building = $BUILDING$_02
+            building_requirement_castle_city_church = { LEVEL = 02 }
+        }
+		add_building = $BUILDING$_03
+        aba_building_cost_effect = { LEVEL = 3 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_4_cost }
+            has_building = $BUILDING$_03
+            building_requirement_castle_city_church = { LEVEL = 02 }
+        }
+		add_building = $BUILDING$_04
+        aba_building_cost_effect = { LEVEL = 4 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_5_cost }
+            has_building = $BUILDING$_04
+            building_requirement_castle_city_church = { LEVEL = 03 }
+        }
+		add_building = $BUILDING$_05
+        aba_building_cost_effect = { LEVEL = 5 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_6_cost }
+            has_building = $BUILDING$_05
+            building_requirement_castle_city_church = { LEVEL = 03 }
+        }
+		add_building = $BUILDING$_06
+        aba_building_cost_effect = { LEVEL = 6 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_7_cost }
+            has_building = $BUILDING$_06
+            building_requirement_castle_city_church = { LEVEL = 04 }
+        }
+		add_building = $BUILDING$_07
+        aba_building_cost_effect = { LEVEL = 7 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_8_cost }
+            has_building = $BUILDING$_07
+            building_requirement_castle_city_church = { LEVEL = 04 }
+        }
+		add_building = $BUILDING$_08
+        aba_building_cost_effect = { LEVEL = 8 }
+	}
+}
+aba_oeex_tribal_building_upgrade_effect = {
+	if = {
+		limit = {
+            prev = {
+                gold > 250
+                prestige > 75
+            }
+            has_building = $BUILDING$_01
+            has_building_or_higher = tribe_01
+        }
+		add_building = $BUILDING$_02
+        prev = {
+            remove_short_term_gold = 250
+            add_prestige_no_experience = -75
+        }
+	}
+	else_if = {
+		limit = {
+            prev = {
+                gold > 300
+                prestige > 100
+            }
+            has_building = $BUILDING$_02
+            has_building_or_higher = tribe_01
+        }
+		add_building = $BUILDING$_03
+        prev = {
+            remove_short_term_gold = 300
+            add_prestige_no_experience = -100
+        }
+	}
+	else_if = {
+		limit = {
+            prev = {
+                gold > 300
+                prestige > 150
+            }
+            has_building = $BUILDING$_03
+            has_building_or_higher = tribe_02
+        }
+		add_building = $BUILDING$_04
+        prev = {
+        }
+	}
+}
+
+# AGOT 建筑
+aba_building_upgrade_effect_agot = { 
+    # economy
+    if = {
+        limit = { has_building_or_higher = agot_urban_farms_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = agot_urban_farms }
+    }
+    if = {
+        limit = { has_building_or_higher = agot_steppe_farms_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = agot_steppe_farms }
+    }
+    if = {
+        limit = { has_building_or_higher = apiaries_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = apiaries }
+    }
+    # fortification
+    if = {
+        limit = { has_building_or_higher = building_moat_01 }
+        aba_fortification_building_upgrade_effect = { BUILDING = building_moat }
+    }
+    # other
+    if = {
+        limit = { has_building_or_higher = agot_slave_camps_01 }
+        aba_default_building_upgrade_effect = { BUILDING = agot_slave_camps }
+    }
+    if = {
+        limit = { has_building_or_higher = godswood_01 }
+        aba_default_building_upgrade_effect = { BUILDING = godswood }
+    }
+}
+
+# 幻萌 一年战争 建筑
+aba_building_upgrade_effect_hm = { 
+    # wsgport
+    if = {
+        limit = { has_building_or_higher = wsgport_01 }
+        aba_economy_building_upgrade_effect = { BUILDING = wsgport }
+    }
+    # hm1 4级制
+    if = {
+        limit = { has_building_or_higher = enemy_castle_sushe_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = enemy_castle_sushe }
+    }
+    if = {
+        limit = { has_building_or_higher = gangqu_sushe_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = gangqu_sushe }
+    }
+    if = {
+        limit = { has_building_or_higher = gangqu_juntuan_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = gangqu_juntuan }
+    }
+    if = {
+        limit = { has_building_or_higher = gangqu_xianbing_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = gangqu_xianbing }
+    }
+    if = {
+        limit = { has_building_or_higher = wsgport_curtain_walls_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = wsgport_curtain_walls }
+    }
+    if = {
+        limit = { has_building_or_higher = hm_military_camps_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = hm_military_camps }
+    }
+    if = {
+        limit = { has_building_or_higher = gangqu_spandex_plantation_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = gangqu_spandex_plantation }
+    }
+    if = {
+        limit = { has_building_or_higher = vv_qanats_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = vv_qanats }
+    }
+    if = {
+        limit = { has_building_or_higher = shelter_hospital_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = shelter_hospital }
+    }
+    if = {
+        limit = { has_building_or_higher = hm_vigilante_corps_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = hm_vigilante_corps }
+    }
+    if = {
+        limit = { has_building_or_higher = shelter_hospital_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = shelter_hospital }
+    }
+    if = {
+        limit = { has_building_or_higher = myself_tidu_palace_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = myself_tidu_palace }
+    }
+    if = {
+        limit = { has_building_or_higher = pet_cafe_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = pet_cafe }
+    }
+    if = {
+        limit = { has_building_or_higher = love_hotel_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = love_hotel }
+    }
+    if = {
+        limit = { has_building_or_higher = angang_steel_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = angang_steel }
+    }
+    if = {
+        limit = { has_building_or_higher = governor_staff_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = governor_staff }
+    }
+    if = {
+        limit = { has_building_or_higher = armed_forces_cathedral_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = armed_forces_cathedral }
+    }
+    if = {
+        limit = { has_building_or_higher = docklands_library_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = docklands_library }
+    }
+    if = {
+        limit = { has_building_or_higher = super_gangqu_sushe_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = super_gangqu_sushe }
+    }
+    if = {
+        limit = { has_building_or_higher = fort_monastery_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = fort_monastery }
+    }
+    if = {
+        limit = { has_building_or_higher = state_faith_schools_01 }
+        aba_hm1_building_upgrade_effect = { BUILDING = state_faith_schools }  
+    }
+    # hm2 8级制
+    if = {
+        limit = { has_building_or_higher = gangqu_engineering_bureau_01 }
+        aba_hm2_building_upgrade_effect = { BUILDING = gangqu_engineering_bureau }
+    }
+    if = {
+        limit = { has_building_or_higher = gangqu_baths_01 }
+        aba_hm2_building_upgrade_effect = { BUILDING = gangqu_baths }
+    }
+    if = {
+        limit = { has_building_or_higher = gangqu_expedia_01 }
+        aba_hm2_building_upgrade_effect = { BUILDING = gangqu_expedia }
+    }
+    if = {
+        limit = { has_building_or_higher = gangqu_engineering_bureau_01 }
+        aba_hm2_building_upgrade_effect = { BUILDING = gangqu_engineering_bureau }
+    }
+    # hm3 4级+军事
+    if = {
+        limit = { has_building_or_higher = hm_barracks_01 }
+        aba_hm3_building_upgrade_effect = { BUILDING = hm_barracks }
+    }
+    if = {
+        limit = { has_building_or_higher = hm_camel_farms_01 }
+        aba_hm3_building_upgrade_effect = { BUILDING = hm_camel_farms }
+    }
+    if = {
+        limit = { has_building_or_higher = hm_regimental_grounds_01 }
+        aba_hm3_building_upgrade_effect = { BUILDING = hm_regimental_grounds }
+    }
+    if = {
+        limit = { has_building_or_higher = salander_wind_furnace_01 }
+        aba_hm3_building_upgrade_effect = { BUILDING = salander_wind_furnace }
+    }
+    # hm4 8级+军事
+    if = {
+        limit = { has_building_or_higher = super_hm_regimental_grounds_01 }
+        aba_hm4_building_upgrade_effect = { BUILDING = super_hm_regimental_grounds }
+    }
+    # hm5 不规则
+    if = {
+        limit = { has_building_or_higher = hm_helicopter_base_01 }
+        aba_hm5_building_upgrade_effect = { BUILDING = hm_helicopter_base }
+    }
+    if = {
+        limit = { has_building_or_higher = hm_frontline_training_ground_01 }
+        aba_hm5_building_upgrade_effect = { BUILDING = hm_frontline_training_ground }
+    }
+    if = {
+        limit = { has_building_or_higher = hm_underground_railroad_01 }
+        aba_hm5_building_upgrade_effect = { BUILDING = hm_underground_railroad }
+    }
+    if = {
+        limit = { has_building_or_higher = hm_fortress_artillery_01 }
+        aba_hm5_building_upgrade_effect = { BUILDING = hm_fortress_artillery }
+    }
+    if = {
+        limit = { has_building_or_higher = gangqu_spandex_silkroad_trade_01 }
+        aba_hm5_building_upgrade_effect = { BUILDING = gangqu_spandex_silkroad_trade }
+    }
+    # hm6 奇观
+    if = {
+        limit = { has_building_or_higher = super_hm_generic_university_01 }
+        aba_hm6_building_upgrade_effect = { BUILDING = super_hm_generic_university }
+    }
+    if = {
+        limit = { has_building_or_higher = super_hm_library_01 }
+        aba_hm6_building_upgrade_effect = { BUILDING = super_hm_library }
+    }
+    if = {
+        limit = { has_building_or_higher = super_siege_works_01 }
+        aba_hm6_building_upgrade_effect = { BUILDING = super_siege_works }
+    }
+    if = {
+        limit = { has_building_or_higher = super_synagogue_01 }
+        aba_hm6_building_upgrade_effect = { BUILDING = super_synagogue }
+    }
+    if = {
+        limit = { has_building_or_higher = super_fortress_arians_01 }
+        aba_hm6_building_upgrade_effect = { BUILDING = super_fortress_arians }
+    }
+    if = {
+        limit = { has_building_or_higher = super_shanhaijing_restaurant_01 }
+        aba_hm6_building_upgrade_effect = { BUILDING = super_shanhaijing_restaurant }
+    }
+    if = {
+        limit = { has_building_or_higher = super_national_security_agency_01 }
+        aba_hm6_building_upgrade_effect = { BUILDING = super_national_security_agency }
+    }
+    if = {
+        limit = { has_building_or_higher = super_special_rabbit_technology_01 }
+        aba_hm6_building_upgrade_effect = { BUILDING = super_special_rabbit_technology }
+    }
+    if = {
+        limit = { has_building_or_higher = super_abaidos_bank_01 }
+        aba_hm6_building_upgrade_effect = { BUILDING = super_abaidos_bank }
+    }
+    # 789
+    if = {
+        limit = { has_building_or_higher = capital_garrison_01 }
+        aba_hm7_building_upgrade_effect = { BUILDING = capital_garrison }  
+    }
+    if = {
+        limit = { has_building_or_higher = state_faith_temple_01 }
+        aba_hm8_building_upgrade_effect = { BUILDING = state_faith_temple }  
+    }
+    if = {
+        limit = { has_building_or_higher = hm_coast_gun_01 }
+        aba_hm9_building_upgrade_effect = { BUILDING = hm_coast_gun }  
+    }
+    if = {
+        limit = { has_building_or_higher = enemy_castle_city_01 }
+        aba_hm10_building_upgrade_effect = { BUILDING = enemy_castle_city }  
+    }
+}
+
+aba_hm1_building_upgrade_effect = { #八级 1/2/2/3/3/4/4
+	if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_2_cost }
+            has_building = $BUILDING$_01
+            building_requirement_castle_city_church_wsgport = { LEVEL = 01 }
+        }
+		add_building = $BUILDING$_02
+        aba_building_cost_effect = { LEVEL = 2 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_3_cost }
+            has_building = $BUILDING$_02
+            building_requirement_castle_city_church_wsgport = { LEVEL = 02 }
+        }
+		add_building = $BUILDING$_03
+        aba_building_cost_effect = { LEVEL = 3 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_4_cost }
+            has_building = $BUILDING$_03
+            building_requirement_castle_city_church_wsgport = { LEVEL = 02 }
+        }
+		add_building = $BUILDING$_04
+        aba_building_cost_effect = { LEVEL = 4 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_5_cost }
+            has_building = $BUILDING$_04
+            building_requirement_castle_city_church_wsgport = { LEVEL = 03 }
+        }
+		add_building = $BUILDING$_05
+        aba_building_cost_effect = { LEVEL = 5 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_6_cost }
+            has_building = $BUILDING$_05
+            building_requirement_castle_city_church_wsgport = { LEVEL = 03 }
+        }
+		add_building = $BUILDING$_06
+        aba_building_cost_effect = { LEVEL = 6 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_7_cost }
+            has_building = $BUILDING$_06
+            building_requirement_castle_city_church_wsgport = { LEVEL = 04 }
+        }
+		add_building = $BUILDING$_07
+        aba_building_cost_effect = { LEVEL = 7 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_8_cost }
+            has_building = $BUILDING$_07
+            building_requirement_castle_city_church_wsgport = { LEVEL = 04 }
+        }
+		add_building = $BUILDING$_08
+        aba_building_cost_effect = { LEVEL = 8 }
+	}
+}
+aba_hm3_building_upgrade_effect = { #八级 1/2/2/3/3/4/4 需要军事革新
+	if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_2_cost }
+            has_building = $BUILDING$_01
+            building_requirement_castle_city_church_wsgport = { LEVEL = 01 }
+            prev.culture = {
+                has_innovation = innovation_barracks
+            }
+        }
+		add_building = $BUILDING$_02
+        aba_building_cost_effect = { LEVEL = 2 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_3_cost }
+            has_building = $BUILDING$_02
+            building_requirement_castle_city_church_wsgport = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+		add_building = $BUILDING$_03
+        aba_building_cost_effect = { LEVEL = 3 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_4_cost }
+            has_building = $BUILDING$_03
+            building_requirement_castle_city_church_wsgport = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+		add_building = $BUILDING$_04
+        aba_building_cost_effect = { LEVEL = 4 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_5_cost }
+            has_building = $BUILDING$_04
+            building_requirement_castle_city_church_wsgport = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+		add_building = $BUILDING$_05
+        aba_building_cost_effect = { LEVEL = 5 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_6_cost }
+            has_building = $BUILDING$_05
+            building_requirement_castle_city_church_wsgport = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+		add_building = $BUILDING$_06
+        aba_building_cost_effect = { LEVEL = 6 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_7_cost }
+            has_building = $BUILDING$_06
+            building_requirement_castle_city_church_wsgport = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+		add_building = $BUILDING$_07
+        aba_building_cost_effect = { LEVEL = 7 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_8_cost }
+            has_building = $BUILDING$_07
+            building_requirement_castle_city_church_wsgport = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+		add_building = $BUILDING$_08
+        aba_building_cost_effect = { LEVEL = 8 }
+	}
+}
+aba_hm2_building_upgrade_effect = { #八级 2/3/4/5/6/7/8
+	if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_2_cost }
+            has_building = $BUILDING$_01
+            building_requirement_wsgport = { LEVEL = 02 }
+        }
+		add_building = $BUILDING$_02
+        aba_building_cost_effect = { LEVEL = 2 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_3_cost }
+            has_building = $BUILDING$_02
+            building_requirement_wsgport = { LEVEL = 03 }
+        }
+		add_building = $BUILDING$_03
+        aba_building_cost_effect = { LEVEL = 3 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_4_cost }
+            has_building = $BUILDING$_03
+            building_requirement_wsgport = { LEVEL = 04 }
+        }
+		add_building = $BUILDING$_04
+        aba_building_cost_effect = { LEVEL = 4 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_5_cost }
+            has_building = $BUILDING$_04
+            building_requirement_wsgport = { LEVEL = 05 }
+        }
+		add_building = $BUILDING$_05
+        aba_building_cost_effect = { LEVEL = 5 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_6_cost }
+            has_building = $BUILDING$_05
+            building_requirement_wsgport = { LEVEL = 06 }
+        }
+		add_building = $BUILDING$_06
+        aba_building_cost_effect = { LEVEL = 6 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_7_cost }
+            has_building = $BUILDING$_06
+            building_requirement_wsgport = { LEVEL = 07 }
+        }
+		add_building = $BUILDING$_07
+        aba_building_cost_effect = { LEVEL = 7 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_8_cost }
+            has_building = $BUILDING$_07
+            building_requirement_wsgport = { LEVEL = 08 }
+        }
+		add_building = $BUILDING$_08
+        aba_building_cost_effect = { LEVEL = 8 }
+	}
+}
+aba_hm4_building_upgrade_effect = { #八级 2/3/4/5/6/7/8 需要军事革新
+	if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_2_cost }
+            has_building = $BUILDING$_01
+            building_requirement_wsgport = { LEVEL = 02 }
+            prev.culture = {
+                has_innovation = innovation_barracks
+            }
+        }
+		add_building = $BUILDING$_02
+        aba_building_cost_effect = { LEVEL = 2 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_3_cost }
+            has_building = $BUILDING$_02
+            building_requirement_wsgport = { LEVEL = 03 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+		add_building = $BUILDING$_03
+        aba_building_cost_effect = { LEVEL = 3 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_4_cost }
+            has_building = $BUILDING$_03
+            building_requirement_wsgport = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+		add_building = $BUILDING$_04
+        aba_building_cost_effect = { LEVEL = 4 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_5_cost }
+            has_building = $BUILDING$_04
+            building_requirement_wsgport = { LEVEL = 05 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+		add_building = $BUILDING$_05
+        aba_building_cost_effect = { LEVEL = 5 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_6_cost }
+            has_building = $BUILDING$_05
+            building_requirement_wsgport = { LEVEL = 06 }
+            prev.culture = {
+                has_innovation = innovation_castle_baileys
+            }
+        }
+		add_building = $BUILDING$_06
+        aba_building_cost_effect = { LEVEL = 6 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_7_cost }
+            has_building = $BUILDING$_06
+            building_requirement_wsgport = { LEVEL = 07 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+		add_building = $BUILDING$_07
+        aba_building_cost_effect = { LEVEL = 7 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_8_cost }
+            has_building = $BUILDING$_07
+            building_requirement_wsgport = { LEVEL = 08 }
+            prev.culture = {
+                has_innovation = innovation_royal_armory
+            }
+        }
+		add_building = $BUILDING$_08
+        aba_building_cost_effect = { LEVEL = 8 }
+	}
+}
+aba_hm7_building_upgrade_effect = { #八级 1/2/2/3/4/5/7
+	if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_2_cost }
+            has_building = $BUILDING$_01
+		    building_requirement_castle_city_church_wsgport = { LEVEL = 01 }
+        }
+		add_building = $BUILDING$_02
+        aba_building_cost_effect = { LEVEL = 2 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_3_cost }
+            has_building = $BUILDING$_02
+		    building_requirement_castle_city_church_wsgport = { LEVEL = 02 }
+        }
+		add_building = $BUILDING$_03
+        aba_building_cost_effect = { LEVEL = 3 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_4_cost }
+            has_building = $BUILDING$_03
+		    building_requirement_castle_city_church_wsgport = { LEVEL = 02 }
+        }
+		add_building = $BUILDING$_04
+        aba_building_cost_effect = { LEVEL = 4 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_5_cost }
+            has_building = $BUILDING$_04
+		    building_requirement_castle_city_church_wsgport = { LEVEL = 03 }
+        }
+		add_building = $BUILDING$_05
+        aba_building_cost_effect = { LEVEL = 5 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_6_cost }
+            has_building = $BUILDING$_05
+		    building_requirement_castle_city_church_wsgport = { LEVEL = 04 }
+        }
+		add_building = $BUILDING$_06
+        aba_building_cost_effect = { LEVEL = 6 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_7_cost }
+            has_building = $BUILDING$_06
+		    building_requirement_wsgport = { LEVEL = 05 }
+        }
+		add_building = $BUILDING$_07
+        aba_building_cost_effect = { LEVEL = 7 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > abacommon_building_tier_8_cost }
+            has_building = $BUILDING$_07
+		    building_requirement_wsgport = { LEVEL = 07 }
+        }
+		add_building = $BUILDING$_08
+        aba_building_cost_effect = { LEVEL = 8 }
+	}
+}
+aba_hm5_building_upgrade_effect = { #四级 5/6/7 需要军事革新
+	if = {
+		limit = {
+            prev = { gold > hm_short_expensive_tier_2_cost }
+            has_building = $BUILDING$_01
+            building_requirement_wsgport = { LEVEL = 05 }
+            prev.culture = {
+                has_innovation = innovation_barracks
+            }
+        }
+		add_building = $BUILDING$_02
+        prev = { remove_short_term_gold = hm_short_expensive_tier_2_cost }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > hm_short_expensive_tier_3_cost }
+            has_building = $BUILDING$_02
+            building_requirement_wsgport = { LEVEL = 06 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+		add_building = $BUILDING$_03
+        prev = { remove_short_term_gold = hm_short_expensive_tier_3_cost }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > hm_short_expensive_tier_4_cost }
+            has_building = $BUILDING$_03
+            building_requirement_wsgport = { LEVEL = 07 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+		add_building = $BUILDING$_04
+        prev = { remove_short_term_gold = hm_short_expensive_tier_4_cost }
+	}
+}
+aba_hm6_building_upgrade_effect = { #四级 4/6/7 需要军事革新
+	if = {
+		limit = {
+            prev = { gold > hm_monument_tier_2_cost }
+            has_building = $BUILDING$_01
+            building_requirement_castle_city_church_wsgport = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_barracks
+            }
+        }
+		add_building = $BUILDING$_02
+        prev = { remove_short_term_gold = hm_monument_tier_2_cost }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > hm_monument_tier_3_cost }
+            has_building = $BUILDING$_02
+            building_requirement_wsgport = { LEVEL = 06 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+		add_building = $BUILDING$_03
+        prev = { remove_short_term_gold = hm_monument_tier_3_cost }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > hm_monument_tier_4_cost }
+            has_building = $BUILDING$_03
+            building_requirement_wsgport = { LEVEL = 07 }
+            prev.culture = {
+                has_innovation = innovation_burhs
+            }
+        }
+		add_building = $BUILDING$_04
+        prev = { remove_short_term_gold = hm_monument_tier_4_cost }
+	}
+}
+aba_hm8_building_upgrade_effect = { #四级 4/6/7 需要经济革新
+	if = {
+		limit = {
+            prev = { gold > hm_monument_tier_2_cost }
+            has_building = $BUILDING$_01
+            building_requirement_castle_city_church_wsgport = { LEVEL = 04 }
+            prev.culture = {
+                has_innovation = innovation_manorialism
+            }
+        }
+		add_building = $BUILDING$_02
+        prev = { remove_short_term_gold = hm_monument_tier_2_cost }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > hm_monument_tier_3_cost }
+            has_building = $BUILDING$_02
+            building_requirement_wsgport = { LEVEL = 06 }
+            prev.culture = {
+                has_innovation = innovation_windmills
+            }
+        }
+		add_building = $BUILDING$_03
+        prev = { remove_short_term_gold = hm_monument_tier_3_cost }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > hm_monument_tier_4_cost }
+            has_building = $BUILDING$_03
+            building_requirement_wsgport = { LEVEL = 07 }
+            prev.culture = {
+                has_innovation = innovation_cranes
+            }
+        }
+		add_building = $BUILDING$_04
+        prev = { remove_short_term_gold = hm_monument_tier_4_cost }
+	}
+}
+aba_hm9_building_upgrade_effect = { #四级 4/5/6 固定花费1000
+	if = {
+		limit = {
+            prev = { gold > 1000 }
+            has_building = $BUILDING$_01
+            building_requirement_castle_city_church_wsgport = { LEVEL = 04 }
+        }
+		add_building = $BUILDING$_02
+        prev = { remove_short_term_gold = 1000 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > 1000 }
+            has_building = $BUILDING$_02
+            building_requirement_wsgport = { LEVEL = 05 }
+        }
+		add_building = $BUILDING$_03
+        prev = { remove_short_term_gold = 1000 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > 1000 }
+            has_building = $BUILDING$_03
+            building_requirement_wsgport = { LEVEL = 06 }
+        }
+		add_building = $BUILDING$_04
+        prev = { remove_short_term_gold = 1000 }
+	}
+}
+aba_hm10_building_upgrade_effect = { #四级 2/3/4 固定花费1000
+	if = {
+		limit = {
+            prev = { gold > 1000 }
+            has_building = $BUILDING$_01
+            building_requirement_castle_city_church_wsgport = { LEVEL = 02 }
+        }
+		add_building = $BUILDING$_02
+        prev = { remove_short_term_gold = 1000 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > 1000 }
+            has_building = $BUILDING$_02
+            building_requirement_castle_city_church_wsgport = { LEVEL = 03 }
+        }
+		add_building = $BUILDING$_03
+        prev = { remove_short_term_gold = 1000 }
+	}
+	else_if = {
+		limit = {
+            prev = { gold > 1000 }
+            has_building = $BUILDING$_03
+            building_requirement_castle_city_church_wsgport = { LEVEL = 04 }
+        }
+		add_building = $BUILDING$_04
+        prev = { remove_short_term_gold = 1000 }
+	}
+}
+
+# 共产宗教
+# 地产
+aba_holding_upgrade_effect_comr = {
+    if = {
+        limit = { has_building_or_higher = kolkhoz_01 }
+        aba_comr_holding_upgrade_effect = { BUILDING = kolkhoz }
+    }
+}
+aba_comr_holding_upgrade_effect = {
+    if = {
+        limit = {
+            prev = { gold > main_building_tier_2_cost }
+            has_building = $BUILDING$_01
+        }
+        add_building = $BUILDING$_02
+        prev = { remove_short_term_gold = main_building_tier_2_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > main_building_tier_3_cost }
+            has_building = $BUILDING$_02
+        }
+        add_building = $BUILDING$_03
+        prev = { remove_short_term_gold = main_building_tier_3_cost }
+    }
+    else_if = {
+        limit = {
+            prev = { gold > main_building_tier_4_cost }
+            has_building = $BUILDING$_03
+        }
+        add_building = $BUILDING$_04
+        prev = { remove_short_term_gold = main_building_tier_4_cost }
+    }
+}
+# 建筑
+aba_building_upgrade_effect_comr = {
+    if = {
+        limit = { has_building_or_higher = intensive_farm_01 }
+        aba_comr_building_upgrade_effect = { BUILDING = intensive_farm }
+    }
+    if = {
+        limit = { has_building_or_higher = marx_ikon_01 }
+        aba_comr_building_upgrade_effect = { BUILDING = marx_ikon }
+    }
+    if = {
+        limit = { has_building_or_higher = guillotine_01 }
+        aba_comr_building_upgrade_effect = { BUILDING = guillotine }
+    }
+    if = {
+        limit = { has_building_or_higher = armory_01 }
+        aba_comr_building_upgrade_effect = { BUILDING = armory }
+    }
+    if = {
+        limit = { has_building_or_higher = depot_01 }
+        aba_comr_building_upgrade_effect = { BUILDING = depot }
+    }
+    if = {
+        limit = { has_building_or_higher = tractor_01 }
+        aba_comr_building_upgrade_effect = { BUILDING = tractor }
+    }
+}
+aba_comr_building_upgrade_effect = {
+    if = {
+        limit = {
+            prev = {
+                gold > 167
+                prestige > 125
+            }
+            has_building = $BUILDING$_01
+            building_requirement_kolkhoz = { LEVEL = 01 }
+        }
+        add_building = $BUILDING$_02
+        prev = {
+            remove_short_term_gold = 167
+            add_prestige_no_experience = -125
+        }
+    }
+    else_if = {
+        limit = {
+            prev = {
+                gold > 227
+                prestige > 175
+            }
+            has_building = $BUILDING$_02
+            building_requirement_kolkhoz = { LEVEL = 02 }
+        }
+        add_building = $BUILDING$_03
+        prev = {
+            remove_short_term_gold = 227
+            add_prestige_no_experience = -175
+        }
+    }
+    else_if = {
+        limit = {
+            prev = {
+                gold > 333
+                prestige > 250
+            }
+            has_building = $BUILDING$_03
+            building_requirement_kolkhoz = { LEVEL = 02 }
+        }
+        add_building = $BUILDING$_04
+        prev = {
+            remove_short_term_gold = 333
+            add_prestige_no_experience = -250
+        }
+    }
+    else_if = {
+        limit = {
+            prev = {
+                gold > 500
+                prestige > 375
+            }
+            has_building = $BUILDING$_04
+            building_requirement_kolkhoz = { LEVEL = 03 }
+        }
+        add_building = $BUILDING$_05
+        prev = {
+            remove_short_term_gold = 500
+            add_prestige_no_experience = -375
+        }
+    }
+    else_if = {
+        limit = {
+            prev = {
+                gold > 740
+                prestige > 555
+            }
+            has_building = $BUILDING$_05
+            building_requirement_kolkhoz = { LEVEL = 03 }
+        }
+        add_building = $BUILDING$_06
+        prev = {
+            remove_short_term_gold = 740
+            add_prestige_no_experience = -555
+        }
+    }
+    else_if = {
+        limit = {
+            prev = {
+                gold > 1057
+                prestige > 800
+            }
+            has_building = $BUILDING$_06
+            building_requirement_kolkhoz = { LEVEL = 04 }
+        }
+        add_building = $BUILDING$_07
+        prev = {
+            remove_short_term_gold = 1057
+            add_prestige_no_experience = -800
+        }
+    }
+    else_if = {
+        limit = {
+            prev = {
+                gold > 1493
+                prestige > 1120
+            }
+            has_building = $BUILDING$_07
+            building_requirement_kolkhoz = { LEVEL = 04 }
+        }
+        add_building = $BUILDING$_08
+        prev = {
+            remove_short_term_gold = 1493
+            add_prestige_no_experience = -120
+        }
+    }
+}

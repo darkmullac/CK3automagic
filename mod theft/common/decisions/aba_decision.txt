@@ -1,0 +1,39 @@
+﻿aba_building_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_spend_money.dds"
+	}
+	decision_group_type = uba
+	ai_check_interval = 0
+	desc = aba_building_decision_desc
+	selection_tooltip = aba_building_decision_tooltip
+	is_shown = {
+        is_ai = no
+		is_ruler = yes
+		is_landed = yes
+		NOT = {
+			exists = global_var:uba_decision_off
+		}
+	}
+
+	# is_valid = {
+    #     is_ai = no
+	# }
+
+	is_valid_showing_failures_only = {
+		#is_capable_adult = yes
+		is_imprisoned = no
+		# is_at_war = no
+	}
+
+	effect = {
+        trigger_event = aba_building_upgrade_event.0001
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}

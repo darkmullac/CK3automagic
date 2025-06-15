@@ -1,0 +1,92 @@
+﻿aba_save_resource_trigger = {
+	aba_save_gold_trigger = yes
+	aba_save_prestige_trigger = yes
+}
+
+aba_save_gold_trigger = {
+	aba_save_gold_20000_trigger = yes
+	aba_save_gold_10000_trigger = yes
+	aba_save_gold_5000_trigger = yes
+	aba_save_gold_2000_trigger = yes
+}
+
+aba_save_gold_20000_trigger = {
+	OR = {
+		AND = {
+			prev = { has_character_flag = aba_save_gold_20000_flag }
+			prev = { gold > 20000 }
+		}
+		NOT = { prev = { has_character_flag = aba_save_gold_20000_flag } }
+	}
+}
+aba_save_gold_10000_trigger = {
+	OR = {
+		AND = {
+			prev = { has_character_flag = aba_save_gold_10000_flag }
+			prev = { gold > 10000 }
+		}
+		NOT = { prev = { has_character_flag = aba_save_gold_10000_flag } }
+	}
+}
+aba_save_gold_5000_trigger = {
+	OR = {
+		AND = {
+			prev = { has_character_flag = aba_save_gold_5000_flag }
+			prev = { gold > 5000 }
+		}
+		NOT = { prev = { has_character_flag = aba_save_gold_5000_flag } }
+	}
+}
+aba_save_gold_2000_trigger = {
+	OR = {
+		AND = {
+			prev = { has_character_flag = aba_save_gold_2000_flag }
+			prev = { gold > 2000 }
+		}
+		NOT = { prev = { has_character_flag = aba_save_gold_2000_flag } }
+	}
+}
+
+aba_save_prestige_trigger = {
+	aba_save_prestige_20000_trigger = yes
+	aba_save_prestige_10000_trigger = yes
+	aba_save_prestige_5000_trigger = yes
+	aba_save_prestige_2000_trigger = yes
+}
+
+aba_save_prestige_20000_trigger = {
+	OR = {
+		AND = {
+			prev = { has_character_flag = aba_save_prestige_20000_flag }
+			prev = { prestige > 20000 }
+		}
+		NOT = { prev = { has_character_flag = aba_save_prestige_20000_flag } }
+	}
+}
+aba_save_prestige_10000_trigger = {
+	OR = {
+		AND = {
+			prev = { has_character_flag = aba_save_prestige_10000_flag }
+			prev = { prestige > 10000 }
+		}
+		NOT = { prev = { has_character_flag = aba_save_prestige_10000_flag } }
+	}
+}
+aba_save_prestige_5000_trigger = {
+	OR = {
+		AND = {
+			prev = { has_character_flag = aba_save_prestige_5000_flag }
+			prev = { prestige > 5000 }
+		}
+		NOT = { prev = { has_character_flag = aba_save_prestige_5000_flag } }
+	}
+}
+aba_save_prestige_2000_trigger = {
+	OR = {
+		AND = {
+			prev = { has_character_flag = aba_save_prestige_2000_flag }
+			prev = { prestige > 2000 }
+		}
+		NOT = { prev = { has_character_flag = aba_save_prestige_2000_flag } }
+	}
+}

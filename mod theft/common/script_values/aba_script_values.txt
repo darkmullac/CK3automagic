@@ -1,0 +1,106 @@
+﻿aba_building_cooldown = {
+	value = 15
+	if = { # 半个月
+		limit = {
+			has_global_variable = aba_building_cooldown_0
+		}
+		multiply = 0.5
+	}
+	else_if = { # 一个月
+		limit = {
+			has_global_variable = aba_building_cooldown_1
+		}
+		multiply = 1
+	}
+	else_if = { # 三个月
+		limit = {
+			has_global_variable = aba_building_cooldown_2
+		}
+		multiply = 3
+	}
+	else_if = { # 六个月
+		limit = {
+			has_global_variable = aba_building_cooldown_3
+		}
+		multiply = 6
+	}
+}
+
+aba_building_recent = {
+	value = 365
+	if = { # 半个月
+		limit = {
+			has_global_variable = aba_building_cooldown_0
+		}
+		multiply = 0.5
+	}
+	else_if = { # 一个月
+		limit = {
+			has_global_variable = aba_building_cooldown_1
+		}
+		multiply = 1
+	}
+	else_if = { # 三个月
+		limit = {
+			has_global_variable = aba_building_cooldown_2
+		}
+		multiply = 1.5
+	}
+	else_if = { # 六个月
+		limit = {
+			has_global_variable = aba_building_cooldown_3
+		}
+		multiply = 2
+	}
+	else = { # 默认
+		multiply = 1
+	}
+}
+
+
+# 价格修改
+# 略微便宜
+@abacommon_cost_base = 80
+@abacommon_cost_scale_addition_per_tier = 80
+
+@abacommon_cost_tier_1 = @[abacommon_cost_base] #values progress quadratically with for from T3 onwards. The addition at the end is to have nice, round numbers displayed
+@abacommon_cost_tier_2 = @[abacommon_cost_tier_1 + abacommon_cost_scale_addition_per_tier]
+@abacommon_cost_tier_3 = @[abacommon_cost_tier_2 + 3*3*abacommon_cost_scale_addition_per_tier*building_cost_scaling_modifier_normal + 0]
+@abacommon_cost_tier_4 = @[abacommon_cost_tier_3 + 4*4*abacommon_cost_scale_addition_per_tier*building_cost_scaling_modifier_normal + 0]
+@abacommon_cost_tier_5 = @[abacommon_cost_tier_4 + 5*5*abacommon_cost_scale_addition_per_tier*building_cost_scaling_modifier_normal + 0]
+@abacommon_cost_tier_6 = @[abacommon_cost_tier_5 + 6*6*abacommon_cost_scale_addition_per_tier*building_cost_scaling_modifier_normal + 0]
+@abacommon_cost_tier_7 = @[abacommon_cost_tier_6 + 7*7*abacommon_cost_scale_addition_per_tier*building_cost_scaling_modifier_normal + 0]
+@abacommon_cost_tier_8 = @[abacommon_cost_tier_7 + 8*8*abacommon_cost_scale_addition_per_tier*building_cost_scaling_modifier_normal + 0]
+
+abacommon_building_tier_1_cost = @[abacommon_cost_tier_1]
+abacommon_building_tier_2_cost = @[abacommon_cost_tier_2]
+abacommon_building_tier_3_cost = @[abacommon_cost_tier_3]
+abacommon_building_tier_4_cost = @[abacommon_cost_tier_4]
+abacommon_building_tier_5_cost = @[abacommon_cost_tier_5]
+abacommon_building_tier_6_cost = @[abacommon_cost_tier_6]
+abacommon_building_tier_7_cost = @[abacommon_cost_tier_7]
+abacommon_building_tier_8_cost = @[abacommon_cost_tier_8]
+
+
+# 比较便宜
+@abacheap_cost_base = 60
+@abacheap_cost_scale_addition_per_tier = 60
+
+@abacheap_cost_tier_1 = @[abacheap_cost_base] #values progress quadratically with for from T3 onwards. The addition at the end is to have nice, round numbers displayed
+@abacheap_cost_tier_2 = @[abacheap_cost_tier_1 + abacheap_cost_scale_addition_per_tier]
+@abacheap_cost_tier_3 = @[abacheap_cost_tier_2 + 3*3*abacheap_cost_scale_addition_per_tier*building_cost_scaling_modifier_normal + 0]
+@abacheap_cost_tier_4 = @[abacheap_cost_tier_3 + 4*4*abacheap_cost_scale_addition_per_tier*building_cost_scaling_modifier_normal + 0]
+@abacheap_cost_tier_5 = @[abacheap_cost_tier_4 + 5*5*abacheap_cost_scale_addition_per_tier*building_cost_scaling_modifier_normal + 0]
+@abacheap_cost_tier_6 = @[abacheap_cost_tier_5 + 6*6*abacheap_cost_scale_addition_per_tier*building_cost_scaling_modifier_normal + 0]
+@abacheap_cost_tier_7 = @[abacheap_cost_tier_6 + 7*7*abacheap_cost_scale_addition_per_tier*building_cost_scaling_modifier_normal + 0]
+@abacheap_cost_tier_8 = @[abacheap_cost_tier_7 + 8*8*abacheap_cost_scale_addition_per_tier*building_cost_scaling_modifier_normal + 0]
+
+
+abacheap_building_tier_1_cost = @[abacheap_cost_tier_1]
+abacheap_building_tier_2_cost = @[abacheap_cost_tier_2]
+abacheap_building_tier_3_cost = @[abacheap_cost_tier_3]
+abacheap_building_tier_4_cost = @[abacheap_cost_tier_4]
+abacheap_building_tier_5_cost = @[abacheap_cost_tier_5]
+abacheap_building_tier_6_cost = @[abacheap_cost_tier_6]
+abacheap_building_tier_7_cost = @[abacheap_cost_tier_7]
+abacheap_building_tier_8_cost = @[abacheap_cost_tier_8]
