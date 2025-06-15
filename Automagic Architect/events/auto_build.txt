@@ -1,14 +1,57 @@
 ﻿namespace = auto_build
-auto_build.0003 = {
+
+auto_build.0001 = {
 	type = character_event
+	title = auto_build.0001.t
+	desc = auto_build.0001.desc
+	theme = stewardship
+	
+	weight_multiplier = {
+		base = 1
+	}
+	
+	override_background = {
+		reference = terrain
+	}
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
 	trigger = {
 		OR = {
 			has_character_flag = enable_auto_build
 			has_character_flag = enable_vassal_auto_build
 		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			trigger_event = {
+				id = auto_build.0003
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = auto_build.0001.a
+		trigger_event = auto_build.0003
+	}
+}
 
+auto_build.0003 = {
+	type = character_event
+	theme = stewardship
+	trigger = {
+		OR = {
+			has_character_flag = enable_auto_build
+			has_character_flag = enable_vassal_auto_build
+		}
 	}
 	hidden = yes
+	
 	immediate = {
 		hidden_effect = {
 			trigger_event = {
@@ -17,178 +60,1051 @@ auto_build.0003 = {
 			}
 		}
 	}
-
 }
-
-#######适配原版的版本的作者建筑顺序写得好捷豹怪，什么鬼牧场放最前面，我当场梆梆给他两拳（doge
-#以下内容编号会出现顺序不明的情况，只是我在调整建造优先度:3
-#You can modify these for free,which is easy:Ctrl+X and then Ctrl+V.You can change the building order as you wish in this way.
-#Tips:我没写印度魔幻风炉的革新限制，按道理来说自动建造能给你拍地产上去(地区不合适并不能，如果你玩印度需要建造，先手动拍一个一级的 事件的title、desc都完全没必要写，完全可以删了，我是憨憨改了这么多:(
-#I advise you to use visual code to edit.
 
 auto_build.0004 = {
 	type = character_event
+	theme = stewardship
+	trigger = {
+		OR = {
+			has_character_flag = enable_auto_build
+			has_character_flag = enable_vassal_auto_build
+		}
+	}
 	hidden = yes
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					has_character_flag = enable_auto_build
-				}
-
-				trigger_event = auto_build.0088 #水车/Watermills
-				trigger_event = auto_build.0089 #风车/Windmills
-				trigger_event = auto_build.0090 #商队旅馆/Caravanserai
-				trigger_event = auto_build.0018 #庄园宅邸/Farm Estates
-				trigger_event = auto_build.0024 #农田/Cereal Fields
-				trigger_event = auto_build.0092 #铁匠铺/Smiths
-				trigger_event = auto_build.0093 #工坊/Workshops
-				trigger_event = auto_build.0017 #沙漠果园/Orchards
-				trigger_event = auto_build.0015 #牧场/Cattle Pastures
-				trigger_event = auto_build.0016 #狩猎场/Hunting Grounds
-				trigger_event = auto_build.0019 #营地，加弓箭手散兵那个营地/Militia Camps
-				trigger_event = auto_build.0020 #军团训练场/Regimental Grounds
-				trigger_event = auto_build.0021 #林中堡垒/Ramparts
-				trigger_event = auto_build.0022 #幕墙，到处都能建的那个/Curtain Walls
-				trigger_event = auto_build.0023 #瞭望塔/Watchtowers
-				trigger_event = auto_build.0025 #哨站/Outposts
-				trigger_event = auto_build.0026 #兵营/Barracks
-				trigger_event = auto_build.0027 #骆驼养殖场/Camel Farms
-				trigger_event = auto_build.0028 #林业/Logging Camps
-				trigger_event = auto_build.0029 #湿地农场/Peat Quarries
-				trigger_event = auto_build.0030 #山丘农场/Hill Farms
-				trigger_event = auto_build.0031 #战象象栏/Elephant Pens
-				trigger_event = auto_build.0032 #沙漠农业/Plantations
-				trigger_event = auto_build.0033 #采石场/Quarries
-				trigger_event = auto_build.0034 #山堡/Hill Forts
-				trigger_event = auto_build.0035 #贸易港/Tradeports
-				trigger_event = auto_build.0036 #行会/Guild Halls
-				trigger_event = auto_build.0037 #城堡/Castles
-				trigger_event = auto_build.0038 #城市/Citises
-				trigger_event = auto_build.0039 #神殿/Temples
-				trigger_event = auto_build.0040 #僧侣学校/Monastic Schools
-				trigger_event = auto_build.0094 #马厩/Stables
-				trigger_event = auto_build.0095 #牧马场/Horse Pastures
-				trigger_event = auto_build.0096 #战士营地/Warrior Lodges
-                                trigger_event = auto_build.0097 # Scriptoriums
-                                trigger_event = auto_build.0098 # Breweries
-				trigger_event = auto_build.0091 #风炉/Wind Furnaces
-				trigger_event = auto_build.0014 #Qanats
-				trigger_event = auto_build.0273 #Hospices
-			}
-			else_if = {#封臣建造顺序 +100/Plus 100
-				limit = {
-					has_character_flag = enable_vassal_auto_build
-				}
-
-				trigger_event = auto_build.0188 #水车/Watermills
-				trigger_event = auto_build.0189 #风车/Windmills
-				trigger_event = auto_build.0190 #商队旅馆/Caravanserai
-				trigger_event = auto_build.0118 #庄园宅邸/Farm Estates
-				trigger_event = auto_build.0124 #农田/Cereal Fields
-				trigger_event = auto_build.0192 #铁匠铺/Smiths
-				trigger_event = auto_build.0193 #工坊/Workshops
-				trigger_event = auto_build.0115 #牧场/Cattle Pastures
-				trigger_event = auto_build.0116 #狩猎场/Hunting Grounds
-				trigger_event = auto_build.0117 #沙漠果园/Orchards
-				trigger_event = auto_build.0119 #军用营地/Militia Camps
-				trigger_event = auto_build.0120 #军团训练场/Regimental Grounds
-				trigger_event = auto_build.0121 #林中堡垒/Ramparts
-				trigger_event = auto_build.0122 #幕墙，到处都能建的那个/Curtain Walls
-				trigger_event = auto_build.0123 #瞭望塔/Watchtowers
-				trigger_event = auto_build.0125 #哨站/Outposts
-				trigger_event = auto_build.0126 #兵营/Barracks
-				trigger_event = auto_build.0127 #骆驼养殖场/Camel Farms
-				trigger_event = auto_build.0128 #林业/Logging Camps
-				trigger_event = auto_build.0129 #湿地农场/Peat Quarries
-				trigger_event = auto_build.0130 #山丘农场/Hill Farms
-				trigger_event = auto_build.0131 #战象象栏/Elephant Pens
-				trigger_event = auto_build.0132 #沙漠农业/Plantations
-				trigger_event = auto_build.0133 #采石场/Quarries
-				trigger_event = auto_build.0134 #山堡/Hill Forts
-				trigger_event = auto_build.0135 #贸易港/Tradeports
-				trigger_event = auto_build.0136 #行会/Guild Halls
-				trigger_event = auto_build.0137 #城堡/Castles
-				trigger_event = auto_build.0138 #城市/Citises
-				trigger_event = auto_build.0139 #神殿/Temples
-				trigger_event = auto_build.0140 #僧侣学校/Monastic Schools
-				trigger_event = auto_build.0194 #马厩/Stables
-				trigger_event = auto_build.0195 #牧马场/Horse Pastures
-				trigger_event = auto_build.0196 #战士营地/Warrior Lodges
-                                trigger_event = auto_build.0197 # Scriptoriums
-                                trigger_event = auto_build.0198 # Breweries
-				trigger_event = auto_build.0191 #风炉/Wind Furnaces
-				trigger_event = auto_build.0114 #Qanats
-				trigger_event = auto_build.0173 #Hospices
-                        }
-                        trigger_event = {
-                                id = auto_build.0003
-                                days = 15
-                        }
-                }
-        }
-}
-
-auto_build.0001 = {
-	type = character_event
-	title = auto_build.0001.t
-	desc = auto_build.0001.desc
-	weight_multiplier = {
-		base = 1
-	}
-	override_background = {
-		reference = terrain
-	}
-	left_portrait = {
-		character = scope:root
-	}
+	
 	immediate = {
 		hidden_effect = {
 			trigger_event = {
-				id = auto_build.0003
-				days = 5
+				id = auto_build.0014
+				days = 1
 			}
 		}
 	}
-	option = {
-		name = auto_build.0001.a
-		add_character_flag = enable_auto_build
+}
+
+auto_build.0014 = {
+	type = character_event
+	theme = stewardship
+	trigger = {
+		OR = {
+			has_character_flag = enable_auto_build
+			has_character_flag = enable_vassal_auto_build
+		}
 	}
-	option = {
-		name = auto_build.0001.b
-		add_character_flag = enable_vassal_auto_build
+	hidden = yes
+	
+	immediate = {
+		hidden_effect = {
+			every_sub_realm_county = {
+				limit = {
+					holder = {
+						OR = {
+							this = root
+							AND = {
+								is_vassal_of = root
+								root = { has_character_flag = enable_vassal_auto_build }
+							}
+						}
+					}
+				}
+				trigger_event = {
+					id = auto_build.0273
+					days = { 1 30 }
+				}
+			}
+		}
 	}
 }
 
-#add_hospices_building_effect
-auto_build.0273 = {
-	type = character_event
-	title = auto_build.0273.t
-	desc = auto_build.0273.desc
+auto_build.0015 = {
+	type = county_event
+	theme = stewardship
 	hidden = yes
-	weight_multiplier = {
-		base = 1
-	}
-	override_background = {
-		reference = terrain
-	}
-	left_portrait = {
-		character = scope:root
-	}
-	option = {
-		name = auto_build.0273.a
-		every_province = {
-			limit = {
-				OR = {
-					has_holding_type = tribal_holding
-					has_holding_type = church_holding
-					has_holding_type = castle_holding
-					has_holding_type = city_holding
-					has_holding_type = church_holding
+	
+	trigger = {
+		NOT = { has_county_modifier = county_modifier_auto_build_disabled }
+		holder = {
+			OR = {
+				has_character_flag = enable_auto_build
+				AND = {
+					has_character_flag = enable_vassal_auto_build
+					is_vassal_of = root
 				}
-				province_owner = root
 			}
-			add_hospices_building_effect = yes
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				any_county_province = {
+					has_holding_slot = yes
+					NOT = { has_holding = yes }
+				}
+			}
+			random_county_province = {
+				limit = {
+					has_holding_slot = yes
+					NOT = { has_holding = yes }
+				}
+				save_scope_as = empty_holding_province
+			}
+			trigger_event = {
+				id = auto_build.0016
+				days = 1
+			}
+		}
+	}
+}
+
+auto_build.0016 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 300
+						NOT = {
+							any_held_title = {
+								tier = tier_barony
+								is_leased_out = yes
+							}
+						}
+					}
+				}
+				create_holding = {
+					type = city_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 300
+				}
+			}
+		}
+	}
+}
+
+auto_build.0017 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 300
+						NOT = {
+							any_held_title = {
+								tier = tier_barony
+								is_leased_out = yes
+							}
+						}
+					}
+				}
+				create_holding = {
+					type = church_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 300
+				}
+			}
+		}
+	}
+}
+
+auto_build.0018 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 300
+						NOT = {
+							any_held_title = {
+								tier = tier_barony
+								is_leased_out = yes
+							}
+						}
+					}
+				}
+				create_holding = {
+					type = tribal_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 300
+				}
+			}
+		}
+	}
+}
+
+auto_build.0019 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 300
+						NOT = {
+							any_held_title = {
+								tier = tier_barony
+								is_leased_out = yes
+							}
+						}
+					}
+				}
+				create_holding = {
+					type = castle_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 300
+				}
+			}
+		}
+	}
+}
+
+auto_build.0020 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 300
+					}
+				}
+				create_holding = {
+					type = city_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 300
+				}
+			}
+		}
+	}
+}
+
+auto_build.0021 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 300
+					}
+				}
+				create_holding = {
+					type = church_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 300
+				}
+			}
+		}
+	}
+}
+
+auto_build.0022 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 300
+					}
+				}
+				create_holding = {
+					type = tribal_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 300
+				}
+			}
+		}
+	}
+}
+
+auto_build.0023 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 300
+					}
+				}
+				create_holding = {
+					type = castle_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 300
+				}
+			}
+		}
+	}
+}
+
+auto_build.0024 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 500
+					}
+				}
+				create_holding = {
+					type = city_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 500
+				}
+			}
+		}
+	}
+}
+
+auto_build.0025 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 500
+					}
+				}
+				create_holding = {
+					type = church_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 500
+				}
+			}
+		}
+	}
+}
+
+auto_build.0026 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 500
+					}
+				}
+				create_holding = {
+					type = tribal_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 500
+				}
+			}
+		}
+	}
+}
+
+auto_build.0027 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 500
+					}
+				}
+				create_holding = {
+					type = castle_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 500
+				}
+			}
+		}
+	}
+}
+
+auto_build.0028 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 400
+					}
+				}
+				create_holding = {
+					type = city_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 400
+				}
+			}
+		}
+	}
+}
+
+auto_build.0029 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 400
+					}
+				}
+				create_holding = {
+					type = church_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 400
+				}
+			}
+		}
+	}
+}
+
+auto_build.0030 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 400
+					}
+				}
+				create_holding = {
+					type = tribal_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 400
+				}
+			}
+		}
+	}
+}
+
+auto_build.0031 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 400
+					}
+				}
+				create_holding = {
+					type = castle_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 400
+				}
+			}
+		}
+	}
+}
+
+auto_build.0032 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 350
+					}
+				}
+				create_holding = {
+					type = city_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 350
+				}
+			}
+		}
+	}
+}
+
+auto_build.0033 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 350
+					}
+				}
+				create_holding = {
+					type = church_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 350
+				}
+			}
+		}
+	}
+}
+
+auto_build.0034 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 350
+					}
+				}
+				create_holding = {
+					type = tribal_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 350
+				}
+			}
+		}
+	}
+}
+
+auto_build.0035 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 350
+					}
+				}
+				create_holding = {
+					type = castle_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 350
+				}
+			}
+		}
+	}
+}
+
+auto_build.0036 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 250
+					}
+				}
+				create_holding = {
+					type = city_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 250
+				}
+			}
+		}
+	}
+}
+
+auto_build.0037 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 250
+					}
+				}
+				create_holding = {
+					type = church_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 250
+				}
+			}
+		}
+	}
+}
+
+auto_build.0038 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 250
+					}
+				}
+				create_holding = {
+					type = tribal_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 250
+				}
+			}
+		}
+	}
+}
+
+auto_build.0039 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 250
+					}
+				}
+				create_holding = {
+					type = castle_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 250
+				}
+			}
+		}
+	}
+}
+
+auto_build.0040 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 200
+					}
+				}
+				create_holding = {
+					type = city_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 200
+				}
+			}
+		}
+	}
+}
+
+auto_build.0088 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 100
+					}
+				}
+				create_holding = {
+					type = city_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 100
+				}
+			}
+		}
+	}
+}
+
+auto_build.0089 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 100
+					}
+				}
+				create_holding = {
+					type = church_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 100
+				}
+			}
+		}
+	}
+}
+
+auto_build.0090 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 100
+					}
+				}
+				create_holding = {
+					type = tribal_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 100
+				}
+			}
+		}
+	}
+}
+
+auto_build.0091 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 100
+					}
+				}
+				create_holding = {
+					type = castle_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 100
+				}
+			}
+		}
+	}
+}
+
+auto_build.0092 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 150
+					}
+				}
+				create_holding = {
+					type = city_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 150
+				}
+			}
+		}
+	}
+}
+
+auto_build.0093 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 150
+					}
+				}
+				create_holding = {
+					type = church_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 150
+				}
+			}
+		}
+	}
+}
+
+auto_build.0094 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 150
+					}
+				}
+				create_holding = {
+					type = tribal_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 150
+				}
+			}
+		}
+	}
+}
+
+auto_build.0095 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 150
+					}
+				}
+				create_holding = {
+					type = castle_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 150
+				}
+			}
+		}
+	}
+}
+
+auto_build.0096 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	immediate = {
+		scope:empty_holding_province = {
+			if = {
+				limit = {
+					root.holder = {
+						gold >= 180
+					}
+				}
+				create_holding = {
+					type = city_holding
+					holder = root.holder
+				}
+				root.holder = {
+					remove_short_term_gold = 180
+				}
+			}
+		}
+	}
+}
+
+auto_build.0273 = {
+	type = county_event
+	theme = stewardship
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_county_modifier = county_modifier_auto_build_disabled }
+		holder = {
+			OR = {
+				has_character_flag = enable_auto_build
+				AND = {
+					has_character_flag = enable_vassal_auto_build
+					is_vassal_of = event_target:auto_build_liege
+				}
+			}
+		}
+		any_county_province = {
+			has_holding_slot = yes
+			NOT = { has_holding = yes }
+		}
+	}
+	
+	weight_multiplier = {
+		base = 100
+		modifier = {
+			factor = 10
+			holder = {
+				OR = {
+					culture = { has_cultural_parameter = castle_holding }
+					culture = { has_cultural_parameter = city_holding }
+					culture = { has_cultural_parameter = church_holding }
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_county_province = {
+			limit = {
+				has_holding_slot = yes
+				NOT = { has_holding = yes }
+			}
+			save_scope_as = empty_holding_province
+		}
+		
+		holder = {
+			if = {
+				limit = {
+					OR = {
+						culture = { has_cultural_parameter = castle_holding }
+						government_has_flag = government_is_feudal
+					}
+				}
+				root = { trigger_event = auto_build.0015 }
+			}
+			else_if = {
+				limit = {
+					OR = {
+						culture = { has_cultural_parameter = city_holding }
+						government_has_flag = government_is_republic
+					}
+				}
+				root = { trigger_event = auto_build.0015 }
+			}
+			else_if = {
+				limit = {
+					culture = { has_cultural_parameter = church_holding }
+				}
+				root = { trigger_event = auto_build.0015 }
+			}
+			else = {
+				root = { trigger_event = auto_build.0015 }
+			}
 		}
 	}
 }
