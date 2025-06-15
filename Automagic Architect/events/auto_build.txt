@@ -5590,3 +5590,129 @@ auto_build.0177 = {
                 }
         }
 }
+
+namespace = automagic_architect
+
+automagic_architect.0001 = {
+    type = character_event
+    title = automagic_architect.0001.t
+    desc = automagic_architect.0001.desc
+    theme = stewardship_domain_focus
+    left_portrait = root
+    option = { name = automagic_architect.0001.scope trigger_event = automagic_architect.0002 }
+    option = { name = automagic_architect.0001.budget trigger_event = automagic_architect.0003 }
+    option = { name = automagic_architect.0001.period trigger_event = automagic_architect.0004 }
+    option = {
+        name = automagic_architect.0001.pause
+        trigger = { NOT = { has_character_flag = automagic_architect_paused } }
+        remove_character_flag = enable_auto_build
+        remove_character_flag = enable_vassal_auto_build
+        add_character_flag = automagic_architect_paused
+        trigger_event = automagic_architect.0001
+    }
+    option = {
+        name = automagic_architect.0001.resume
+        trigger = { has_character_flag = automagic_architect_paused }
+        if = { limit = { has_character_flag = automagic_architect_scope_player } add_character_flag = enable_auto_build }
+        if = { limit = { has_character_flag = automagic_architect_scope_vassal } add_character_flag = enable_vassal_auto_build }
+        remove_character_flag = automagic_architect_paused
+        trigger_event = automagic_architect.0001
+    }
+    option = { name = automagic_architect.0001.reset trigger_event = automagic_architect.0006 }
+    option = { name = automagic_architect.0001.summary trigger_event = automagic_architect.0005 }
+    option = { name = automagic_architect.0001.about trigger_event = automagic_architect.0099 }
+}
+
+automagic_architect.0002 = {
+    type = character_event
+    title = automagic_architect.0002.t
+    desc = automagic_architect.0002.desc
+    theme = stewardship_domain_focus
+    left_portrait = root
+    option = {
+        name = automagic_architect.0002.a
+        add_character_flag = automagic_architect_scope_player
+        remove_character_flag = automagic_architect_scope_vassal
+        add_character_flag = enable_auto_build
+        remove_character_flag = enable_vassal_auto_build
+        trigger_event = automagic_architect.0001
+    }
+    option = {
+        name = automagic_architect.0002.b
+        add_character_flag = automagic_architect_scope_vassal
+        remove_character_flag = automagic_architect_scope_player
+        add_character_flag = enable_vassal_auto_build
+        remove_character_flag = enable_auto_build
+        trigger_event = automagic_architect.0001
+    }
+    option = {
+        name = automagic_architect.0002.c
+        add_character_flag = automagic_architect_scope_player
+        add_character_flag = automagic_architect_scope_vassal
+        add_character_flag = enable_auto_build
+        add_character_flag = enable_vassal_auto_build
+        trigger_event = automagic_architect.0001
+    }
+    option = { name = automagic_architect.back trigger_event = automagic_architect.0001 }
+}
+
+automagic_architect.0003 = {
+    type = character_event
+    title = automagic_architect.0003.t
+    desc = automagic_architect.0003.desc
+    theme = stewardship_domain_focus
+    left_portrait = root
+    option = { name = automagic_architect.0003.a set_character_variable = { name = automagic_architect_reserve value = 0 } trigger_event = automagic_architect.0001 }
+    option = { name = automagic_architect.0003.b set_character_variable = { name = automagic_architect_reserve value = 500 } trigger_event = automagic_architect.0001 }
+    option = { name = automagic_architect.0003.c set_character_variable = { name = automagic_architect_reserve value = 1000 } trigger_event = automagic_architect.0001 }
+    option = { name = automagic_architect.back trigger_event = automagic_architect.0001 }
+}
+
+automagic_architect.0004 = {
+    type = character_event
+    title = automagic_architect.0004.t
+    desc = automagic_architect.0004.desc
+    theme = stewardship_domain_focus
+    left_portrait = root
+    option = { name = automagic_architect.0004.a remove_character_flag = automagic_architect_period_month remove_character_flag = automagic_architect_period_quarter trigger_event = automagic_architect.0001 }
+    option = { name = automagic_architect.0004.b add_character_flag = automagic_architect_period_month remove_character_flag = automagic_architect_period_quarter trigger_event = automagic_architect.0001 }
+    option = { name = automagic_architect.0004.c remove_character_flag = automagic_architect_period_month add_character_flag = automagic_architect_period_quarter trigger_event = automagic_architect.0001 }
+    option = { name = automagic_architect.back trigger_event = automagic_architect.0001 }
+}
+
+automagic_architect.0005 = {
+    type = character_event
+    title = automagic_architect.0005.t
+    desc = automagic_architect.0005.desc
+    theme = stewardship_domain_focus
+    left_portrait = root
+    option = { name = automagic_architect.ok }
+}
+
+automagic_architect.0006 = {
+    type = character_event
+    title = automagic_architect.0006.t
+    desc = automagic_architect.0006.desc
+    theme = stewardship_domain_focus
+    left_portrait = root
+    immediate = {
+        remove_character_flag = automagic_architect_scope_player
+        remove_character_flag = automagic_architect_scope_vassal
+        remove_character_flag = automagic_architect_paused
+        remove_character_flag = automagic_architect_period_month
+        remove_character_flag = automagic_architect_period_quarter
+        set_character_variable = { name = automagic_architect_reserve value = 0 }
+        add_character_flag = enable_auto_build
+        add_character_flag = enable_vassal_auto_build
+    }
+    option = { name = automagic_architect.ok trigger_event = automagic_architect.0001 }
+}
+
+automagic_architect.0099 = {
+    type = character_event
+    title = automagic_architect.0099.t
+    desc = automagic_architect.0099.desc
+    theme = stewardship_domain_focus
+    left_portrait = root
+    option = { name = automagic_architect.ok }
+}
