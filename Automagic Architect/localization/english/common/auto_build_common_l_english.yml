@@ -3,3 +3,10 @@
  enable_auto_build_desc:0 "Let the AI automatically build and upgrade buildings in your holdings."
  disable_auto_build:0 "Disable Auto-Build"
  disable_auto_build_desc:0 "Turn off automatic building and resume manual control."
+ ama_recent_build_modifier:0 “Construction project underway”
+ ama_recent_build_modifier_desc:0 “Most of the construction resources at this location have been taken up by another project.”
+ ama_building_decision:0 "Auto-Upgrade Plan"
+ ama_building_decision_desc:0 "I don't have the time or energy to manage every building in my domain. This is a job for professional architects! Summon the architects in the domain immediately!\n\n#EMP Note: Only already constructed buildings and estates will be automatically upgraded; you need to manually build the first level of any structure. Additionally, duchy buildings and special buildings still require manual upgrades.#!"
+ ama_building_decision_tooltip:0 "Let the architects take charge of expanding the buildings in your realm." 
+ ama_building_decision_confirm:0 "Summon the Architects"
+ decision_group_type_uba: "Architect Decisions"

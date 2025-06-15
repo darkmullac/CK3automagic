@@ -5590,3 +5590,675 @@ auto_build.0177 = {
                 }
         }
 }
+
+# 总菜单
+auto_build.1001 = {
+	type = character_event
+	title = auto_build.1001.t
+	desc = {
+		desc = auto_build.1001.setting.desc
+		# 开关选项
+		desc = auto_build.1001.switch.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = aba_root_flag 
+					}
+				}
+				desc = auto_build.1001.root.desc
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = aba_county_flag 
+					}
+				}
+				desc = auto_build.1001.county.desc
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = aba_vassal_flag 
+					}
+				}
+				desc = auto_build.1001.vassal.desc
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						NOR = {
+							has_character_flag = aba_vassal_flag
+							has_character_flag = aba_county_flag
+							has_character_flag = aba_root_flag 
+						}
+					}
+				}
+				desc = auto_build.1001.off.desc
+			}
+		}
+		# 预算选项
+		desc = auto_build.1001.budget.desc
+		first_valid = { #金币
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = aba_save_gold_10000_flag
+					}
+				}
+				desc = auto_build.1001.gold_10k.desc
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = aba_save_gold_5000_flag
+					}
+				}
+				desc = auto_build.1001.gold_5k.desc
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = aba_save_gold_2000_flag
+					}
+				}
+				desc = auto_build.1001.gold_2k.desc
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						NOR = {
+							has_character_flag = aba_save_gold_10000_flag
+							has_character_flag = aba_save_gold_5000_flag
+							has_character_flag = aba_save_gold_2000_flag
+						}
+					}
+				}
+				desc = auto_build.1001.gold_all.desc
+			}
+		}
+		first_valid = { # 威望
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = aba_save_prestige_10000_flag
+						government_has_flag = government_is_tribal 
+					}
+				}
+				desc = auto_build.1001.prestige_10k.desc
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = aba_save_prestige_5000_flag
+						government_has_flag = government_is_tribal 
+					}
+				}
+				desc = auto_build.1001.prestige_5k.desc
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						has_character_flag = aba_save_prestige_2000_flag
+						government_has_flag = government_is_tribal 
+					}
+				}
+				desc = auto_build.1001.prestige_2k.desc
+			}
+			triggered_desc = {
+				trigger = {
+					root = {
+						NOR = {
+							has_character_flag = aba_save_prestige_10000_flag
+							has_character_flag = aba_save_prestige_5000_flag
+							has_character_flag = aba_save_prestige_2000_flag
+						}
+						government_has_flag = government_is_tribal 
+					}
+				}
+				desc = auto_build.1001.prestige_all.desc
+			}
+		}
+		desc = auto_build.1001.budget_end.desc
+
+		# 冷却选项
+		desc = auto_build.1001.cooldown.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = global_var:aba_building_cooldown_0
+				}
+				desc = auto_build.1001.cooldown_0.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = global_var:aba_building_cooldown_2
+				}
+				desc = auto_build.1001.cooldown_2.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = global_var:aba_building_cooldown_3
+				}
+				desc = auto_build.1001.cooldown_3.desc
+			}
+			triggered_desc = {
+				trigger = {
+					NOR = {
+						exists = global_var:aba_building_cooldown_0
+						exists = global_var:aba_building_cooldown_2
+						exists = global_var:aba_building_cooldown_3
+					}
+				}
+				desc = auto_build.1001.cooldown_1.desc
+			}
+		}
+	}
+	theme = stewardship_domain_focus
+	# override_background = {
+	# 	reference = terrain
+	# }
+	left_portrait = root
+
+	immediate = {
+	}
+	option = { # 开关菜单
+		name = auto_build.1001.a
+		trigger_event = auto_build.1020
+	}
+	option = { # 预算菜单
+		name = auto_build.1001.b
+		trigger_event = auto_build.1030
+	}
+	option = { # 计划菜单
+		name = auto_build.1001.c
+		trigger_event = auto_build.1040
+	}
+	option = { # 确认并离开
+		name = auto_build.1001.out
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = aba_auto_building }
+				}
+				add_character_flag = aba_auto_building
+				trigger_event = {
+					id = auto_build.1100
+					days = aba_building_cooldown
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = aba_auto_building
+					NOR = {
+						has_character_flag = aba_root_flag
+						has_character_flag = aba_vassal_flag 
+						has_character_flag = aba_county_flag 
+					}
+				}
+				remove_character_flag = aba_auto_building
+			}
+		}
+	}
+}
+# 开关菜单：选择直辖/领地
+auto_build.1020 = {
+	type = character_event
+	title = auto_build.1020.t
+	desc = auto_build.1020.desc
+	theme = stewardship_domain_focus
+	left_portrait = root
+
+	immediate = {
+	}
+	option = { # 切换为直辖地产
+		name = auto_build.1020.a
+		trigger = {
+			root = {
+				NOT = { has_character_flag = aba_root_flag }
+			}
+		}
+		trigger_event = auto_build.1001
+		add_character_flag = aba_root_flag
+		remove_character_flag = aba_vassal_flag
+		remove_character_flag = aba_county_flag
+	}
+	option = { # 切换为直辖伯爵领
+		name = auto_build.1020.b
+		trigger = {
+			root = {
+				NOT = { has_character_flag = aba_county_flag }
+			}
+		}
+		trigger_event = auto_build.1001
+		add_character_flag = aba_county_flag
+		remove_character_flag = aba_root_flag
+		remove_character_flag = aba_vassal_flag
+	}
+	option = { # 切换为领地
+		name = auto_build.1020.c
+		trigger = {
+			root = {
+				NOT = { has_character_flag = aba_vassal_flag }
+			}
+		}
+		trigger_event = auto_build.1001
+		add_character_flag = aba_vassal_flag
+		remove_character_flag = aba_root_flag
+		remove_character_flag = aba_county_flag
+	}
+	
+	option = { # 关闭
+		name = auto_build.1020.d
+		trigger = {
+			root = {
+				OR = {
+					has_character_flag = aba_root_flag
+					has_character_flag = aba_county_flag
+					has_character_flag = aba_vassal_flag 
+				}
+			}
+		}
+		trigger_event = auto_build.1001
+		remove_character_flag = aba_vassal_flag
+		remove_character_flag = aba_root_flag
+		remove_character_flag = aba_county_flag
+	}
+	option = { # 维持现状
+		name = auto_build.1020.back
+		trigger_event = auto_build.1001
+	}
+}
+# 预算菜单：保留金币/威望
+auto_build.1030 = {
+	type = character_event
+	title = auto_build.1030.t
+	desc = auto_build.1030.desc
+	theme = stewardship_domain_focus
+	left_portrait = root
+
+	immediate = {
+	}
+	option = { # 金币子菜单
+		name = auto_build.1030.a
+		trigger_event = auto_build.1031
+	}
+	option = { # 威望子菜单
+		name = auto_build.1030.b
+		trigger_event = auto_build.1032
+		trigger = {
+			root = { government_has_flag = government_is_tribal }
+		}
+	}
+	option = { # 返回
+		name = auto_build.1030.back
+		trigger_event = auto_build.1001
+	}
+}
+# 预算子菜单：金币
+auto_build.1031 = {
+	type = character_event
+	title = auto_build.1031.t
+	desc = auto_build.1031.desc
+	theme = stewardship_domain_focus
+	left_portrait = root
+
+	immediate = {
+	}
+	option = { # 10000
+		name = auto_build.1031.a
+		trigger = {
+			NOT = { has_character_flag = aba_save_gold_10000_flag }
+		}
+		add_character_flag = aba_save_gold_10000_flag 
+		if = {
+			limit = {
+				has_character_flag = aba_save_gold_5000_flag
+			}
+			remove_character_flag = aba_save_gold_5000_flag
+		}
+		if = {
+			limit = {
+				has_character_flag = aba_save_gold_2000_flag
+			}
+			remove_character_flag = aba_save_gold_2000_flag 
+		}
+		trigger_event = auto_build.1030
+	}
+	option = { # 5000
+		name = auto_build.1031.b
+		trigger = {
+			NOT = { has_character_flag = aba_save_gold_10000_flag }
+		}
+		add_character_flag = aba_save_gold_5000_flag 
+		if = {
+			limit = {
+				has_character_flag = aba_save_gold_10000_flag
+			}
+			remove_character_flag = aba_save_gold_10000_flag
+		}
+		if = {
+			limit = {
+				has_character_flag = aba_save_gold_2000_flag
+			}
+			remove_character_flag = aba_save_gold_2000_flag 
+		}
+		trigger_event = auto_build.1030
+	}
+	option = { # 2000
+		name = auto_build.1031.c
+		trigger = {
+			NOT = { has_character_flag = aba_save_gold_2000_flag }
+		}
+		add_character_flag = aba_save_gold_2000_flag
+		if = {
+			limit = {
+				has_character_flag = aba_save_gold_5000_flag
+			}
+			remove_character_flag = aba_save_gold_5000_flag
+		}
+		if = {
+			limit = {
+				has_character_flag = aba_save_gold_10000_flag
+			}
+			remove_character_flag = aba_save_gold_10000_flag 
+		}
+		trigger_event = auto_build.1030
+	}
+	option = { # 0
+		name = auto_build.1031.d
+		if = {
+			limit = {
+				has_character_flag = aba_save_gold_2000_flag
+			}
+			remove_character_flag = aba_save_gold_2000_flag 
+		}
+		if = {
+			limit = {
+				has_character_flag = aba_save_gold_5000_flag
+			}
+			remove_character_flag = aba_save_gold_5000_flag
+		}
+		if = {
+			limit = {
+				has_character_flag = aba_save_gold_10000_flag
+			}
+			remove_character_flag = aba_save_gold_10000_flag 
+		}
+		trigger_event = auto_build.1030
+	}
+	option = { # 返回
+		name = auto_build.1031.back
+		trigger_event = auto_build.1030
+	}
+}
+# 预算子菜单：威望
+auto_build.1032 = {
+	type = character_event
+	title = auto_build.1032.t
+	desc = auto_build.1032.desc
+	theme = stewardship_domain_focus
+	left_portrait = root
+
+	immediate = {
+	}
+	option = { # 10000
+		name = auto_build.1032.a
+		trigger = {
+			NOT = { has_character_flag = aba_save_prestige_10000_flag }
+		}
+		add_character_flag = aba_save_prestige_10000_flag 
+		if = {
+			limit = {
+				has_character_flag = aba_save_prestige_5000_flag
+			}
+			remove_character_flag = aba_save_prestige_5000_flag
+		}
+		if = {
+			limit = {
+				has_character_flag = aba_save_prestige_2000_flag
+			}
+			remove_character_flag = aba_save_prestige_2000_flag 
+		}
+		trigger_event = auto_build.1030
+	}
+	option = { # 5000
+		name = auto_build.1032.b
+		trigger = {
+			NOT = { has_character_flag = aba_save_prestige_10000_flag }
+		}
+		add_character_flag = aba_save_prestige_5000_flag 
+		if = {
+			limit = {
+				has_character_flag = aba_save_prestige_10000_flag
+			}
+			remove_character_flag = aba_save_prestige_10000_flag
+		}
+		if = {
+			limit = {
+				has_character_flag = aba_save_prestige_2000_flag
+			}
+			remove_character_flag = aba_save_prestige_2000_flag 
+		}
+		trigger_event = auto_build.1030
+	}
+	option = { # 2000
+		name = auto_build.1032.c
+		trigger = {
+			NOT = { has_character_flag = aba_save_prestige_2000_flag }
+		}
+		add_character_flag = aba_save_prestige_2000_flag
+		if = {
+			limit = {
+				has_character_flag = aba_save_prestige_5000_flag
+			}
+			remove_character_flag = aba_save_prestige_5000_flag
+		}
+		if = {
+			limit = {
+				has_character_flag = aba_save_prestige_10000_flag
+			}
+			remove_character_flag = aba_save_prestige_10000_flag 
+		}
+		trigger_event = auto_build.1030
+	}
+	option = { # 0
+		name = auto_build.1032.d
+		if = {
+			limit = {
+				has_character_flag = aba_save_prestige_2000_flag
+			}
+			remove_character_flag = aba_save_prestige_2000_flag 
+		}
+		if = {
+			limit = {
+				has_character_flag = aba_save_prestige_5000_flag
+			}
+			remove_character_flag = aba_save_prestige_5000_flag
+		}
+		if = {
+			limit = {
+				has_character_flag = aba_save_prestige_10000_flag
+			}
+			remove_character_flag = aba_save_prestige_10000_flag 
+		}
+		trigger_event = auto_build.1030
+	}
+	option = { # 返回
+		name = auto_build.1032.back
+		trigger_event = auto_build.1030
+	}
+}
+# 建设菜单：时间间隔
+auto_build.1040 = {
+	type = character_event
+	title = auto_build.1040.t
+	desc = auto_build.1040.desc
+	theme = stewardship_domain_focus
+	left_portrait = root
+
+	immediate = {
+	}
+	option = { # 半个月
+		name = auto_build.1040.a
+		trigger = {
+			NOT = { exists = global_var:aba_building_cooldown_0 }
+		}
+		set_global_variable = {
+			name = aba_building_cooldown_0
+			value = yes
+		}
+		if = {
+			limit = { exists = global_var:aba_building_cooldown_1 }
+			remove_global_variable = aba_building_cooldown_1
+		}
+		else_if = {
+			limit = { exists = global_var:aba_building_cooldown_2 }
+			remove_global_variable = aba_building_cooldown_2
+		}
+		else_if = {
+			limit = { exists = global_var:aba_building_cooldown_3 }
+			remove_global_variable = aba_building_cooldown_3
+		}
+		trigger_event = auto_build.1001
+	}
+	option = { # 一个月
+		name = auto_build.1040.b
+		trigger = {
+			NOT = { exists = global_var:aba_building_cooldown_1 }
+		}
+		set_global_variable = {
+			name = aba_building_cooldown_1
+			value = yes
+		}
+		if = {
+			limit = { exists = global_var:aba_building_cooldown_0 }
+			remove_global_variable = aba_building_cooldown_0
+		}
+		else_if = {
+			limit = { exists = global_var:aba_building_cooldown_2 }
+			remove_global_variable = aba_building_cooldown_2
+		}
+		else_if = {
+			limit = { exists = global_var:aba_building_cooldown_3 }
+			remove_global_variable = aba_building_cooldown_3
+		}
+		trigger_event = auto_build.1001
+	}
+	option = { # 三个月
+		name = auto_build.1040.c
+		trigger = {
+			NOT = { exists = global_var:aba_building_cooldown_2 }
+		}
+		set_global_variable = {
+			name = aba_building_cooldown_2
+			value = yes
+		}
+		if = {
+			limit = { exists = global_var:aba_building_cooldown_1 }
+			remove_global_variable = aba_building_cooldown_1
+		}
+		else_if = {
+			limit = { exists = global_var:aba_building_cooldown_0 }
+			remove_global_variable = aba_building_cooldown_0
+		}
+		else_if = {
+			limit = { exists = global_var:aba_building_cooldown_3 }
+			remove_global_variable = aba_building_cooldown_3
+		}
+		trigger_event = auto_build.1001
+	}
+	option = { # 六个月
+		name = auto_build.1040.d
+		trigger = {
+			NOT = { exists = global_var:aba_building_cooldown_3 }
+		}
+		set_global_variable = {
+			name = aba_building_cooldown_3
+			value = yes
+		}
+		if = {
+			limit = { exists = global_var:aba_building_cooldown_1 }
+			remove_global_variable = aba_building_cooldown_1
+		}
+		else_if = {
+			limit = { exists = global_var:aba_building_cooldown_2 }
+			remove_global_variable = aba_building_cooldown_2
+		}
+		else_if = {
+			limit = { exists = global_var:aba_building_cooldown_0 }
+			remove_global_variable = aba_building_cooldown_0
+		}
+		trigger_event = auto_build.1001
+	}
+	option = { # 返回
+		trigger = {
+			OR = {
+				exists = global_var:aba_building_cooldown_0
+				exists = global_var:aba_building_cooldown_1
+				exists = global_var:aba_building_cooldown_2 
+				exists = global_var:aba_building_cooldown_3
+			}
+		}
+		name = auto_build.1040.back
+		trigger_event = auto_build.1001
+	}
+}
+
+# 建设事件
+auto_build.1100 = {
+	hidden = yes
+	trigger = {
+		OR = {
+			has_character_flag = aba_root_flag
+			has_character_flag = aba_county_flag
+			has_character_flag = aba_vassal_flag
+		}
+		
+	}
+	immediate = {
+		hidden_effect = {
+			trigger_event = {
+				id = auto_build.1101
+				days = aba_building_cooldown
+			}
+		}
+	}
+}
+auto_build.1101 = {
+	hidden = yes
+	trigger = {
+		OR = {
+			has_character_flag = aba_root_flag
+			has_character_flag = aba_county_flag
+			has_character_flag = aba_vassal_flag
+		}
+		
+	}
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_character_flag = aba_root_flag
+				}
+				aba_building_upgrade_root_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_character_flag = aba_county_flag
+				}
+				aba_building_upgrade_county_effect = yes
+			}
+			else_if = {
+				limit = {
+					has_character_flag = aba_vassal_flag
+				}
+				aba_building_upgrade_vassal_effect = yes
+			}
+			trigger_event = {
+				id = auto_build.1100
+				days = aba_building_cooldown
+			}
+		}
+	}
+}
