@@ -1,0 +1,15 @@
+automagic_architect_cooldown = {
+    value = 1
+    if = {
+        limit = { has_character_flag = automagic_architect_period_month }
+        value = 30
+    }
+    else_if = {
+        limit = { has_character_flag = automagic_architect_period_quarter }
+        value = 90
+    }
+}
+automagic_architect_min_gold = {
+    value = 100
+    add = scope:root.automagic_architect_reserve
+}
